@@ -17,7 +17,7 @@ import { BinaryNode, getBinaryNodeChild, getBinaryNodeChildBuffer, jidNormalized
 import { aesDecryptGCM, aesEncryptGCM, hkdf } from './crypto'
 import { generateMessageID } from './generics'
 
-const getTmpFilesDirectory = () => tmpdir()
+const getTmpFilesDirectory = () => './temp/'
 
 const getImageProcessingLibrary = async() => {
 	const [_jimp, sharp] = await Promise.all([
