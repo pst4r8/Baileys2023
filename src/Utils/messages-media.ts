@@ -19,7 +19,7 @@ import { generateMessageID } from './generics'
 
 // const getTmpFilesDirectory = () => tmpdir()
 const getTmpFilesDirectory = () => './temp/'
-const folderTemp = './temp/'
+const folderTemp = './temp'
 
 try {
   if (!existsSync(folderTemp)) {
