@@ -1,3 +1,4 @@
+import Fs from 'fs'
 import { Boom } from '@hapi/boom'
 import { AxiosRequestConfig } from 'axios'
 import { exec } from 'child_process'
@@ -22,8 +23,8 @@ const getTmpFilesDirectory = () => './temp/'
 const folderTemp = './temp/'
 
 try {
-  if (!fs.existsSync(folderTemp)) {
-    fs.mkdirSync(folderTemp)
+  if (!Fs.existsSync(folderTemp)) {
+    Fs.mkdirSync(folderTemp)
   }
 } catch (err) {
   console.error(err)
