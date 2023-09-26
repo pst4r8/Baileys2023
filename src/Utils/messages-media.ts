@@ -1,4 +1,3 @@
-import fs from 'fs'
 import { Boom } from '@hapi/boom'
 import { AxiosRequestConfig } from 'axios'
 import { exec } from 'child_process'
