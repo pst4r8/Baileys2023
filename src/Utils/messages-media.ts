@@ -1,10 +1,9 @@
-import Fs from 'fs'
 import { Boom } from '@hapi/boom'
 import { AxiosRequestConfig } from 'axios'
 import { exec } from 'child_process'
 import * as Crypto from 'crypto'
 import { once } from 'events'
-import { createReadStream, createWriteStream, promises as fs, WriteStream } from 'fs'
+import { existsSync, mkdirSync, createReadStream, createWriteStream, promises as fs, WriteStream } from 'fs'
 import type { IAudioMetadata } from 'music-metadata'
 import { tmpdir } from 'os'
 import { join } from 'path'
@@ -23,8 +22,8 @@ const getTmpFilesDirectory = () => './temp/'
 const folderTemp = './temp/'
 
 try {
-  if (!Fs.existsSync(folderTemp)) {
-    Fs.mkdirSync(folderTemp)
+  if (!existsSync(folderTemp)) {
+    mkdirSync(folderTemp)
   }
 } catch (err) {
   console.error(err)
