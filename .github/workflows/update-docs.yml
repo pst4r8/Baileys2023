@@ -22,9 +22,9 @@ jobs:
     - name: Parsing Package Info
       id: packageInfo
       run: |
-        echo "::set-output name=package-name::$(jq -r .name package.json)"
-        echo "::set-output name=package-version::$(jq -r .version package.json)"
-        echo "::set-output name=commit-msg::$(git log -1 --pretty=%B)"
+        echo "package-name=$(jq -r .name package.json)" >> $GITHUB_OUTPUT
+        echo "package-version=$(jq -r .version package.json)" >> $GITHUB_OUTPUT
+        echo "commit-msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
         
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.1
