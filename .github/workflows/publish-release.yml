@@ -25,7 +25,7 @@ jobs:
           node-version: 18.x
           registry-url: "https://registry.npmjs.org"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -42,12 +42,12 @@ jobs:
       - name: Install Dependencies
         run: yarn
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
 
       - name: Publish in NPM
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
 
       - name: Generate Changelog
         id: generate_changelog
