@@ -56,26 +56,3 @@ jobs:
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
           echo "${changelog}" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Make Package
-        run: npm pack
-
-      - name: Rename Pack
-        run: mv *.tgz baileys.tgz
-
-      - name: Create Release
-        uses: meeDamian/github-release@2.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
-          commitish: ${{ github.sha }}
-          name: ${{ github.ref_name }}
-          body: ${{ steps.generate_changelog.outputs.changelog }}
-          draft: false
-          prerelease: false
-          files: >
-            baileys.tgz
-          gzip: folders
-          allow_override: true
