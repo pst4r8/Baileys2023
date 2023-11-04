@@ -566,35 +566,30 @@ export const generateWAMessageFromContent = (
 	const { quoted, userJid } = options
 
 	if(quoted) {
-		try {
-		    const participant = quoted.key.fromMe ? userJid : (quoted.participant || quoted.key.participant || quoted.key.remoteJid)
-    
-		    let quotedMsg = normalizeMessageContent(quoted.message)!
-		    const msgType = getContentType(quotedMsg)!
-		    // strip any redundant properties
-		    quotedMsg = proto.Message.fromObject({ [msgType]: quotedMsg[msgType] })
-    
-		    const quotedContent = quotedMsg[msgType]
-		    if(typeof quotedContent === 'object' && quotedContent && 'contextInfo' in quotedContent) {
-			    delete quotedContent.contextInfo
-		    }
-    
-		    const contextInfo: proto.IContextInfo = message[key].contextInfo || { }
-		    contextInfo.participant = jidNormalizedUser(participant!)
-		    contextInfo.stanzaId = quoted.key.id
-		    contextInfo.quotedMessage = quotedMsg
-    
-		    // if a participant is quoted, then it must be a group
-		    // hence, remoteJid of group must also be entered
-		    if(jid !== quoted.key.remoteJid) {
-			    contextInfo.remoteJid = quoted.key.remoteJid
-		    }
-    
-		    message[key].contextInfo = contextInfo
-		} catch (err) {
-            if (err.message == "Cannot read properties of undefined (reading 'undefined')") return
-            console.error(err)
-        }
+	    const participant = quoted.key.fromMe ? userJid : (quoted.participant || quoted.key.participant || quoted.key.remoteJid)
+
+	    let quotedMsg = normalizeMessageContent(quoted.message)!
+	    const msgType = getContentType(quotedMsg)!
+	    // strip any redundant properties
+	    quotedMsg = proto.Message.fromObject({ [msgType]: quotedMsg[msgType] })
+
+	    const quotedContent = quotedMsg[msgType]
+	    if(typeof quotedContent === 'object' && quotedContent && 'contextInfo' in quotedContent) {
+		    delete quotedContent.contextInfo
+	    }
+
+	    const contextInfo: proto.IContextInfo = message[key].contextInfo || { }
+	    contextInfo.participant = jidNormalizedUser(participant!)
+	    contextInfo.stanzaId = quoted.key.id
+	    contextInfo.quotedMessage = quotedMsg
+
+	    // if a participant is quoted, then it must be a group
+	    // hence, remoteJid of group must also be entered
+	    if(jid !== quoted.key.remoteJid) {
+		    contextInfo.remoteJid = quoted.key.remoteJid
+	    }
+
+	    message[key].contextInfo = contextInfo
 	}
 
 	if(
