@@ -715,62 +715,57 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 					disappearingMessagesInChat
 				await groupToggleEphemeral(jid, value)
 			} else {
-			    try {
-				    const fullMsg = await generateWAMessage(
-					    jid,
-					    content,
-					    {
-						    logger,
-						    userJid,
-						    getUrlInfo: text => getUrlInfo(
-							    text,
-							    {
-								    thumbnailWidth: linkPreviewImageThumbnailWidth,
-								    fetchOpts: {
-									    timeout: 3_000,
-									    ...axiosOptions || { }
-								    },
-								    logger,
-								    uploadImage: generateHighQualityLinkPreview
-									    ? waUploadToServer
-									    : undefined
+			    const fullMsg = await generateWAMessage(
+				    jid,
+				    content,
+				    {
+					    logger,
+					    userJid,
+					    getUrlInfo: text => getUrlInfo(
+						    text,
+						    {
+							    thumbnailWidth: linkPreviewImageThumbnailWidth,
+							    fetchOpts: {
+								    timeout: 3_000,
+								    ...axiosOptions || { }
 							    },
-						    ),
-						    upload: waUploadToServer,
-						    mediaCache: config.mediaCache,
-						    options: config.options,
-						    ...options,
-					    }
-				    )
-				    const isDeleteMsg = 'delete' in content && !!content.delete
-				    const isEditMsg = 'edit' in content && !!content.edit
-				    const additionalAttributes: BinaryNodeAttributes = { }
-				    // required for delete
-				    if(isDeleteMsg) {
-					    // if the chat is a group, and I am not the author, then delete the message as an admin
-					    if(isJidGroup(content.delete?.remoteJid as string) && !content.delete?.fromMe) {
-						    additionalAttributes.edit = '8'
-					    } else {
-						    additionalAttributes.edit = '7'
-					    }
-				    } else if(isEditMsg) {
-					    additionalAttributes.edit = '1'
+							    logger,
+							    uploadImage: generateHighQualityLinkPreview
+								    ? waUploadToServer
+								    : undefined
+						    },
+					    ),
+					    upload: waUploadToServer,
+					    mediaCache: config.mediaCache,
+					    options: config.options,
+					    ...options,
 				    }
-    
-				    await relayMessage(jid, fullMsg.message!, { messageId: fullMsg.key.id!, cachedGroupMetadata: options.cachedGroupMetadata, additionalAttributes, statusJidList: options.statusJidList })
-				    if(config.emitOwnEvents) {
-					    process.nextTick(() => {
-						    processingMutex.mutex(() => (
-							    upsertMessage(fullMsg, 'append')
-						    ))
-					    })
+			    )
+			    const isDeleteMsg = 'delete' in content && !!content.delete
+			    const isEditMsg = 'edit' in content && !!content.edit
+			    const additionalAttributes: BinaryNodeAttributes = { }
+			    // required for delete
+			    if(isDeleteMsg) {
+				    // if the chat is a group, and I am not the author, then delete the message as an admin
+				    if(isJidGroup(content.delete?.remoteJid as string) && !content.delete?.fromMe) {
+					    additionalAttributes.edit = '8'
+				    } else {
+					    additionalAttributes.edit = '7'
 				    }
-    
-				    return fullMsg
-				} catch (err) {
-                    if (err.message == "Cannot read properties of undefined (reading 'message')") return
-                    console.error(err)
-                }
+			    } else if(isEditMsg) {
+				    additionalAttributes.edit = '1'
+			    }
+
+			    await relayMessage(jid, fullMsg.message!, { messageId: fullMsg.key.id!, cachedGroupMetadata: options.cachedGroupMetadata, additionalAttributes, statusJidList: options.statusJidList })
+			    if(config.emitOwnEvents) {
+				    process.nextTick(() => {
+					    processingMutex.mutex(() => (
+						    upsertMessage(fullMsg, 'append')
+					    ))
+				    })
+			    }
+
+			    return fullMsg
 			}
 		}
 	}
