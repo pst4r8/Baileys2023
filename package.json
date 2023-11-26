@@ -1,6 +1,6 @@
 {
   "name": "@pst4r8/baileys",
-  "version": "6.7.1",
+  "version": "6.7.2",
   "description": "WhatsApp API",
   "keywords": [
     "whatsapp",
@@ -67,22 +67,22 @@
     "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.0.0",
     "jest": "^27.0.6",
-    "jimp": "^0.16.1",
+    "jimp": "^0.22.10",
     "link-preview-js": "^3.0.0",
     "open": "^8.4.2",
     "qrcode-terminal": "^0.12.0",
     "release-it": "^15.10.3",
-    "sharp": "^0.30.5",
+    "sharp": "^0.32.6",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.8.1",
     "typedoc": "^0.24.7",
     "typescript": "^4.6.4"
   },
   "peerDependencies": {
-    "jimp": "^0.16.1",
+    "jimp": "^0.22.10",
     "link-preview-js": "^3.0.0",
     "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.30.5"
+    "sharp": "^0.32.6"
   },
   "peerDependenciesMeta": {
     "jimp": {
