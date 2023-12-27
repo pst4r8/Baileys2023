@@ -577,7 +577,7 @@ export const generateWAMessageFromContent = (
 		let quotedMsg = normalizeMessageContent(quoted.message)!
 		const msgType = getContentType(quotedMsg)!
 		// strip any redundant properties
-		if (quotedMsg) {
+		if(quotedMsg) {
 		        quotedMsg = proto.Message.fromObject({ [msgType]: quotedMsg[msgType] })
 
 		        const quotedContent = quotedMsg[msgType]
