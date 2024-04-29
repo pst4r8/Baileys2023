@@ -582,25 +582,27 @@ export const generateWAMessageFromContent = (
 		let quotedMsg = normalizeMessageContent(quoted.message)!
 		const msgType = getContentType(quotedMsg)!
 		// strip any redundant properties
-		quotedMsg = proto.Message.fromObject({ [msgType]: quotedMsg[msgType] })
-
-		const quotedContent = quotedMsg[msgType]
-		if(typeof quotedContent === 'object' && quotedContent && 'contextInfo' in quotedContent) {
-			delete quotedContent.contextInfo
+		if(quotedMsg) {
+		    quotedMsg = proto.Message.fromObject({ [msgType]: quotedMsg[msgType] })
+    
+		    const quotedContent = quotedMsg[msgType]
+		    if(typeof quotedContent === 'object' && quotedContent && 'contextInfo' in quotedContent) {
+			    delete quotedContent.contextInfo
+		    }
+    
+		    const contextInfo: proto.IContextInfo = innerMessage[key].contextInfo || { }
+		    contextInfo.participant = jidNormalizedUser(participant!)
+		    contextInfo.stanzaId = quoted.key.id
+		    contextInfo.quotedMessage = quotedMsg
+    
+		    // if a participant is quoted, then it must be a group
+		    // hence, remoteJid of group must also be entered
+		    if(jid !== quoted.key.remoteJid) {
+			    contextInfo.remoteJid = quoted.key.remoteJid
+		    }
+    
+		    innerMessage[key].contextInfo = contextInfo
 		}
-
-		const contextInfo: proto.IContextInfo = innerMessage[key].contextInfo || { }
-		contextInfo.participant = jidNormalizedUser(participant!)
-		contextInfo.stanzaId = quoted.key.id
-		contextInfo.quotedMessage = quotedMsg
-
-		// if a participant is quoted, then it must be a group
-		// hence, remoteJid of group must also be entered
-		if(jid !== quoted.key.remoteJid) {
-			contextInfo.remoteJid = quoted.key.remoteJid
-		}
-
-		innerMessage[key].contextInfo = contextInfo
 	}
 
 	if(
