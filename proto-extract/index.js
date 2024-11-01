@@ -7,7 +7,7 @@ let whatsAppVersion = 'latest'
 
 const addPrefix = (lines, prefix) => lines.map(line => prefix + line)
 
-const extractAllExpressions = node => {
+const extractAllExpressions = (node) => {
 	const expressions = [node]
 	const exp = node.expression
 	if (exp) {
@@ -430,8 +430,8 @@ async function findAppModules() {
 	const decodedProto = Object.keys(decodedProtoMap).sort()
 	const sortedStr = decodedProto.map(d => decodedProtoMap[d]).join('\n')
 
-	const decodedProtoStr = `syntax = "proto3";\npackage waproto;\n\n/// WhatsApp Version: ${whatsAppVersion}\n\n${sortedStr}`
-	const destinationPath = 'WAProto.proto'
+	const decodedProtoStr = `syntax = "proto2";\npackage proto;\n\n${sortedStr}`
+	const destinationPath = '../WAProto/WAProto.proto'
 	await fs.writeFile(destinationPath, decodedProtoStr)
 
 	console.log(`Extracted protobuf schema to "${destinationPath}"`)
