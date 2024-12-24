@@ -1,4 +1,5 @@
 import * as $protobuf from "protobufjs";
+import Long = require("long");
 /** Namespace proto. */
 export namespace proto {
 
@@ -114,6 +115,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVDeviceIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** ADVEncryptionType enum. */
@@ -234,6 +242,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVKeyIndexList
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedDeviceIdentity. */
@@ -342,6 +357,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedDeviceIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedDeviceIdentityHMAC. */
@@ -444,6 +466,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedDeviceIdentityHMAC
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ADVSignedKeyIndexList. */
@@ -546,6 +575,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ADVSignedKeyIndexList
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ActionLink. */
@@ -642,6 +678,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ActionLink
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an AutoDownloadSettings. */
@@ -750,6 +793,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for AutoDownloadSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an AvatarUserSettings. */
@@ -846,6 +896,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for AvatarUserSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BizAccountLinkInfo. */
@@ -960,6 +1017,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizAccountLinkInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BizAccountLinkInfo {
@@ -1070,6 +1134,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizAccountPayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BizIdentityInfo. */
@@ -1202,6 +1273,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BizIdentityInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BizIdentityInfo {
@@ -1338,6 +1416,696 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotAvatarMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotCapabilityMetadata. */
+    interface IBotCapabilityMetadata {
+
+        /** BotCapabilityMetadata capabilities */
+        capabilities?: (proto.BotCapabilityMetadata.BotCapabilityType[]|null);
+    }
+
+    /** Represents a BotCapabilityMetadata. */
+    class BotCapabilityMetadata implements IBotCapabilityMetadata {
+
+        /**
+         * Constructs a new BotCapabilityMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotCapabilityMetadata);
+
+        /** BotCapabilityMetadata capabilities. */
+        public capabilities: proto.BotCapabilityMetadata.BotCapabilityType[];
+
+        /**
+         * Creates a new BotCapabilityMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotCapabilityMetadata instance
+         */
+        public static create(properties?: proto.IBotCapabilityMetadata): proto.BotCapabilityMetadata;
+
+        /**
+         * Encodes the specified BotCapabilityMetadata message. Does not implicitly {@link proto.BotCapabilityMetadata.verify|verify} messages.
+         * @param message BotCapabilityMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotCapabilityMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotCapabilityMetadata message, length delimited. Does not implicitly {@link proto.BotCapabilityMetadata.verify|verify} messages.
+         * @param message BotCapabilityMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotCapabilityMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotCapabilityMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotCapabilityMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotCapabilityMetadata;
+
+        /**
+         * Decodes a BotCapabilityMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotCapabilityMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotCapabilityMetadata;
+
+        /**
+         * Verifies a BotCapabilityMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotCapabilityMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotCapabilityMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotCapabilityMetadata;
+
+        /**
+         * Creates a plain object from a BotCapabilityMetadata message. Also converts values to other types if specified.
+         * @param message BotCapabilityMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotCapabilityMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotCapabilityMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotCapabilityMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotCapabilityMetadata {
+
+        /** BotCapabilityType enum. */
+        enum BotCapabilityType {
+            PROGRESS_INDICATOR = 1,
+            RICH_RESPONSE_HEADING = 2,
+            RICH_RESPONSE_NESTED_LIST = 3,
+            AI_MEMORY = 4,
+            RICH_RESPONSE_THREAD_SURFING = 5,
+            RICH_RESPONSE_TABLE = 6,
+            RICH_RESPONSE_CODE = 7,
+            WA_IG_1P_PLUGIN_RANKING_CONTROL = 10,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_1 = 11,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_2 = 12,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_3 = 13,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_4 = 14,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_5 = 15,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_6 = 16,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_7 = 17,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_8 = 18,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_9 = 19,
+            WA_IG_1P_PLUGIN_RANKING_UPDATE_10 = 20
+        }
+    }
+
+    /** Properties of a BotImagineMetadata. */
+    interface IBotImagineMetadata {
+
+        /** BotImagineMetadata imagineType */
+        imagineType?: (proto.BotImagineMetadata.ImagineType|null);
+    }
+
+    /** Represents a BotImagineMetadata. */
+    class BotImagineMetadata implements IBotImagineMetadata {
+
+        /**
+         * Constructs a new BotImagineMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotImagineMetadata);
+
+        /** BotImagineMetadata imagineType. */
+        public imagineType: proto.BotImagineMetadata.ImagineType;
+
+        /**
+         * Creates a new BotImagineMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotImagineMetadata instance
+         */
+        public static create(properties?: proto.IBotImagineMetadata): proto.BotImagineMetadata;
+
+        /**
+         * Encodes the specified BotImagineMetadata message. Does not implicitly {@link proto.BotImagineMetadata.verify|verify} messages.
+         * @param message BotImagineMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotImagineMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotImagineMetadata message, length delimited. Does not implicitly {@link proto.BotImagineMetadata.verify|verify} messages.
+         * @param message BotImagineMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotImagineMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotImagineMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotImagineMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotImagineMetadata;
+
+        /**
+         * Decodes a BotImagineMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotImagineMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotImagineMetadata;
+
+        /**
+         * Verifies a BotImagineMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotImagineMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotImagineMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotImagineMetadata;
+
+        /**
+         * Creates a plain object from a BotImagineMetadata message. Also converts values to other types if specified.
+         * @param message BotImagineMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotImagineMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotImagineMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotImagineMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotImagineMetadata {
+
+        /** ImagineType enum. */
+        enum ImagineType {
+            UNKNOWN = 0,
+            IMAGINE = 1,
+            MEMU = 2,
+            FLASH = 3,
+            EDIT = 4
+        }
+    }
+
+    /** Properties of a BotMediaMetadata. */
+    interface IBotMediaMetadata {
+
+        /** BotMediaMetadata fileSha256 */
+        fileSha256?: (string|null);
+
+        /** BotMediaMetadata mediaKey */
+        mediaKey?: (string|null);
+
+        /** BotMediaMetadata fileEncSha256 */
+        fileEncSha256?: (string|null);
+
+        /** BotMediaMetadata directPath */
+        directPath?: (string|null);
+
+        /** BotMediaMetadata mediaKeyTimestamp */
+        mediaKeyTimestamp?: (number|Long|null);
+
+        /** BotMediaMetadata mimetype */
+        mimetype?: (string|null);
+
+        /** BotMediaMetadata orientationType */
+        orientationType?: (proto.BotMediaMetadata.OrientationType|null);
+    }
+
+    /** Represents a BotMediaMetadata. */
+    class BotMediaMetadata implements IBotMediaMetadata {
+
+        /**
+         * Constructs a new BotMediaMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotMediaMetadata);
+
+        /** BotMediaMetadata fileSha256. */
+        public fileSha256: string;
+
+        /** BotMediaMetadata mediaKey. */
+        public mediaKey: string;
+
+        /** BotMediaMetadata fileEncSha256. */
+        public fileEncSha256: string;
+
+        /** BotMediaMetadata directPath. */
+        public directPath: string;
+
+        /** BotMediaMetadata mediaKeyTimestamp. */
+        public mediaKeyTimestamp: (number|Long);
+
+        /** BotMediaMetadata mimetype. */
+        public mimetype: string;
+
+        /** BotMediaMetadata orientationType. */
+        public orientationType: proto.BotMediaMetadata.OrientationType;
+
+        /**
+         * Creates a new BotMediaMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotMediaMetadata instance
+         */
+        public static create(properties?: proto.IBotMediaMetadata): proto.BotMediaMetadata;
+
+        /**
+         * Encodes the specified BotMediaMetadata message. Does not implicitly {@link proto.BotMediaMetadata.verify|verify} messages.
+         * @param message BotMediaMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotMediaMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotMediaMetadata message, length delimited. Does not implicitly {@link proto.BotMediaMetadata.verify|verify} messages.
+         * @param message BotMediaMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotMediaMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotMediaMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotMediaMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMediaMetadata;
+
+        /**
+         * Decodes a BotMediaMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotMediaMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMediaMetadata;
+
+        /**
+         * Verifies a BotMediaMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotMediaMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotMediaMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotMediaMetadata;
+
+        /**
+         * Creates a plain object from a BotMediaMetadata message. Also converts values to other types if specified.
+         * @param message BotMediaMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotMediaMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotMediaMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMediaMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotMediaMetadata {
+
+        /** OrientationType enum. */
+        enum OrientationType {
+            CENTER = 1,
+            LEFT = 2,
+            RIGHT = 3
+        }
+    }
+
+    /** Properties of a BotMemoryFact. */
+    interface IBotMemoryFact {
+
+        /** BotMemoryFact fact */
+        fact?: (string|null);
+
+        /** BotMemoryFact factId */
+        factId?: (string|null);
+    }
+
+    /** Represents a BotMemoryFact. */
+    class BotMemoryFact implements IBotMemoryFact {
+
+        /**
+         * Constructs a new BotMemoryFact.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotMemoryFact);
+
+        /** BotMemoryFact fact. */
+        public fact: string;
+
+        /** BotMemoryFact factId. */
+        public factId: string;
+
+        /**
+         * Creates a new BotMemoryFact instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotMemoryFact instance
+         */
+        public static create(properties?: proto.IBotMemoryFact): proto.BotMemoryFact;
+
+        /**
+         * Encodes the specified BotMemoryFact message. Does not implicitly {@link proto.BotMemoryFact.verify|verify} messages.
+         * @param message BotMemoryFact message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotMemoryFact, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotMemoryFact message, length delimited. Does not implicitly {@link proto.BotMemoryFact.verify|verify} messages.
+         * @param message BotMemoryFact message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotMemoryFact, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotMemoryFact message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotMemoryFact
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMemoryFact;
+
+        /**
+         * Decodes a BotMemoryFact message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotMemoryFact
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMemoryFact;
+
+        /**
+         * Verifies a BotMemoryFact message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotMemoryFact message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotMemoryFact
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotMemoryFact;
+
+        /**
+         * Creates a plain object from a BotMemoryFact message. Also converts values to other types if specified.
+         * @param message BotMemoryFact
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotMemoryFact, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotMemoryFact to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMemoryFact
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotMemoryMetadata. */
+    interface IBotMemoryMetadata {
+
+        /** BotMemoryMetadata addedFacts */
+        addedFacts?: (proto.IBotMemoryFact[]|null);
+
+        /** BotMemoryMetadata removedFacts */
+        removedFacts?: (proto.IBotMemoryFact[]|null);
+
+        /** BotMemoryMetadata disclaimer */
+        disclaimer?: (string|null);
+    }
+
+    /** Represents a BotMemoryMetadata. */
+    class BotMemoryMetadata implements IBotMemoryMetadata {
+
+        /**
+         * Constructs a new BotMemoryMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotMemoryMetadata);
+
+        /** BotMemoryMetadata addedFacts. */
+        public addedFacts: proto.IBotMemoryFact[];
+
+        /** BotMemoryMetadata removedFacts. */
+        public removedFacts: proto.IBotMemoryFact[];
+
+        /** BotMemoryMetadata disclaimer. */
+        public disclaimer: string;
+
+        /**
+         * Creates a new BotMemoryMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotMemoryMetadata instance
+         */
+        public static create(properties?: proto.IBotMemoryMetadata): proto.BotMemoryMetadata;
+
+        /**
+         * Encodes the specified BotMemoryMetadata message. Does not implicitly {@link proto.BotMemoryMetadata.verify|verify} messages.
+         * @param message BotMemoryMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotMemoryMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotMemoryMetadata message, length delimited. Does not implicitly {@link proto.BotMemoryMetadata.verify|verify} messages.
+         * @param message BotMemoryMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotMemoryMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotMemoryMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotMemoryMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMemoryMetadata;
+
+        /**
+         * Decodes a BotMemoryMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotMemoryMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMemoryMetadata;
+
+        /**
+         * Verifies a BotMemoryMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotMemoryMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotMemoryMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotMemoryMetadata;
+
+        /**
+         * Creates a plain object from a BotMemoryMetadata message. Also converts values to other types if specified.
+         * @param message BotMemoryMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotMemoryMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotMemoryMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMemoryMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotMemuMetadata. */
+    interface IBotMemuMetadata {
+
+        /** BotMemuMetadata faceImages */
+        faceImages?: (proto.IBotMediaMetadata[]|null);
+    }
+
+    /** Represents a BotMemuMetadata. */
+    class BotMemuMetadata implements IBotMemuMetadata {
+
+        /**
+         * Constructs a new BotMemuMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotMemuMetadata);
+
+        /** BotMemuMetadata faceImages. */
+        public faceImages: proto.IBotMediaMetadata[];
+
+        /**
+         * Creates a new BotMemuMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotMemuMetadata instance
+         */
+        public static create(properties?: proto.IBotMemuMetadata): proto.BotMemuMetadata;
+
+        /**
+         * Encodes the specified BotMemuMetadata message. Does not implicitly {@link proto.BotMemuMetadata.verify|verify} messages.
+         * @param message BotMemuMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotMemuMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotMemuMetadata message, length delimited. Does not implicitly {@link proto.BotMemuMetadata.verify|verify} messages.
+         * @param message BotMemuMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotMemuMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotMemuMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotMemuMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMemuMetadata;
+
+        /**
+         * Decodes a BotMemuMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotMemuMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMemuMetadata;
+
+        /**
+         * Verifies a BotMemuMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotMemuMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotMemuMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotMemuMetadata;
+
+        /**
+         * Creates a plain object from a BotMemuMetadata message. Also converts values to other types if specified.
+         * @param message BotMemuMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotMemuMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotMemuMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMemuMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a BotMetadata. */
@@ -1357,6 +2125,42 @@ export namespace proto {
 
         /** BotMetadata invokerJid */
         invokerJid?: (string|null);
+
+        /** BotMetadata sessionMetadata */
+        sessionMetadata?: (proto.IBotSessionMetadata|null);
+
+        /** BotMetadata memuMetadata */
+        memuMetadata?: (proto.IBotMemuMetadata|null);
+
+        /** BotMetadata timezone */
+        timezone?: (string|null);
+
+        /** BotMetadata reminderMetadata */
+        reminderMetadata?: (proto.IBotReminderMetadata|null);
+
+        /** BotMetadata modelMetadata */
+        modelMetadata?: (proto.IBotModelMetadata|null);
+
+        /** BotMetadata messageDisclaimerText */
+        messageDisclaimerText?: (string|null);
+
+        /** BotMetadata progressIndicatorMetadata */
+        progressIndicatorMetadata?: (proto.IBotProgressIndicatorMetadata|null);
+
+        /** BotMetadata capabilityMetadata */
+        capabilityMetadata?: (proto.IBotCapabilityMetadata|null);
+
+        /** BotMetadata imagineMetadata */
+        imagineMetadata?: (proto.IBotImagineMetadata|null);
+
+        /** BotMetadata memoryMetadata */
+        memoryMetadata?: (proto.IBotMemoryMetadata|null);
+
+        /** BotMetadata renderingMetadata */
+        renderingMetadata?: (proto.IBotRenderingMetadata|null);
+
+        /** BotMetadata botMetricsMetadata */
+        botMetricsMetadata?: (proto.IBotMetricsMetadata|null);
     }
 
     /** Represents a BotMetadata. */
@@ -1382,6 +2186,42 @@ export namespace proto {
 
         /** BotMetadata invokerJid. */
         public invokerJid: string;
+
+        /** BotMetadata sessionMetadata. */
+        public sessionMetadata?: (proto.IBotSessionMetadata|null);
+
+        /** BotMetadata memuMetadata. */
+        public memuMetadata?: (proto.IBotMemuMetadata|null);
+
+        /** BotMetadata timezone. */
+        public timezone: string;
+
+        /** BotMetadata reminderMetadata. */
+        public reminderMetadata?: (proto.IBotReminderMetadata|null);
+
+        /** BotMetadata modelMetadata. */
+        public modelMetadata?: (proto.IBotModelMetadata|null);
+
+        /** BotMetadata messageDisclaimerText. */
+        public messageDisclaimerText: string;
+
+        /** BotMetadata progressIndicatorMetadata. */
+        public progressIndicatorMetadata?: (proto.IBotProgressIndicatorMetadata|null);
+
+        /** BotMetadata capabilityMetadata. */
+        public capabilityMetadata?: (proto.IBotCapabilityMetadata|null);
+
+        /** BotMetadata imagineMetadata. */
+        public imagineMetadata?: (proto.IBotImagineMetadata|null);
+
+        /** BotMetadata memoryMetadata. */
+        public memoryMetadata?: (proto.IBotMemoryMetadata|null);
+
+        /** BotMetadata renderingMetadata. */
+        public renderingMetadata?: (proto.IBotRenderingMetadata|null);
+
+        /** BotMetadata botMetricsMetadata. */
+        public botMetricsMetadata?: (proto.IBotMetricsMetadata|null);
 
         /**
          * Creates a new BotMetadata instance using the specified properties.
@@ -1452,6 +2292,256 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** BotMetricsEntryPoint enum. */
+    enum BotMetricsEntryPoint {
+        FAVICON = 1,
+        CHATLIST = 2,
+        AISEARCH_NULL_STATE_PAPER_PLANE = 3,
+        AISEARCH_NULL_STATE_SUGGESTION = 4,
+        AISEARCH_TYPE_AHEAD_SUGGESTION = 5,
+        AISEARCH_TYPE_AHEAD_PAPER_PLANE = 6,
+        AISEARCH_TYPE_AHEAD_RESULT_CHATLIST = 7,
+        AISEARCH_TYPE_AHEAD_RESULT_MESSAGES = 8,
+        AIVOICE_SEARCH_BAR = 9,
+        AIVOICE_FAVICON = 10,
+        AISTUDIO = 11,
+        DEEPLINK = 12,
+        NOTIFICATION = 13,
+        PROFILE_MESSAGE_BUTTON = 14,
+        FORWARD = 15,
+        APP_SHORTCUT = 16
+    }
+
+    /** Properties of a BotMetricsMetadata. */
+    interface IBotMetricsMetadata {
+
+        /** BotMetricsMetadata destinationId */
+        destinationId?: (string|null);
+
+        /** BotMetricsMetadata destinationEntryPoint */
+        destinationEntryPoint?: (proto.BotMetricsEntryPoint|null);
+    }
+
+    /** Represents a BotMetricsMetadata. */
+    class BotMetricsMetadata implements IBotMetricsMetadata {
+
+        /**
+         * Constructs a new BotMetricsMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotMetricsMetadata);
+
+        /** BotMetricsMetadata destinationId. */
+        public destinationId: string;
+
+        /** BotMetricsMetadata destinationEntryPoint. */
+        public destinationEntryPoint: proto.BotMetricsEntryPoint;
+
+        /**
+         * Creates a new BotMetricsMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotMetricsMetadata instance
+         */
+        public static create(properties?: proto.IBotMetricsMetadata): proto.BotMetricsMetadata;
+
+        /**
+         * Encodes the specified BotMetricsMetadata message. Does not implicitly {@link proto.BotMetricsMetadata.verify|verify} messages.
+         * @param message BotMetricsMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotMetricsMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotMetricsMetadata message, length delimited. Does not implicitly {@link proto.BotMetricsMetadata.verify|verify} messages.
+         * @param message BotMetricsMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotMetricsMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotMetricsMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotMetricsMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotMetricsMetadata;
+
+        /**
+         * Decodes a BotMetricsMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotMetricsMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotMetricsMetadata;
+
+        /**
+         * Verifies a BotMetricsMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotMetricsMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotMetricsMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotMetricsMetadata;
+
+        /**
+         * Creates a plain object from a BotMetricsMetadata message. Also converts values to other types if specified.
+         * @param message BotMetricsMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotMetricsMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotMetricsMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotMetricsMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotModelMetadata. */
+    interface IBotModelMetadata {
+
+        /** BotModelMetadata modelType */
+        modelType?: (proto.BotModelMetadata.ModelType|null);
+
+        /** BotModelMetadata premiumModelStatus */
+        premiumModelStatus?: (proto.BotModelMetadata.PremiumModelStatus|null);
+    }
+
+    /** Represents a BotModelMetadata. */
+    class BotModelMetadata implements IBotModelMetadata {
+
+        /**
+         * Constructs a new BotModelMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotModelMetadata);
+
+        /** BotModelMetadata modelType. */
+        public modelType: proto.BotModelMetadata.ModelType;
+
+        /** BotModelMetadata premiumModelStatus. */
+        public premiumModelStatus: proto.BotModelMetadata.PremiumModelStatus;
+
+        /**
+         * Creates a new BotModelMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotModelMetadata instance
+         */
+        public static create(properties?: proto.IBotModelMetadata): proto.BotModelMetadata;
+
+        /**
+         * Encodes the specified BotModelMetadata message. Does not implicitly {@link proto.BotModelMetadata.verify|verify} messages.
+         * @param message BotModelMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotModelMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotModelMetadata message, length delimited. Does not implicitly {@link proto.BotModelMetadata.verify|verify} messages.
+         * @param message BotModelMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotModelMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotModelMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotModelMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotModelMetadata;
+
+        /**
+         * Decodes a BotModelMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotModelMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotModelMetadata;
+
+        /**
+         * Verifies a BotModelMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotModelMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotModelMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotModelMetadata;
+
+        /**
+         * Creates a plain object from a BotModelMetadata message. Also converts values to other types if specified.
+         * @param message BotModelMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotModelMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotModelMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotModelMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotModelMetadata {
+
+        /** ModelType enum. */
+        enum ModelType {
+            UNKNOWN_TYPE = 0,
+            LLAMA_PROD = 1,
+            LLAMA_PROD_PREMIUM = 2
+        }
+
+        /** PremiumModelStatus enum. */
+        enum PremiumModelStatus {
+            UNKNOWN_STATUS = 0,
+            AVAILABLE = 1,
+            QUOTA_EXCEED_LIMIT = 2
+        }
     }
 
     /** Properties of a BotPluginMetadata. */
@@ -1478,8 +2568,20 @@ export namespace proto {
         /** BotPluginMetadata expectedLinksCount */
         expectedLinksCount?: (number|null);
 
-        /** BotPluginMetadata pluginVersion */
-        pluginVersion?: (number|null);
+        /** BotPluginMetadata searchQuery */
+        searchQuery?: (string|null);
+
+        /** BotPluginMetadata parentPluginMessageKey */
+        parentPluginMessageKey?: (proto.IMessageKey|null);
+
+        /** BotPluginMetadata deprecatedField */
+        deprecatedField?: (proto.BotPluginMetadata.PluginType|null);
+
+        /** BotPluginMetadata parentPluginType */
+        parentPluginType?: (proto.BotPluginMetadata.PluginType|null);
+
+        /** BotPluginMetadata faviconCdnUrl */
+        faviconCdnUrl?: (string|null);
     }
 
     /** Represents a BotPluginMetadata. */
@@ -1512,8 +2614,20 @@ export namespace proto {
         /** BotPluginMetadata expectedLinksCount. */
         public expectedLinksCount: number;
 
-        /** BotPluginMetadata pluginVersion. */
-        public pluginVersion: number;
+        /** BotPluginMetadata searchQuery. */
+        public searchQuery: string;
+
+        /** BotPluginMetadata parentPluginMessageKey. */
+        public parentPluginMessageKey?: (proto.IMessageKey|null);
+
+        /** BotPluginMetadata deprecatedField. */
+        public deprecatedField: proto.BotPluginMetadata.PluginType;
+
+        /** BotPluginMetadata parentPluginType. */
+        public parentPluginType: proto.BotPluginMetadata.PluginType;
+
+        /** BotPluginMetadata faviconCdnUrl. */
+        public faviconCdnUrl: string;
 
         /**
          * Creates a new BotPluginMetadata instance using the specified properties.
@@ -1584,21 +2698,785 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotPluginMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace BotPluginMetadata {
 
         /** PluginType enum. */
         enum PluginType {
+            UNKNOWN_PLUGIN = 0,
             REELS = 1,
             SEARCH = 2
         }
 
         /** SearchProvider enum. */
         enum SearchProvider {
+            UNKNOWN = 0,
             BING = 1,
-            GOOGLE = 2
+            GOOGLE = 2,
+            SUPPORT = 3
         }
+    }
+
+    /** Properties of a BotProgressIndicatorMetadata. */
+    interface IBotProgressIndicatorMetadata {
+
+        /** BotProgressIndicatorMetadata progressDescription */
+        progressDescription?: (string|null);
+    }
+
+    /** Represents a BotProgressIndicatorMetadata. */
+    class BotProgressIndicatorMetadata implements IBotProgressIndicatorMetadata {
+
+        /**
+         * Constructs a new BotProgressIndicatorMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotProgressIndicatorMetadata);
+
+        /** BotProgressIndicatorMetadata progressDescription. */
+        public progressDescription: string;
+
+        /**
+         * Creates a new BotProgressIndicatorMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotProgressIndicatorMetadata instance
+         */
+        public static create(properties?: proto.IBotProgressIndicatorMetadata): proto.BotProgressIndicatorMetadata;
+
+        /**
+         * Encodes the specified BotProgressIndicatorMetadata message. Does not implicitly {@link proto.BotProgressIndicatorMetadata.verify|verify} messages.
+         * @param message BotProgressIndicatorMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotProgressIndicatorMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotProgressIndicatorMetadata message, length delimited. Does not implicitly {@link proto.BotProgressIndicatorMetadata.verify|verify} messages.
+         * @param message BotProgressIndicatorMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotProgressIndicatorMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotProgressIndicatorMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotProgressIndicatorMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotProgressIndicatorMetadata;
+
+        /**
+         * Decodes a BotProgressIndicatorMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotProgressIndicatorMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotProgressIndicatorMetadata;
+
+        /**
+         * Verifies a BotProgressIndicatorMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotProgressIndicatorMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotProgressIndicatorMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotProgressIndicatorMetadata;
+
+        /**
+         * Creates a plain object from a BotProgressIndicatorMetadata message. Also converts values to other types if specified.
+         * @param message BotProgressIndicatorMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotProgressIndicatorMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotProgressIndicatorMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotProgressIndicatorMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotPromptSuggestion. */
+    interface IBotPromptSuggestion {
+
+        /** BotPromptSuggestion prompt */
+        prompt?: (string|null);
+
+        /** BotPromptSuggestion promptId */
+        promptId?: (string|null);
+    }
+
+    /** Represents a BotPromptSuggestion. */
+    class BotPromptSuggestion implements IBotPromptSuggestion {
+
+        /**
+         * Constructs a new BotPromptSuggestion.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotPromptSuggestion);
+
+        /** BotPromptSuggestion prompt. */
+        public prompt: string;
+
+        /** BotPromptSuggestion promptId. */
+        public promptId: string;
+
+        /**
+         * Creates a new BotPromptSuggestion instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotPromptSuggestion instance
+         */
+        public static create(properties?: proto.IBotPromptSuggestion): proto.BotPromptSuggestion;
+
+        /**
+         * Encodes the specified BotPromptSuggestion message. Does not implicitly {@link proto.BotPromptSuggestion.verify|verify} messages.
+         * @param message BotPromptSuggestion message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotPromptSuggestion, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotPromptSuggestion message, length delimited. Does not implicitly {@link proto.BotPromptSuggestion.verify|verify} messages.
+         * @param message BotPromptSuggestion message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotPromptSuggestion, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotPromptSuggestion message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotPromptSuggestion
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotPromptSuggestion;
+
+        /**
+         * Decodes a BotPromptSuggestion message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotPromptSuggestion
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotPromptSuggestion;
+
+        /**
+         * Verifies a BotPromptSuggestion message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotPromptSuggestion message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotPromptSuggestion
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotPromptSuggestion;
+
+        /**
+         * Creates a plain object from a BotPromptSuggestion message. Also converts values to other types if specified.
+         * @param message BotPromptSuggestion
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotPromptSuggestion, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotPromptSuggestion to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotPromptSuggestion
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotPromptSuggestions. */
+    interface IBotPromptSuggestions {
+
+        /** BotPromptSuggestions suggestions */
+        suggestions?: (proto.IBotPromptSuggestion[]|null);
+    }
+
+    /** Represents a BotPromptSuggestions. */
+    class BotPromptSuggestions implements IBotPromptSuggestions {
+
+        /**
+         * Constructs a new BotPromptSuggestions.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotPromptSuggestions);
+
+        /** BotPromptSuggestions suggestions. */
+        public suggestions: proto.IBotPromptSuggestion[];
+
+        /**
+         * Creates a new BotPromptSuggestions instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotPromptSuggestions instance
+         */
+        public static create(properties?: proto.IBotPromptSuggestions): proto.BotPromptSuggestions;
+
+        /**
+         * Encodes the specified BotPromptSuggestions message. Does not implicitly {@link proto.BotPromptSuggestions.verify|verify} messages.
+         * @param message BotPromptSuggestions message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotPromptSuggestions, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotPromptSuggestions message, length delimited. Does not implicitly {@link proto.BotPromptSuggestions.verify|verify} messages.
+         * @param message BotPromptSuggestions message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotPromptSuggestions, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotPromptSuggestions message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotPromptSuggestions
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotPromptSuggestions;
+
+        /**
+         * Decodes a BotPromptSuggestions message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotPromptSuggestions
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotPromptSuggestions;
+
+        /**
+         * Verifies a BotPromptSuggestions message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotPromptSuggestions message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotPromptSuggestions
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotPromptSuggestions;
+
+        /**
+         * Creates a plain object from a BotPromptSuggestions message. Also converts values to other types if specified.
+         * @param message BotPromptSuggestions
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotPromptSuggestions, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotPromptSuggestions to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotPromptSuggestions
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a BotReminderMetadata. */
+    interface IBotReminderMetadata {
+
+        /** BotReminderMetadata requestMessageKey */
+        requestMessageKey?: (proto.IMessageKey|null);
+
+        /** BotReminderMetadata action */
+        action?: (proto.BotReminderMetadata.ReminderAction|null);
+
+        /** BotReminderMetadata name */
+        name?: (string|null);
+
+        /** BotReminderMetadata nextTriggerTimestamp */
+        nextTriggerTimestamp?: (number|Long|null);
+
+        /** BotReminderMetadata frequency */
+        frequency?: (proto.BotReminderMetadata.ReminderFrequency|null);
+    }
+
+    /** Represents a BotReminderMetadata. */
+    class BotReminderMetadata implements IBotReminderMetadata {
+
+        /**
+         * Constructs a new BotReminderMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotReminderMetadata);
+
+        /** BotReminderMetadata requestMessageKey. */
+        public requestMessageKey?: (proto.IMessageKey|null);
+
+        /** BotReminderMetadata action. */
+        public action: proto.BotReminderMetadata.ReminderAction;
+
+        /** BotReminderMetadata name. */
+        public name: string;
+
+        /** BotReminderMetadata nextTriggerTimestamp. */
+        public nextTriggerTimestamp: (number|Long);
+
+        /** BotReminderMetadata frequency. */
+        public frequency: proto.BotReminderMetadata.ReminderFrequency;
+
+        /**
+         * Creates a new BotReminderMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotReminderMetadata instance
+         */
+        public static create(properties?: proto.IBotReminderMetadata): proto.BotReminderMetadata;
+
+        /**
+         * Encodes the specified BotReminderMetadata message. Does not implicitly {@link proto.BotReminderMetadata.verify|verify} messages.
+         * @param message BotReminderMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotReminderMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotReminderMetadata message, length delimited. Does not implicitly {@link proto.BotReminderMetadata.verify|verify} messages.
+         * @param message BotReminderMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotReminderMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotReminderMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotReminderMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotReminderMetadata;
+
+        /**
+         * Decodes a BotReminderMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotReminderMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotReminderMetadata;
+
+        /**
+         * Verifies a BotReminderMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotReminderMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotReminderMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotReminderMetadata;
+
+        /**
+         * Creates a plain object from a BotReminderMetadata message. Also converts values to other types if specified.
+         * @param message BotReminderMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotReminderMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotReminderMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotReminderMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotReminderMetadata {
+
+        /** ReminderAction enum. */
+        enum ReminderAction {
+            NOTIFY = 1,
+            CREATE = 2,
+            DELETE = 3,
+            UPDATE = 4
+        }
+
+        /** ReminderFrequency enum. */
+        enum ReminderFrequency {
+            ONCE = 1,
+            DAILY = 2,
+            WEEKLY = 3,
+            BIWEEKLY = 4,
+            MONTHLY = 5
+        }
+    }
+
+    /** Properties of a BotRenderingMetadata. */
+    interface IBotRenderingMetadata {
+
+        /** BotRenderingMetadata keywords */
+        keywords?: (proto.BotRenderingMetadata.IKeyword[]|null);
+    }
+
+    /** Represents a BotRenderingMetadata. */
+    class BotRenderingMetadata implements IBotRenderingMetadata {
+
+        /**
+         * Constructs a new BotRenderingMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotRenderingMetadata);
+
+        /** BotRenderingMetadata keywords. */
+        public keywords: proto.BotRenderingMetadata.IKeyword[];
+
+        /**
+         * Creates a new BotRenderingMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotRenderingMetadata instance
+         */
+        public static create(properties?: proto.IBotRenderingMetadata): proto.BotRenderingMetadata;
+
+        /**
+         * Encodes the specified BotRenderingMetadata message. Does not implicitly {@link proto.BotRenderingMetadata.verify|verify} messages.
+         * @param message BotRenderingMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotRenderingMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotRenderingMetadata message, length delimited. Does not implicitly {@link proto.BotRenderingMetadata.verify|verify} messages.
+         * @param message BotRenderingMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotRenderingMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotRenderingMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotRenderingMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotRenderingMetadata;
+
+        /**
+         * Decodes a BotRenderingMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotRenderingMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotRenderingMetadata;
+
+        /**
+         * Verifies a BotRenderingMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotRenderingMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotRenderingMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotRenderingMetadata;
+
+        /**
+         * Creates a plain object from a BotRenderingMetadata message. Also converts values to other types if specified.
+         * @param message BotRenderingMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotRenderingMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotRenderingMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotRenderingMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace BotRenderingMetadata {
+
+        /** Properties of a Keyword. */
+        interface IKeyword {
+
+            /** Keyword value */
+            value?: (string|null);
+
+            /** Keyword associatedPrompts */
+            associatedPrompts?: (string[]|null);
+        }
+
+        /** Represents a Keyword. */
+        class Keyword implements IKeyword {
+
+            /**
+             * Constructs a new Keyword.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.BotRenderingMetadata.IKeyword);
+
+            /** Keyword value. */
+            public value: string;
+
+            /** Keyword associatedPrompts. */
+            public associatedPrompts: string[];
+
+            /**
+             * Creates a new Keyword instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns Keyword instance
+             */
+            public static create(properties?: proto.BotRenderingMetadata.IKeyword): proto.BotRenderingMetadata.Keyword;
+
+            /**
+             * Encodes the specified Keyword message. Does not implicitly {@link proto.BotRenderingMetadata.Keyword.verify|verify} messages.
+             * @param message Keyword message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.BotRenderingMetadata.IKeyword, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified Keyword message, length delimited. Does not implicitly {@link proto.BotRenderingMetadata.Keyword.verify|verify} messages.
+             * @param message Keyword message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.BotRenderingMetadata.IKeyword, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a Keyword message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns Keyword
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotRenderingMetadata.Keyword;
+
+            /**
+             * Decodes a Keyword message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns Keyword
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotRenderingMetadata.Keyword;
+
+            /**
+             * Verifies a Keyword message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a Keyword message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns Keyword
+             */
+            public static fromObject(object: { [k: string]: any }): proto.BotRenderingMetadata.Keyword;
+
+            /**
+             * Creates a plain object from a Keyword message. Also converts values to other types if specified.
+             * @param message Keyword
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.BotRenderingMetadata.Keyword, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this Keyword to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Keyword
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+    }
+
+    /** Properties of a BotSessionMetadata. */
+    interface IBotSessionMetadata {
+
+        /** BotSessionMetadata sessionId */
+        sessionId?: (string|null);
+
+        /** BotSessionMetadata sessionSource */
+        sessionSource?: (proto.BotSessionSource|null);
+    }
+
+    /** Represents a BotSessionMetadata. */
+    class BotSessionMetadata implements IBotSessionMetadata {
+
+        /**
+         * Constructs a new BotSessionMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IBotSessionMetadata);
+
+        /** BotSessionMetadata sessionId. */
+        public sessionId: string;
+
+        /** BotSessionMetadata sessionSource. */
+        public sessionSource: proto.BotSessionSource;
+
+        /**
+         * Creates a new BotSessionMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BotSessionMetadata instance
+         */
+        public static create(properties?: proto.IBotSessionMetadata): proto.BotSessionMetadata;
+
+        /**
+         * Encodes the specified BotSessionMetadata message. Does not implicitly {@link proto.BotSessionMetadata.verify|verify} messages.
+         * @param message BotSessionMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IBotSessionMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified BotSessionMetadata message, length delimited. Does not implicitly {@link proto.BotSessionMetadata.verify|verify} messages.
+         * @param message BotSessionMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IBotSessionMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a BotSessionMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns BotSessionMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.BotSessionMetadata;
+
+        /**
+         * Decodes a BotSessionMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns BotSessionMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.BotSessionMetadata;
+
+        /**
+         * Verifies a BotSessionMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a BotSessionMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns BotSessionMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.BotSessionMetadata;
+
+        /**
+         * Creates a plain object from a BotSessionMetadata message. Also converts values to other types if specified.
+         * @param message BotSessionMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.BotSessionMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this BotSessionMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotSessionMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** BotSessionSource enum. */
+    enum BotSessionSource {
+        NULL_STATE = 1,
+        TYPEAHEAD = 2,
+        USER_INPUT = 3,
+        EMU_FLASH = 4,
+        EMU_FLASH_FOLLOWUP = 5,
+        VOICE = 6
     }
 
     /** Properties of a BotSuggestedPromptMetadata. */
@@ -1609,6 +3487,12 @@ export namespace proto {
 
         /** BotSuggestedPromptMetadata selectedPromptIndex */
         selectedPromptIndex?: (number|null);
+
+        /** BotSuggestedPromptMetadata promptSuggestions */
+        promptSuggestions?: (proto.IBotPromptSuggestions|null);
+
+        /** BotSuggestedPromptMetadata selectedPromptId */
+        selectedPromptId?: (string|null);
     }
 
     /** Represents a BotSuggestedPromptMetadata. */
@@ -1625,6 +3509,12 @@ export namespace proto {
 
         /** BotSuggestedPromptMetadata selectedPromptIndex. */
         public selectedPromptIndex: number;
+
+        /** BotSuggestedPromptMetadata promptSuggestions. */
+        public promptSuggestions?: (proto.IBotPromptSuggestions|null);
+
+        /** BotSuggestedPromptMetadata selectedPromptId. */
+        public selectedPromptId: string;
 
         /**
          * Creates a new BotSuggestedPromptMetadata instance using the specified properties.
@@ -1695,6 +3585,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for BotSuggestedPromptMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a CallLogRecord. */
@@ -1869,6 +3766,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CallLogRecord
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace CallLogRecord {
@@ -1989,6 +3893,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ParticipantInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** SilenceReason enum. */
@@ -2094,6 +4005,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CertChain
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace CertChain {
@@ -2192,6 +4110,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NoiseCertificate
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace NoiseCertificate {
@@ -2308,8 +4233,118 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Details
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
+    }
+
+    /** Properties of a ChatLockSettings. */
+    interface IChatLockSettings {
+
+        /** ChatLockSettings hideLockedChats */
+        hideLockedChats?: (boolean|null);
+
+        /** ChatLockSettings secretCode */
+        secretCode?: (proto.IUserPassword|null);
+    }
+
+    /** Represents a ChatLockSettings. */
+    class ChatLockSettings implements IChatLockSettings {
+
+        /**
+         * Constructs a new ChatLockSettings.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IChatLockSettings);
+
+        /** ChatLockSettings hideLockedChats. */
+        public hideLockedChats: boolean;
+
+        /** ChatLockSettings secretCode. */
+        public secretCode?: (proto.IUserPassword|null);
+
+        /**
+         * Creates a new ChatLockSettings instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns ChatLockSettings instance
+         */
+        public static create(properties?: proto.IChatLockSettings): proto.ChatLockSettings;
+
+        /**
+         * Encodes the specified ChatLockSettings message. Does not implicitly {@link proto.ChatLockSettings.verify|verify} messages.
+         * @param message ChatLockSettings message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IChatLockSettings, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified ChatLockSettings message, length delimited. Does not implicitly {@link proto.ChatLockSettings.verify|verify} messages.
+         * @param message ChatLockSettings message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IChatLockSettings, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a ChatLockSettings message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns ChatLockSettings
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ChatLockSettings;
+
+        /**
+         * Decodes a ChatLockSettings message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns ChatLockSettings
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ChatLockSettings;
+
+        /**
+         * Verifies a ChatLockSettings message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a ChatLockSettings message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns ChatLockSettings
+         */
+        public static fromObject(object: { [k: string]: any }): proto.ChatLockSettings;
+
+        /**
+         * Creates a plain object from a ChatLockSettings message. Also converts values to other types if specified.
+         * @param message ChatLockSettings
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.ChatLockSettings, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this ChatLockSettings to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ChatLockSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ChatRowOpaqueData. */
@@ -2400,6 +4435,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ChatRowOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ChatRowOpaqueData {
@@ -2516,6 +4558,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DraftMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace DraftMessage {
@@ -2674,6 +4723,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CtwaContextData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace CtwaContextData {
@@ -2792,8 +4848,118 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CtwaContextLinkData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
+    }
+
+    /** Properties of a ClientPairingProps. */
+    interface IClientPairingProps {
+
+        /** ClientPairingProps isChatDbLidMigrated */
+        isChatDbLidMigrated?: (boolean|null);
+
+        /** ClientPairingProps isSyncdPureLidSession */
+        isSyncdPureLidSession?: (boolean|null);
+    }
+
+    /** Represents a ClientPairingProps. */
+    class ClientPairingProps implements IClientPairingProps {
+
+        /**
+         * Constructs a new ClientPairingProps.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IClientPairingProps);
+
+        /** ClientPairingProps isChatDbLidMigrated. */
+        public isChatDbLidMigrated: boolean;
+
+        /** ClientPairingProps isSyncdPureLidSession. */
+        public isSyncdPureLidSession: boolean;
+
+        /**
+         * Creates a new ClientPairingProps instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns ClientPairingProps instance
+         */
+        public static create(properties?: proto.IClientPairingProps): proto.ClientPairingProps;
+
+        /**
+         * Encodes the specified ClientPairingProps message. Does not implicitly {@link proto.ClientPairingProps.verify|verify} messages.
+         * @param message ClientPairingProps message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IClientPairingProps, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified ClientPairingProps message, length delimited. Does not implicitly {@link proto.ClientPairingProps.verify|verify} messages.
+         * @param message ClientPairingProps message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IClientPairingProps, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a ClientPairingProps message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns ClientPairingProps
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ClientPairingProps;
+
+        /**
+         * Decodes a ClientPairingProps message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns ClientPairingProps
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ClientPairingProps;
+
+        /**
+         * Verifies a ClientPairingProps message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a ClientPairingProps message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns ClientPairingProps
+         */
+        public static fromObject(object: { [k: string]: any }): proto.ClientPairingProps;
+
+        /**
+         * Creates a plain object from a ClientPairingProps message. Also converts values to other types if specified.
+         * @param message ClientPairingProps
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.ClientPairingProps, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this ClientPairingProps to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ClientPairingProps
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ClientPayload. */
@@ -2879,6 +5045,9 @@ export namespace proto {
 
         /** ClientPayload interopData */
         interopData?: (proto.ClientPayload.IInteropData|null);
+
+        /** ClientPayload trafficAnonymization */
+        trafficAnonymization?: (proto.ClientPayload.TrafficAnonymization|null);
     }
 
     /** Represents a ClientPayload. */
@@ -2971,6 +5140,9 @@ export namespace proto {
         /** ClientPayload interopData. */
         public interopData?: (proto.ClientPayload.IInteropData|null);
 
+        /** ClientPayload trafficAnonymization. */
+        public trafficAnonymization: proto.ClientPayload.TrafficAnonymization;
+
         /**
          * Creates a new ClientPayload instance using the specified properties.
          * @param [properties] Properties to set
@@ -3040,6 +5212,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ClientPayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ClientPayload {
@@ -3168,6 +5347,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DNSSource
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace DNSSource {
@@ -3312,6 +5498,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DevicePairingRegistrationData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** IOSAppExtension enum. */
@@ -3329,6 +5522,9 @@ export namespace proto {
 
             /** InteropData token */
             token?: (Uint8Array|null);
+
+            /** InteropData enableReadReceipts */
+            enableReadReceipts?: (boolean|null);
         }
 
         /** Represents an InteropData. */
@@ -3345,6 +5541,9 @@ export namespace proto {
 
             /** InteropData token. */
             public token: Uint8Array;
+
+            /** InteropData enableReadReceipts. */
+            public enableReadReceipts: boolean;
 
             /**
              * Creates a new InteropData instance using the specified properties.
@@ -3415,6 +5614,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteropData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Product enum. */
@@ -3423,6 +5629,12 @@ export namespace proto {
             MESSENGER = 1,
             INTEROP = 2,
             INTEROP_MSGR = 3
+        }
+
+        /** TrafficAnonymization enum. */
+        enum TrafficAnonymization {
+            OFF = 0,
+            STANDARD = 1
         }
 
         /** Properties of a UserAgent. */
@@ -3472,6 +5684,9 @@ export namespace proto {
 
             /** UserAgent deviceType */
             deviceType?: (proto.ClientPayload.UserAgent.DeviceType|null);
+
+            /** UserAgent deviceModelType */
+            deviceModelType?: (string|null);
         }
 
         /** Represents a UserAgent. */
@@ -3527,6 +5742,9 @@ export namespace proto {
 
             /** UserAgent deviceType. */
             public deviceType: proto.ClientPayload.UserAgent.DeviceType;
+
+            /** UserAgent deviceModelType. */
+            public deviceModelType: string;
 
             /**
              * Creates a new UserAgent instance using the specified properties.
@@ -3597,6 +5815,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UserAgent
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace UserAgent {
@@ -3713,6 +5938,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AppVersion
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** DeviceType enum. */
@@ -3879,6 +6111,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for WebInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace WebInfo {
@@ -4040,6 +6279,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WebdPayload
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -4138,6 +6384,322 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CommentMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a CompanionCommitment. */
+    interface ICompanionCommitment {
+
+        /** CompanionCommitment hash */
+        hash?: (Uint8Array|null);
+    }
+
+    /** Represents a CompanionCommitment. */
+    class CompanionCommitment implements ICompanionCommitment {
+
+        /**
+         * Constructs a new CompanionCommitment.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ICompanionCommitment);
+
+        /** CompanionCommitment hash. */
+        public hash: Uint8Array;
+
+        /**
+         * Creates a new CompanionCommitment instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns CompanionCommitment instance
+         */
+        public static create(properties?: proto.ICompanionCommitment): proto.CompanionCommitment;
+
+        /**
+         * Encodes the specified CompanionCommitment message. Does not implicitly {@link proto.CompanionCommitment.verify|verify} messages.
+         * @param message CompanionCommitment message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ICompanionCommitment, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified CompanionCommitment message, length delimited. Does not implicitly {@link proto.CompanionCommitment.verify|verify} messages.
+         * @param message CompanionCommitment message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ICompanionCommitment, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a CompanionCommitment message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns CompanionCommitment
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CompanionCommitment;
+
+        /**
+         * Decodes a CompanionCommitment message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns CompanionCommitment
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CompanionCommitment;
+
+        /**
+         * Verifies a CompanionCommitment message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a CompanionCommitment message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns CompanionCommitment
+         */
+        public static fromObject(object: { [k: string]: any }): proto.CompanionCommitment;
+
+        /**
+         * Creates a plain object from a CompanionCommitment message. Also converts values to other types if specified.
+         * @param message CompanionCommitment
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.CompanionCommitment, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this CompanionCommitment to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CompanionCommitment
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a CompanionEphemeralIdentity. */
+    interface ICompanionEphemeralIdentity {
+
+        /** CompanionEphemeralIdentity publicKey */
+        publicKey?: (Uint8Array|null);
+
+        /** CompanionEphemeralIdentity deviceType */
+        deviceType?: (proto.DeviceProps.PlatformType|null);
+
+        /** CompanionEphemeralIdentity ref */
+        ref?: (string|null);
+    }
+
+    /** Represents a CompanionEphemeralIdentity. */
+    class CompanionEphemeralIdentity implements ICompanionEphemeralIdentity {
+
+        /**
+         * Constructs a new CompanionEphemeralIdentity.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ICompanionEphemeralIdentity);
+
+        /** CompanionEphemeralIdentity publicKey. */
+        public publicKey: Uint8Array;
+
+        /** CompanionEphemeralIdentity deviceType. */
+        public deviceType: proto.DeviceProps.PlatformType;
+
+        /** CompanionEphemeralIdentity ref. */
+        public ref: string;
+
+        /**
+         * Creates a new CompanionEphemeralIdentity instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns CompanionEphemeralIdentity instance
+         */
+        public static create(properties?: proto.ICompanionEphemeralIdentity): proto.CompanionEphemeralIdentity;
+
+        /**
+         * Encodes the specified CompanionEphemeralIdentity message. Does not implicitly {@link proto.CompanionEphemeralIdentity.verify|verify} messages.
+         * @param message CompanionEphemeralIdentity message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ICompanionEphemeralIdentity, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified CompanionEphemeralIdentity message, length delimited. Does not implicitly {@link proto.CompanionEphemeralIdentity.verify|verify} messages.
+         * @param message CompanionEphemeralIdentity message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ICompanionEphemeralIdentity, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a CompanionEphemeralIdentity message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns CompanionEphemeralIdentity
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.CompanionEphemeralIdentity;
+
+        /**
+         * Decodes a CompanionEphemeralIdentity message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns CompanionEphemeralIdentity
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.CompanionEphemeralIdentity;
+
+        /**
+         * Verifies a CompanionEphemeralIdentity message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a CompanionEphemeralIdentity message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns CompanionEphemeralIdentity
+         */
+        public static fromObject(object: { [k: string]: any }): proto.CompanionEphemeralIdentity;
+
+        /**
+         * Creates a plain object from a CompanionEphemeralIdentity message. Also converts values to other types if specified.
+         * @param message CompanionEphemeralIdentity
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.CompanionEphemeralIdentity, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this CompanionEphemeralIdentity to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for CompanionEphemeralIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a Config. */
+    interface IConfig {
+
+        /** Config field */
+        field?: ({ [k: string]: proto.IField }|null);
+
+        /** Config version */
+        version?: (number|null);
+    }
+
+    /** Represents a Config. */
+    class Config implements IConfig {
+
+        /**
+         * Constructs a new Config.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IConfig);
+
+        /** Config field. */
+        public field: { [k: string]: proto.IField };
+
+        /** Config version. */
+        public version: number;
+
+        /**
+         * Creates a new Config instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Config instance
+         */
+        public static create(properties?: proto.IConfig): proto.Config;
+
+        /**
+         * Encodes the specified Config message. Does not implicitly {@link proto.Config.verify|verify} messages.
+         * @param message Config message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IConfig, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified Config message, length delimited. Does not implicitly {@link proto.Config.verify|verify} messages.
+         * @param message Config message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IConfig, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a Config message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns Config
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Config;
+
+        /**
+         * Decodes a Config message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns Config
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Config;
+
+        /**
+         * Verifies a Config message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a Config message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns Config
+         */
+        public static fromObject(object: { [k: string]: any }): proto.Config;
+
+        /**
+         * Creates a plain object from a Config message. Also converts values to other types if specified.
+         * @param message Config
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.Config, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this Config to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Config
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ContextInfo. */
@@ -4241,6 +6803,33 @@ export namespace proto {
 
         /** ContextInfo dataSharingContext */
         dataSharingContext?: (proto.ContextInfo.IDataSharingContext|null);
+
+        /** ContextInfo alwaysShowAdAttribution */
+        alwaysShowAdAttribution?: (boolean|null);
+
+        /** ContextInfo featureEligibilities */
+        featureEligibilities?: (proto.ContextInfo.IFeatureEligibilities|null);
+
+        /** ContextInfo entryPointConversionExternalSource */
+        entryPointConversionExternalSource?: (string|null);
+
+        /** ContextInfo entryPointConversionExternalMedium */
+        entryPointConversionExternalMedium?: (string|null);
+
+        /** ContextInfo ctwaSignals */
+        ctwaSignals?: (string|null);
+
+        /** ContextInfo ctwaPayload */
+        ctwaPayload?: (Uint8Array|null);
+
+        /** ContextInfo forwardedAiBotMessageInfo */
+        forwardedAiBotMessageInfo?: (proto.ContextInfo.IForwardedAIBotMessageInfo|null);
+
+        /** ContextInfo statusAttributionType */
+        statusAttributionType?: (proto.ContextInfo.StatusAttributionType|null);
+
+        /** ContextInfo urlTrackingMap */
+        urlTrackingMap?: (proto.IUrlTrackingMap|null);
     }
 
     /** Represents a ContextInfo. */
@@ -4351,6 +6940,33 @@ export namespace proto {
         /** ContextInfo dataSharingContext. */
         public dataSharingContext?: (proto.ContextInfo.IDataSharingContext|null);
 
+        /** ContextInfo alwaysShowAdAttribution. */
+        public alwaysShowAdAttribution: boolean;
+
+        /** ContextInfo featureEligibilities. */
+        public featureEligibilities?: (proto.ContextInfo.IFeatureEligibilities|null);
+
+        /** ContextInfo entryPointConversionExternalSource. */
+        public entryPointConversionExternalSource: string;
+
+        /** ContextInfo entryPointConversionExternalMedium. */
+        public entryPointConversionExternalMedium: string;
+
+        /** ContextInfo ctwaSignals. */
+        public ctwaSignals: string;
+
+        /** ContextInfo ctwaPayload. */
+        public ctwaPayload: Uint8Array;
+
+        /** ContextInfo forwardedAiBotMessageInfo. */
+        public forwardedAiBotMessageInfo?: (proto.ContextInfo.IForwardedAIBotMessageInfo|null);
+
+        /** ContextInfo statusAttributionType. */
+        public statusAttributionType: proto.ContextInfo.StatusAttributionType;
+
+        /** ContextInfo urlTrackingMap. */
+        public urlTrackingMap?: (proto.IUrlTrackingMap|null);
+
         /**
          * Creates a new ContextInfo instance using the specified properties.
          * @param [properties] Properties to set
@@ -4420,6 +7036,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace ContextInfo {
@@ -4530,6 +7153,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AdReplyInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace AdReplyInfo {
@@ -4630,6 +7260,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BusinessMessageForwardInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DataSharingContext. */
@@ -4637,6 +7274,12 @@ export namespace proto {
 
             /** DataSharingContext showMmDisclosure */
             showMmDisclosure?: (boolean|null);
+
+            /** DataSharingContext encryptedSignalTokenConsented */
+            encryptedSignalTokenConsented?: (string|null);
+
+            /** DataSharingContext parameters */
+            parameters?: (proto.ContextInfo.DataSharingContext.IParameters[]|null);
         }
 
         /** Represents a DataSharingContext. */
@@ -4650,6 +7293,12 @@ export namespace proto {
 
             /** DataSharingContext showMmDisclosure. */
             public showMmDisclosure: boolean;
+
+            /** DataSharingContext encryptedSignalTokenConsented. */
+            public encryptedSignalTokenConsented: string;
+
+            /** DataSharingContext parameters. */
+            public parameters: proto.ContextInfo.DataSharingContext.IParameters[];
 
             /**
              * Creates a new DataSharingContext instance using the specified properties.
@@ -4720,6 +7369,137 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DataSharingContext
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace DataSharingContext {
+
+            /** Properties of a Parameters. */
+            interface IParameters {
+
+                /** Parameters key */
+                key?: (string|null);
+
+                /** Parameters stringData */
+                stringData?: (string|null);
+
+                /** Parameters intData */
+                intData?: (number|Long|null);
+
+                /** Parameters floatData */
+                floatData?: (number|null);
+
+                /** Parameters contents */
+                contents?: (proto.ContextInfo.DataSharingContext.IParameters|null);
+            }
+
+            /** Represents a Parameters. */
+            class Parameters implements IParameters {
+
+                /**
+                 * Constructs a new Parameters.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.ContextInfo.DataSharingContext.IParameters);
+
+                /** Parameters key. */
+                public key: string;
+
+                /** Parameters stringData. */
+                public stringData: string;
+
+                /** Parameters intData. */
+                public intData: (number|Long);
+
+                /** Parameters floatData. */
+                public floatData: number;
+
+                /** Parameters contents. */
+                public contents?: (proto.ContextInfo.DataSharingContext.IParameters|null);
+
+                /**
+                 * Creates a new Parameters instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Parameters instance
+                 */
+                public static create(properties?: proto.ContextInfo.DataSharingContext.IParameters): proto.ContextInfo.DataSharingContext.Parameters;
+
+                /**
+                 * Encodes the specified Parameters message. Does not implicitly {@link proto.ContextInfo.DataSharingContext.Parameters.verify|verify} messages.
+                 * @param message Parameters message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.ContextInfo.DataSharingContext.IParameters, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified Parameters message, length delimited. Does not implicitly {@link proto.ContextInfo.DataSharingContext.Parameters.verify|verify} messages.
+                 * @param message Parameters message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.ContextInfo.DataSharingContext.IParameters, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a Parameters message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Parameters
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.DataSharingContext.Parameters;
+
+                /**
+                 * Decodes a Parameters message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns Parameters
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.DataSharingContext.Parameters;
+
+                /**
+                 * Verifies a Parameters message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a Parameters message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Parameters
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.ContextInfo.DataSharingContext.Parameters;
+
+                /**
+                 * Creates a plain object from a Parameters message. Also converts values to other types if specified.
+                 * @param message Parameters
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.ContextInfo.DataSharingContext.Parameters, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Parameters to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Parameters
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
         }
 
         /** Properties of an ExternalAdReplyInfo. */
@@ -4766,6 +7546,30 @@ export namespace proto {
 
             /** ExternalAdReplyInfo ref */
             ref?: (string|null);
+
+            /** ExternalAdReplyInfo clickToWhatsappCall */
+            clickToWhatsappCall?: (boolean|null);
+
+            /** ExternalAdReplyInfo adContextPreviewDismissed */
+            adContextPreviewDismissed?: (boolean|null);
+
+            /** ExternalAdReplyInfo sourceApp */
+            sourceApp?: (string|null);
+
+            /** ExternalAdReplyInfo automatedGreetingMessageShown */
+            automatedGreetingMessageShown?: (boolean|null);
+
+            /** ExternalAdReplyInfo greetingMessageBody */
+            greetingMessageBody?: (string|null);
+
+            /** ExternalAdReplyInfo ctaPayload */
+            ctaPayload?: (string|null);
+
+            /** ExternalAdReplyInfo disableNudge */
+            disableNudge?: (boolean|null);
+
+            /** ExternalAdReplyInfo originalImageUrl */
+            originalImageUrl?: (string|null);
         }
 
         /** Represents an ExternalAdReplyInfo. */
@@ -4818,6 +7622,30 @@ export namespace proto {
 
             /** ExternalAdReplyInfo ref. */
             public ref: string;
+
+            /** ExternalAdReplyInfo clickToWhatsappCall. */
+            public clickToWhatsappCall: boolean;
+
+            /** ExternalAdReplyInfo adContextPreviewDismissed. */
+            public adContextPreviewDismissed: boolean;
+
+            /** ExternalAdReplyInfo sourceApp. */
+            public sourceApp: string;
+
+            /** ExternalAdReplyInfo automatedGreetingMessageShown. */
+            public automatedGreetingMessageShown: boolean;
+
+            /** ExternalAdReplyInfo greetingMessageBody. */
+            public greetingMessageBody: string;
+
+            /** ExternalAdReplyInfo ctaPayload. */
+            public ctaPayload: string;
+
+            /** ExternalAdReplyInfo disableNudge. */
+            public disableNudge: boolean;
+
+            /** ExternalAdReplyInfo originalImageUrl. */
+            public originalImageUrl: string;
 
             /**
              * Creates a new ExternalAdReplyInfo instance using the specified properties.
@@ -4888,6 +7716,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExternalAdReplyInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ExternalAdReplyInfo {
@@ -4898,6 +7733,224 @@ export namespace proto {
                 IMAGE = 1,
                 VIDEO = 2
             }
+        }
+
+        /** Properties of a FeatureEligibilities. */
+        interface IFeatureEligibilities {
+
+            /** FeatureEligibilities cannotBeReactedTo */
+            cannotBeReactedTo?: (boolean|null);
+
+            /** FeatureEligibilities cannotBeRanked */
+            cannotBeRanked?: (boolean|null);
+
+            /** FeatureEligibilities canRequestFeedback */
+            canRequestFeedback?: (boolean|null);
+        }
+
+        /** Represents a FeatureEligibilities. */
+        class FeatureEligibilities implements IFeatureEligibilities {
+
+            /**
+             * Constructs a new FeatureEligibilities.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.ContextInfo.IFeatureEligibilities);
+
+            /** FeatureEligibilities cannotBeReactedTo. */
+            public cannotBeReactedTo: boolean;
+
+            /** FeatureEligibilities cannotBeRanked. */
+            public cannotBeRanked: boolean;
+
+            /** FeatureEligibilities canRequestFeedback. */
+            public canRequestFeedback: boolean;
+
+            /**
+             * Creates a new FeatureEligibilities instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns FeatureEligibilities instance
+             */
+            public static create(properties?: proto.ContextInfo.IFeatureEligibilities): proto.ContextInfo.FeatureEligibilities;
+
+            /**
+             * Encodes the specified FeatureEligibilities message. Does not implicitly {@link proto.ContextInfo.FeatureEligibilities.verify|verify} messages.
+             * @param message FeatureEligibilities message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.ContextInfo.IFeatureEligibilities, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified FeatureEligibilities message, length delimited. Does not implicitly {@link proto.ContextInfo.FeatureEligibilities.verify|verify} messages.
+             * @param message FeatureEligibilities message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.ContextInfo.IFeatureEligibilities, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a FeatureEligibilities message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns FeatureEligibilities
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.FeatureEligibilities;
+
+            /**
+             * Decodes a FeatureEligibilities message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns FeatureEligibilities
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.FeatureEligibilities;
+
+            /**
+             * Verifies a FeatureEligibilities message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a FeatureEligibilities message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns FeatureEligibilities
+             */
+            public static fromObject(object: { [k: string]: any }): proto.ContextInfo.FeatureEligibilities;
+
+            /**
+             * Creates a plain object from a FeatureEligibilities message. Also converts values to other types if specified.
+             * @param message FeatureEligibilities
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.ContextInfo.FeatureEligibilities, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this FeatureEligibilities to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FeatureEligibilities
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a ForwardedAIBotMessageInfo. */
+        interface IForwardedAIBotMessageInfo {
+
+            /** ForwardedAIBotMessageInfo botName */
+            botName?: (string|null);
+
+            /** ForwardedAIBotMessageInfo botJid */
+            botJid?: (string|null);
+
+            /** ForwardedAIBotMessageInfo creatorName */
+            creatorName?: (string|null);
+        }
+
+        /** Represents a ForwardedAIBotMessageInfo. */
+        class ForwardedAIBotMessageInfo implements IForwardedAIBotMessageInfo {
+
+            /**
+             * Constructs a new ForwardedAIBotMessageInfo.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.ContextInfo.IForwardedAIBotMessageInfo);
+
+            /** ForwardedAIBotMessageInfo botName. */
+            public botName: string;
+
+            /** ForwardedAIBotMessageInfo botJid. */
+            public botJid: string;
+
+            /** ForwardedAIBotMessageInfo creatorName. */
+            public creatorName: string;
+
+            /**
+             * Creates a new ForwardedAIBotMessageInfo instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns ForwardedAIBotMessageInfo instance
+             */
+            public static create(properties?: proto.ContextInfo.IForwardedAIBotMessageInfo): proto.ContextInfo.ForwardedAIBotMessageInfo;
+
+            /**
+             * Encodes the specified ForwardedAIBotMessageInfo message. Does not implicitly {@link proto.ContextInfo.ForwardedAIBotMessageInfo.verify|verify} messages.
+             * @param message ForwardedAIBotMessageInfo message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.ContextInfo.IForwardedAIBotMessageInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified ForwardedAIBotMessageInfo message, length delimited. Does not implicitly {@link proto.ContextInfo.ForwardedAIBotMessageInfo.verify|verify} messages.
+             * @param message ForwardedAIBotMessageInfo message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.ContextInfo.IForwardedAIBotMessageInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a ForwardedAIBotMessageInfo message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns ForwardedAIBotMessageInfo
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ContextInfo.ForwardedAIBotMessageInfo;
+
+            /**
+             * Decodes a ForwardedAIBotMessageInfo message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns ForwardedAIBotMessageInfo
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ContextInfo.ForwardedAIBotMessageInfo;
+
+            /**
+             * Verifies a ForwardedAIBotMessageInfo message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a ForwardedAIBotMessageInfo message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns ForwardedAIBotMessageInfo
+             */
+            public static fromObject(object: { [k: string]: any }): proto.ContextInfo.ForwardedAIBotMessageInfo;
+
+            /**
+             * Creates a plain object from a ForwardedAIBotMessageInfo message. Also converts values to other types if specified.
+             * @param message ForwardedAIBotMessageInfo
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.ContextInfo.ForwardedAIBotMessageInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this ForwardedAIBotMessageInfo to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ForwardedAIBotMessageInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ForwardedNewsletterMessageInfo. */
@@ -5012,6 +8065,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ForwardedNewsletterMessageInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ForwardedNewsletterMessageInfo {
@@ -5022,6 +8082,12 @@ export namespace proto {
                 UPDATE_CARD = 2,
                 LINK_CARD = 3
             }
+        }
+
+        /** StatusAttributionType enum. */
+        enum StatusAttributionType {
+            NONE = 0,
+            RESHARED_FROM_MENTION = 1
         }
 
         /** Properties of a UTMInfo. */
@@ -5118,6 +8184,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UTMInfo
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -5258,6 +8331,18 @@ export namespace proto {
 
         /** Conversation commentsCount */
         commentsCount?: (number|null);
+
+        /** Conversation locked */
+        locked?: (boolean|null);
+
+        /** Conversation systemMessageToInsert */
+        systemMessageToInsert?: (proto.PrivacySystemMessage|null);
+
+        /** Conversation capiCreatedGroup */
+        capiCreatedGroup?: (boolean|null);
+
+        /** Conversation accountLid */
+        accountLid?: (string|null);
     }
 
     /** Represents a Conversation. */
@@ -5404,6 +8489,18 @@ export namespace proto {
         /** Conversation commentsCount. */
         public commentsCount: number;
 
+        /** Conversation locked. */
+        public locked: boolean;
+
+        /** Conversation systemMessageToInsert. */
+        public systemMessageToInsert: proto.PrivacySystemMessage;
+
+        /** Conversation capiCreatedGroup. */
+        public capiCreatedGroup: boolean;
+
+        /** Conversation accountLid. */
+        public accountLid: string;
+
         /**
          * Creates a new Conversation instance using the specified properties.
          * @param [properties] Properties to set
@@ -5473,6 +8570,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Conversation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace Conversation {
@@ -5482,6 +8586,113 @@ export namespace proto {
             COMPLETE_BUT_MORE_MESSAGES_REMAIN_ON_PRIMARY = 0,
             COMPLETE_AND_NO_MORE_MESSAGE_REMAIN_ON_PRIMARY = 1,
             COMPLETE_ON_DEMAND_SYNC_BUT_MORE_MSG_REMAIN_ON_PRIMARY = 2
+        }
+    }
+
+    /** Properties of a DeviceCapabilities. */
+    interface IDeviceCapabilities {
+
+        /** DeviceCapabilities chatLockSupportLevel */
+        chatLockSupportLevel?: (proto.DeviceCapabilities.ChatLockSupportLevel|null);
+    }
+
+    /** Represents a DeviceCapabilities. */
+    class DeviceCapabilities implements IDeviceCapabilities {
+
+        /**
+         * Constructs a new DeviceCapabilities.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IDeviceCapabilities);
+
+        /** DeviceCapabilities chatLockSupportLevel. */
+        public chatLockSupportLevel: proto.DeviceCapabilities.ChatLockSupportLevel;
+
+        /**
+         * Creates a new DeviceCapabilities instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns DeviceCapabilities instance
+         */
+        public static create(properties?: proto.IDeviceCapabilities): proto.DeviceCapabilities;
+
+        /**
+         * Encodes the specified DeviceCapabilities message. Does not implicitly {@link proto.DeviceCapabilities.verify|verify} messages.
+         * @param message DeviceCapabilities message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IDeviceCapabilities, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified DeviceCapabilities message, length delimited. Does not implicitly {@link proto.DeviceCapabilities.verify|verify} messages.
+         * @param message DeviceCapabilities message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IDeviceCapabilities, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a DeviceCapabilities message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns DeviceCapabilities
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.DeviceCapabilities;
+
+        /**
+         * Decodes a DeviceCapabilities message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns DeviceCapabilities
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.DeviceCapabilities;
+
+        /**
+         * Verifies a DeviceCapabilities message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a DeviceCapabilities message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns DeviceCapabilities
+         */
+        public static fromObject(object: { [k: string]: any }): proto.DeviceCapabilities;
+
+        /**
+         * Creates a plain object from a DeviceCapabilities message. Also converts values to other types if specified.
+         * @param message DeviceCapabilities
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.DeviceCapabilities, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this DeviceCapabilities to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceCapabilities
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace DeviceCapabilities {
+
+        /** ChatLockSupportLevel enum. */
+        enum ChatLockSupportLevel {
+            NONE = 0,
+            MINIMAL = 1,
+            FULL = 2
         }
     }
 
@@ -5579,6 +8790,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceConsistencyCodeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a DeviceListMetadata. */
@@ -5711,6 +8929,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceListMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a DeviceProps. */
@@ -5825,6 +9050,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DeviceProps
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace DeviceProps {
@@ -5941,6 +9173,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppVersion
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HistorySyncConfig. */
@@ -5969,6 +9208,24 @@ export namespace proto {
 
             /** HistorySyncConfig supportCagReactionsAndPolls */
             supportCagReactionsAndPolls?: (boolean|null);
+
+            /** HistorySyncConfig supportBizHostedMsg */
+            supportBizHostedMsg?: (boolean|null);
+
+            /** HistorySyncConfig supportRecentSyncChunkMessageCountTuning */
+            supportRecentSyncChunkMessageCountTuning?: (boolean|null);
+
+            /** HistorySyncConfig supportHostedGroupMsg */
+            supportHostedGroupMsg?: (boolean|null);
+
+            /** HistorySyncConfig supportFbidBotChatHistory */
+            supportFbidBotChatHistory?: (boolean|null);
+
+            /** HistorySyncConfig supportAddOnHistorySyncMigration */
+            supportAddOnHistorySyncMigration?: (boolean|null);
+
+            /** HistorySyncConfig supportMessageAssociation */
+            supportMessageAssociation?: (boolean|null);
         }
 
         /** Represents a HistorySyncConfig. */
@@ -6003,6 +9260,24 @@ export namespace proto {
 
             /** HistorySyncConfig supportCagReactionsAndPolls. */
             public supportCagReactionsAndPolls: boolean;
+
+            /** HistorySyncConfig supportBizHostedMsg. */
+            public supportBizHostedMsg: boolean;
+
+            /** HistorySyncConfig supportRecentSyncChunkMessageCountTuning. */
+            public supportRecentSyncChunkMessageCountTuning: boolean;
+
+            /** HistorySyncConfig supportHostedGroupMsg. */
+            public supportHostedGroupMsg: boolean;
+
+            /** HistorySyncConfig supportFbidBotChatHistory. */
+            public supportFbidBotChatHistory: boolean;
+
+            /** HistorySyncConfig supportAddOnHistorySyncMigration. */
+            public supportAddOnHistorySyncMigration: boolean;
+
+            /** HistorySyncConfig supportMessageAssociation. */
+            public supportMessageAssociation: boolean;
 
             /**
              * Creates a new HistorySyncConfig instance using the specified properties.
@@ -6073,6 +9348,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HistorySyncConfig
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** PlatformType enum. */
@@ -6099,7 +9381,9 @@ export namespace proto {
             AR_WRIST = 19,
             AR_DEVICE = 20,
             UWP = 21,
-            VR = 22
+            VR = 22,
+            CLOUD_API = 23,
+            SMARTGLASSES = 24
         }
     }
 
@@ -6209,6 +9493,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for DisappearingMode
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace DisappearingMode {
@@ -6227,8 +9518,478 @@ export namespace proto {
             CHAT_SETTING = 1,
             ACCOUNT_SETTING = 2,
             BULK_CHANGE = 3,
-            BIZ_SUPPORTS_FB_HOSTING = 4
+            BIZ_SUPPORTS_FB_HOSTING = 4,
+            UNKNOWN_GROUPS = 5
         }
+    }
+
+    /** Properties of an EmbeddedContent. */
+    interface IEmbeddedContent {
+
+        /** EmbeddedContent embeddedMessage */
+        embeddedMessage?: (proto.IEmbeddedMessage|null);
+
+        /** EmbeddedContent embeddedMusic */
+        embeddedMusic?: (proto.IEmbeddedMusic|null);
+    }
+
+    /** Represents an EmbeddedContent. */
+    class EmbeddedContent implements IEmbeddedContent {
+
+        /**
+         * Constructs a new EmbeddedContent.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IEmbeddedContent);
+
+        /** EmbeddedContent embeddedMessage. */
+        public embeddedMessage?: (proto.IEmbeddedMessage|null);
+
+        /** EmbeddedContent embeddedMusic. */
+        public embeddedMusic?: (proto.IEmbeddedMusic|null);
+
+        /** EmbeddedContent content. */
+        public content?: ("embeddedMessage"|"embeddedMusic");
+
+        /**
+         * Creates a new EmbeddedContent instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns EmbeddedContent instance
+         */
+        public static create(properties?: proto.IEmbeddedContent): proto.EmbeddedContent;
+
+        /**
+         * Encodes the specified EmbeddedContent message. Does not implicitly {@link proto.EmbeddedContent.verify|verify} messages.
+         * @param message EmbeddedContent message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IEmbeddedContent, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified EmbeddedContent message, length delimited. Does not implicitly {@link proto.EmbeddedContent.verify|verify} messages.
+         * @param message EmbeddedContent message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IEmbeddedContent, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an EmbeddedContent message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns EmbeddedContent
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EmbeddedContent;
+
+        /**
+         * Decodes an EmbeddedContent message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns EmbeddedContent
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EmbeddedContent;
+
+        /**
+         * Verifies an EmbeddedContent message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an EmbeddedContent message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns EmbeddedContent
+         */
+        public static fromObject(object: { [k: string]: any }): proto.EmbeddedContent;
+
+        /**
+         * Creates a plain object from an EmbeddedContent message. Also converts values to other types if specified.
+         * @param message EmbeddedContent
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.EmbeddedContent, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this EmbeddedContent to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EmbeddedContent
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of an EmbeddedMessage. */
+    interface IEmbeddedMessage {
+
+        /** EmbeddedMessage stanzaId */
+        stanzaId?: (string|null);
+
+        /** EmbeddedMessage message */
+        message?: (proto.IMessage|null);
+    }
+
+    /** Represents an EmbeddedMessage. */
+    class EmbeddedMessage implements IEmbeddedMessage {
+
+        /**
+         * Constructs a new EmbeddedMessage.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IEmbeddedMessage);
+
+        /** EmbeddedMessage stanzaId. */
+        public stanzaId: string;
+
+        /** EmbeddedMessage message. */
+        public message?: (proto.IMessage|null);
+
+        /**
+         * Creates a new EmbeddedMessage instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns EmbeddedMessage instance
+         */
+        public static create(properties?: proto.IEmbeddedMessage): proto.EmbeddedMessage;
+
+        /**
+         * Encodes the specified EmbeddedMessage message. Does not implicitly {@link proto.EmbeddedMessage.verify|verify} messages.
+         * @param message EmbeddedMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IEmbeddedMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified EmbeddedMessage message, length delimited. Does not implicitly {@link proto.EmbeddedMessage.verify|verify} messages.
+         * @param message EmbeddedMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IEmbeddedMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an EmbeddedMessage message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns EmbeddedMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EmbeddedMessage;
+
+        /**
+         * Decodes an EmbeddedMessage message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns EmbeddedMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EmbeddedMessage;
+
+        /**
+         * Verifies an EmbeddedMessage message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an EmbeddedMessage message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns EmbeddedMessage
+         */
+        public static fromObject(object: { [k: string]: any }): proto.EmbeddedMessage;
+
+        /**
+         * Creates a plain object from an EmbeddedMessage message. Also converts values to other types if specified.
+         * @param message EmbeddedMessage
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.EmbeddedMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this EmbeddedMessage to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EmbeddedMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of an EmbeddedMusic. */
+    interface IEmbeddedMusic {
+
+        /** EmbeddedMusic musicContentMediaId */
+        musicContentMediaId?: (string|null);
+
+        /** EmbeddedMusic songId */
+        songId?: (string|null);
+
+        /** EmbeddedMusic author */
+        author?: (string|null);
+
+        /** EmbeddedMusic title */
+        title?: (string|null);
+
+        /** EmbeddedMusic artworkDirectPath */
+        artworkDirectPath?: (string|null);
+
+        /** EmbeddedMusic artworkSha256 */
+        artworkSha256?: (Uint8Array|null);
+
+        /** EmbeddedMusic artworkEncSha256 */
+        artworkEncSha256?: (Uint8Array|null);
+
+        /** EmbeddedMusic artworkMediaKey */
+        artworkMediaKey?: (Uint8Array|null);
+
+        /** EmbeddedMusic artistAttribution */
+        artistAttribution?: (string|null);
+
+        /** EmbeddedMusic countryBlocklist */
+        countryBlocklist?: (Uint8Array|null);
+
+        /** EmbeddedMusic isExplicit */
+        isExplicit?: (boolean|null);
+    }
+
+    /** Represents an EmbeddedMusic. */
+    class EmbeddedMusic implements IEmbeddedMusic {
+
+        /**
+         * Constructs a new EmbeddedMusic.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IEmbeddedMusic);
+
+        /** EmbeddedMusic musicContentMediaId. */
+        public musicContentMediaId: string;
+
+        /** EmbeddedMusic songId. */
+        public songId: string;
+
+        /** EmbeddedMusic author. */
+        public author: string;
+
+        /** EmbeddedMusic title. */
+        public title: string;
+
+        /** EmbeddedMusic artworkDirectPath. */
+        public artworkDirectPath: string;
+
+        /** EmbeddedMusic artworkSha256. */
+        public artworkSha256: Uint8Array;
+
+        /** EmbeddedMusic artworkEncSha256. */
+        public artworkEncSha256: Uint8Array;
+
+        /** EmbeddedMusic artworkMediaKey. */
+        public artworkMediaKey: Uint8Array;
+
+        /** EmbeddedMusic artistAttribution. */
+        public artistAttribution: string;
+
+        /** EmbeddedMusic countryBlocklist. */
+        public countryBlocklist: Uint8Array;
+
+        /** EmbeddedMusic isExplicit. */
+        public isExplicit: boolean;
+
+        /**
+         * Creates a new EmbeddedMusic instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns EmbeddedMusic instance
+         */
+        public static create(properties?: proto.IEmbeddedMusic): proto.EmbeddedMusic;
+
+        /**
+         * Encodes the specified EmbeddedMusic message. Does not implicitly {@link proto.EmbeddedMusic.verify|verify} messages.
+         * @param message EmbeddedMusic message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IEmbeddedMusic, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified EmbeddedMusic message, length delimited. Does not implicitly {@link proto.EmbeddedMusic.verify|verify} messages.
+         * @param message EmbeddedMusic message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IEmbeddedMusic, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an EmbeddedMusic message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns EmbeddedMusic
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EmbeddedMusic;
+
+        /**
+         * Decodes an EmbeddedMusic message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns EmbeddedMusic
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EmbeddedMusic;
+
+        /**
+         * Verifies an EmbeddedMusic message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an EmbeddedMusic message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns EmbeddedMusic
+         */
+        public static fromObject(object: { [k: string]: any }): proto.EmbeddedMusic;
+
+        /**
+         * Creates a plain object from an EmbeddedMusic message. Also converts values to other types if specified.
+         * @param message EmbeddedMusic
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.EmbeddedMusic, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this EmbeddedMusic to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EmbeddedMusic
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of an EncryptedPairingRequest. */
+    interface IEncryptedPairingRequest {
+
+        /** EncryptedPairingRequest encryptedPayload */
+        encryptedPayload?: (Uint8Array|null);
+
+        /** EncryptedPairingRequest iv */
+        iv?: (Uint8Array|null);
+    }
+
+    /** Represents an EncryptedPairingRequest. */
+    class EncryptedPairingRequest implements IEncryptedPairingRequest {
+
+        /**
+         * Constructs a new EncryptedPairingRequest.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IEncryptedPairingRequest);
+
+        /** EncryptedPairingRequest encryptedPayload. */
+        public encryptedPayload: Uint8Array;
+
+        /** EncryptedPairingRequest iv. */
+        public iv: Uint8Array;
+
+        /**
+         * Creates a new EncryptedPairingRequest instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns EncryptedPairingRequest instance
+         */
+        public static create(properties?: proto.IEncryptedPairingRequest): proto.EncryptedPairingRequest;
+
+        /**
+         * Encodes the specified EncryptedPairingRequest message. Does not implicitly {@link proto.EncryptedPairingRequest.verify|verify} messages.
+         * @param message EncryptedPairingRequest message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IEncryptedPairingRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified EncryptedPairingRequest message, length delimited. Does not implicitly {@link proto.EncryptedPairingRequest.verify|verify} messages.
+         * @param message EncryptedPairingRequest message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IEncryptedPairingRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an EncryptedPairingRequest message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns EncryptedPairingRequest
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EncryptedPairingRequest;
+
+        /**
+         * Decodes an EncryptedPairingRequest message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns EncryptedPairingRequest
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EncryptedPairingRequest;
+
+        /**
+         * Verifies an EncryptedPairingRequest message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an EncryptedPairingRequest message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns EncryptedPairingRequest
+         */
+        public static fromObject(object: { [k: string]: any }): proto.EncryptedPairingRequest;
+
+        /**
+         * Creates a plain object from an EncryptedPairingRequest message. Also converts values to other types if specified.
+         * @param message EncryptedPairingRequest
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.EncryptedPairingRequest, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this EncryptedPairingRequest to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EncryptedPairingRequest
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an EphemeralSetting. */
@@ -6325,6 +10086,110 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EphemeralSetting
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of an EventAdditionalMetadata. */
+    interface IEventAdditionalMetadata {
+
+        /** EventAdditionalMetadata isStale */
+        isStale?: (boolean|null);
+    }
+
+    /** Represents an EventAdditionalMetadata. */
+    class EventAdditionalMetadata implements IEventAdditionalMetadata {
+
+        /**
+         * Constructs a new EventAdditionalMetadata.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IEventAdditionalMetadata);
+
+        /** EventAdditionalMetadata isStale. */
+        public isStale: boolean;
+
+        /**
+         * Creates a new EventAdditionalMetadata instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns EventAdditionalMetadata instance
+         */
+        public static create(properties?: proto.IEventAdditionalMetadata): proto.EventAdditionalMetadata;
+
+        /**
+         * Encodes the specified EventAdditionalMetadata message. Does not implicitly {@link proto.EventAdditionalMetadata.verify|verify} messages.
+         * @param message EventAdditionalMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IEventAdditionalMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified EventAdditionalMetadata message, length delimited. Does not implicitly {@link proto.EventAdditionalMetadata.verify|verify} messages.
+         * @param message EventAdditionalMetadata message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IEventAdditionalMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an EventAdditionalMetadata message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns EventAdditionalMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.EventAdditionalMetadata;
+
+        /**
+         * Decodes an EventAdditionalMetadata message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns EventAdditionalMetadata
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.EventAdditionalMetadata;
+
+        /**
+         * Verifies an EventAdditionalMetadata message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an EventAdditionalMetadata message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns EventAdditionalMetadata
+         */
+        public static fromObject(object: { [k: string]: any }): proto.EventAdditionalMetadata;
+
+        /**
+         * Creates a plain object from an EventAdditionalMetadata message. Also converts values to other types if specified.
+         * @param message EventAdditionalMetadata
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.EventAdditionalMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this EventAdditionalMetadata to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EventAdditionalMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an EventResponse. */
@@ -6433,6 +10298,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for EventResponse
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ExitCode. */
@@ -6529,6 +10401,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ExitCode
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an ExternalBlobReference. */
@@ -6649,6 +10528,134 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ExternalBlobReference
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a Field. */
+    interface IField {
+
+        /** Field minVersion */
+        minVersion?: (number|null);
+
+        /** Field maxVersion */
+        maxVersion?: (number|null);
+
+        /** Field notReportableMinVersion */
+        notReportableMinVersion?: (number|null);
+
+        /** Field isMessage */
+        isMessage?: (boolean|null);
+
+        /** Field subfield */
+        subfield?: ({ [k: string]: proto.IField }|null);
+    }
+
+    /** Represents a Field. */
+    class Field implements IField {
+
+        /**
+         * Constructs a new Field.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IField);
+
+        /** Field minVersion. */
+        public minVersion: number;
+
+        /** Field maxVersion. */
+        public maxVersion: number;
+
+        /** Field notReportableMinVersion. */
+        public notReportableMinVersion: number;
+
+        /** Field isMessage. */
+        public isMessage: boolean;
+
+        /** Field subfield. */
+        public subfield: { [k: string]: proto.IField };
+
+        /**
+         * Creates a new Field instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Field instance
+         */
+        public static create(properties?: proto.IField): proto.Field;
+
+        /**
+         * Encodes the specified Field message. Does not implicitly {@link proto.Field.verify|verify} messages.
+         * @param message Field message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IField, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified Field message, length delimited. Does not implicitly {@link proto.Field.verify|verify} messages.
+         * @param message Field message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IField, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a Field message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns Field
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Field;
+
+        /**
+         * Decodes a Field message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns Field
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Field;
+
+        /**
+         * Verifies a Field message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a Field message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns Field
+         */
+        public static fromObject(object: { [k: string]: any }): proto.Field;
+
+        /**
+         * Creates a plain object from a Field message. Also converts values to other types if specified.
+         * @param message Field
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.Field, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this Field to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Field
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GlobalSettings. */
@@ -6707,6 +10714,9 @@ export namespace proto {
 
         /** GlobalSettings groupNotificationSettings */
         groupNotificationSettings?: (proto.INotificationSettings|null);
+
+        /** GlobalSettings chatLockSettings */
+        chatLockSettings?: (proto.IChatLockSettings|null);
     }
 
     /** Represents a GlobalSettings. */
@@ -6771,6 +10781,9 @@ export namespace proto {
 
         /** GlobalSettings groupNotificationSettings. */
         public groupNotificationSettings?: (proto.INotificationSettings|null);
+
+        /** GlobalSettings chatLockSettings. */
+        public chatLockSettings?: (proto.IChatLockSettings|null);
 
         /**
          * Creates a new GlobalSettings instance using the specified properties.
@@ -6841,6 +10854,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GlobalSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GroupMention. */
@@ -6937,6 +10957,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GroupMention
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a GroupParticipant. */
@@ -7033,6 +11060,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for GroupParticipant
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace GroupParticipant {
@@ -7145,6 +11179,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HandshakeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HandshakeMessage {
@@ -7243,6 +11284,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClientFinish
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ClientHello. */
@@ -7345,6 +11393,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClientHello
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ServerHello. */
@@ -7447,6 +11502,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ServerHello
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -7494,6 +11556,12 @@ export namespace proto {
 
         /** HistorySync phoneNumberToLidMappings */
         phoneNumberToLidMappings?: (proto.IPhoneNumberToLIDMapping[]|null);
+
+        /** HistorySync companionMetaNonce */
+        companionMetaNonce?: (string|null);
+
+        /** HistorySync shareableChatIdentifierEncryptionKey */
+        shareableChatIdentifierEncryptionKey?: (Uint8Array|null);
     }
 
     /** Represents a HistorySync. */
@@ -7546,6 +11614,12 @@ export namespace proto {
 
         /** HistorySync phoneNumberToLidMappings. */
         public phoneNumberToLidMappings: proto.IPhoneNumberToLIDMapping[];
+
+        /** HistorySync companionMetaNonce. */
+        public companionMetaNonce: string;
+
+        /** HistorySync shareableChatIdentifierEncryptionKey. */
+        public shareableChatIdentifierEncryptionKey: Uint8Array;
 
         /**
          * Creates a new HistorySync instance using the specified properties.
@@ -7616,6 +11690,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HistorySync
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HistorySync {
@@ -7732,6 +11813,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HistorySyncMsg
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a HydratedTemplateButton. */
@@ -7843,6 +11931,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for HydratedTemplateButton
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace HydratedTemplateButton {
@@ -7941,6 +12036,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedCallButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HydratedQuickReplyButton. */
@@ -8037,6 +12139,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedQuickReplyButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a HydratedURLButton. */
@@ -8145,6 +12254,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HydratedURLButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HydratedURLButton {
@@ -8252,6 +12368,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for IdentityKeyPairStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of an InteractiveAnnotation. */
@@ -8263,11 +12386,20 @@ export namespace proto {
         /** InteractiveAnnotation shouldSkipConfirmation */
         shouldSkipConfirmation?: (boolean|null);
 
+        /** InteractiveAnnotation embeddedContent */
+        embeddedContent?: (proto.IEmbeddedContent|null);
+
         /** InteractiveAnnotation location */
         location?: (proto.ILocation|null);
 
         /** InteractiveAnnotation newsletter */
         newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
+
+        /** InteractiveAnnotation embeddedAction */
+        embeddedAction?: (boolean|null);
+
+        /** InteractiveAnnotation tapAction */
+        tapAction?: (proto.ITapLinkAction|null);
     }
 
     /** Represents an InteractiveAnnotation. */
@@ -8285,14 +12417,23 @@ export namespace proto {
         /** InteractiveAnnotation shouldSkipConfirmation. */
         public shouldSkipConfirmation: boolean;
 
+        /** InteractiveAnnotation embeddedContent. */
+        public embeddedContent?: (proto.IEmbeddedContent|null);
+
         /** InteractiveAnnotation location. */
         public location?: (proto.ILocation|null);
 
         /** InteractiveAnnotation newsletter. */
         public newsletter?: (proto.ContextInfo.IForwardedNewsletterMessageInfo|null);
 
+        /** InteractiveAnnotation embeddedAction. */
+        public embeddedAction?: (boolean|null);
+
+        /** InteractiveAnnotation tapAction. */
+        public tapAction?: (proto.ITapLinkAction|null);
+
         /** InteractiveAnnotation action. */
-        public action?: ("location"|"newsletter");
+        public action?: ("location"|"newsletter"|"embeddedAction"|"tapAction");
 
         /**
          * Creates a new InteractiveAnnotation instance using the specified properties.
@@ -8363,6 +12504,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for InteractiveAnnotation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a KeepInChat. */
@@ -8483,6 +12631,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeepInChat
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** KeepType enum. */
@@ -8604,6 +12759,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeyExchangeMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a KeyId. */
@@ -8694,6 +12856,419 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for KeyId
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a LIDMigrationMapping. */
+    interface ILIDMigrationMapping {
+
+        /** LIDMigrationMapping pn */
+        pn: (number|Long);
+
+        /** LIDMigrationMapping assignedLid */
+        assignedLid: (number|Long);
+
+        /** LIDMigrationMapping latestLid */
+        latestLid?: (number|Long|null);
+    }
+
+    /** Represents a LIDMigrationMapping. */
+    class LIDMigrationMapping implements ILIDMigrationMapping {
+
+        /**
+         * Constructs a new LIDMigrationMapping.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ILIDMigrationMapping);
+
+        /** LIDMigrationMapping pn. */
+        public pn: (number|Long);
+
+        /** LIDMigrationMapping assignedLid. */
+        public assignedLid: (number|Long);
+
+        /** LIDMigrationMapping latestLid. */
+        public latestLid: (number|Long);
+
+        /**
+         * Creates a new LIDMigrationMapping instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns LIDMigrationMapping instance
+         */
+        public static create(properties?: proto.ILIDMigrationMapping): proto.LIDMigrationMapping;
+
+        /**
+         * Encodes the specified LIDMigrationMapping message. Does not implicitly {@link proto.LIDMigrationMapping.verify|verify} messages.
+         * @param message LIDMigrationMapping message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ILIDMigrationMapping, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified LIDMigrationMapping message, length delimited. Does not implicitly {@link proto.LIDMigrationMapping.verify|verify} messages.
+         * @param message LIDMigrationMapping message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ILIDMigrationMapping, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a LIDMigrationMapping message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns LIDMigrationMapping
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.LIDMigrationMapping;
+
+        /**
+         * Decodes a LIDMigrationMapping message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns LIDMigrationMapping
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.LIDMigrationMapping;
+
+        /**
+         * Verifies a LIDMigrationMapping message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a LIDMigrationMapping message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns LIDMigrationMapping
+         */
+        public static fromObject(object: { [k: string]: any }): proto.LIDMigrationMapping;
+
+        /**
+         * Creates a plain object from a LIDMigrationMapping message. Also converts values to other types if specified.
+         * @param message LIDMigrationMapping
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.LIDMigrationMapping, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this LIDMigrationMapping to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LIDMigrationMapping
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a LIDMigrationMappingSyncMessage. */
+    interface ILIDMigrationMappingSyncMessage {
+
+        /** LIDMigrationMappingSyncMessage encodedMappingPayload */
+        encodedMappingPayload?: (Uint8Array|null);
+    }
+
+    /** Represents a LIDMigrationMappingSyncMessage. */
+    class LIDMigrationMappingSyncMessage implements ILIDMigrationMappingSyncMessage {
+
+        /**
+         * Constructs a new LIDMigrationMappingSyncMessage.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ILIDMigrationMappingSyncMessage);
+
+        /** LIDMigrationMappingSyncMessage encodedMappingPayload. */
+        public encodedMappingPayload: Uint8Array;
+
+        /**
+         * Creates a new LIDMigrationMappingSyncMessage instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns LIDMigrationMappingSyncMessage instance
+         */
+        public static create(properties?: proto.ILIDMigrationMappingSyncMessage): proto.LIDMigrationMappingSyncMessage;
+
+        /**
+         * Encodes the specified LIDMigrationMappingSyncMessage message. Does not implicitly {@link proto.LIDMigrationMappingSyncMessage.verify|verify} messages.
+         * @param message LIDMigrationMappingSyncMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ILIDMigrationMappingSyncMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified LIDMigrationMappingSyncMessage message, length delimited. Does not implicitly {@link proto.LIDMigrationMappingSyncMessage.verify|verify} messages.
+         * @param message LIDMigrationMappingSyncMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ILIDMigrationMappingSyncMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a LIDMigrationMappingSyncMessage message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns LIDMigrationMappingSyncMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.LIDMigrationMappingSyncMessage;
+
+        /**
+         * Decodes a LIDMigrationMappingSyncMessage message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns LIDMigrationMappingSyncMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.LIDMigrationMappingSyncMessage;
+
+        /**
+         * Verifies a LIDMigrationMappingSyncMessage message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a LIDMigrationMappingSyncMessage message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns LIDMigrationMappingSyncMessage
+         */
+        public static fromObject(object: { [k: string]: any }): proto.LIDMigrationMappingSyncMessage;
+
+        /**
+         * Creates a plain object from a LIDMigrationMappingSyncMessage message. Also converts values to other types if specified.
+         * @param message LIDMigrationMappingSyncMessage
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.LIDMigrationMappingSyncMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this LIDMigrationMappingSyncMessage to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LIDMigrationMappingSyncMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a LIDMigrationMappingSyncPayload. */
+    interface ILIDMigrationMappingSyncPayload {
+
+        /** LIDMigrationMappingSyncPayload pnToLidMappings */
+        pnToLidMappings?: (proto.ILIDMigrationMapping[]|null);
+    }
+
+    /** Represents a LIDMigrationMappingSyncPayload. */
+    class LIDMigrationMappingSyncPayload implements ILIDMigrationMappingSyncPayload {
+
+        /**
+         * Constructs a new LIDMigrationMappingSyncPayload.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ILIDMigrationMappingSyncPayload);
+
+        /** LIDMigrationMappingSyncPayload pnToLidMappings. */
+        public pnToLidMappings: proto.ILIDMigrationMapping[];
+
+        /**
+         * Creates a new LIDMigrationMappingSyncPayload instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns LIDMigrationMappingSyncPayload instance
+         */
+        public static create(properties?: proto.ILIDMigrationMappingSyncPayload): proto.LIDMigrationMappingSyncPayload;
+
+        /**
+         * Encodes the specified LIDMigrationMappingSyncPayload message. Does not implicitly {@link proto.LIDMigrationMappingSyncPayload.verify|verify} messages.
+         * @param message LIDMigrationMappingSyncPayload message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ILIDMigrationMappingSyncPayload, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified LIDMigrationMappingSyncPayload message, length delimited. Does not implicitly {@link proto.LIDMigrationMappingSyncPayload.verify|verify} messages.
+         * @param message LIDMigrationMappingSyncPayload message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ILIDMigrationMappingSyncPayload, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a LIDMigrationMappingSyncPayload message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns LIDMigrationMappingSyncPayload
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.LIDMigrationMappingSyncPayload;
+
+        /**
+         * Decodes a LIDMigrationMappingSyncPayload message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns LIDMigrationMappingSyncPayload
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.LIDMigrationMappingSyncPayload;
+
+        /**
+         * Verifies a LIDMigrationMappingSyncPayload message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a LIDMigrationMappingSyncPayload message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns LIDMigrationMappingSyncPayload
+         */
+        public static fromObject(object: { [k: string]: any }): proto.LIDMigrationMappingSyncPayload;
+
+        /**
+         * Creates a plain object from a LIDMigrationMappingSyncPayload message. Also converts values to other types if specified.
+         * @param message LIDMigrationMappingSyncPayload
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.LIDMigrationMappingSyncPayload, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this LIDMigrationMappingSyncPayload to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LIDMigrationMappingSyncPayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a LegacyMessage. */
+    interface ILegacyMessage {
+
+        /** LegacyMessage eventResponseMessage */
+        eventResponseMessage?: (proto.Message.IEventResponseMessage|null);
+
+        /** LegacyMessage pollVote */
+        pollVote?: (proto.Message.IPollVoteMessage|null);
+    }
+
+    /** Represents a LegacyMessage. */
+    class LegacyMessage implements ILegacyMessage {
+
+        /**
+         * Constructs a new LegacyMessage.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ILegacyMessage);
+
+        /** LegacyMessage eventResponseMessage. */
+        public eventResponseMessage?: (proto.Message.IEventResponseMessage|null);
+
+        /** LegacyMessage pollVote. */
+        public pollVote?: (proto.Message.IPollVoteMessage|null);
+
+        /**
+         * Creates a new LegacyMessage instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns LegacyMessage instance
+         */
+        public static create(properties?: proto.ILegacyMessage): proto.LegacyMessage;
+
+        /**
+         * Encodes the specified LegacyMessage message. Does not implicitly {@link proto.LegacyMessage.verify|verify} messages.
+         * @param message LegacyMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ILegacyMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified LegacyMessage message, length delimited. Does not implicitly {@link proto.LegacyMessage.verify|verify} messages.
+         * @param message LegacyMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ILegacyMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a LegacyMessage message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns LegacyMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.LegacyMessage;
+
+        /**
+         * Decodes a LegacyMessage message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns LegacyMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.LegacyMessage;
+
+        /**
+         * Verifies a LegacyMessage message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a LegacyMessage message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns LegacyMessage
+         */
+        public static fromObject(object: { [k: string]: any }): proto.LegacyMessage;
+
+        /**
+         * Creates a plain object from a LegacyMessage message. Also converts values to other types if specified.
+         * @param message LegacyMessage
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.LegacyMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this LegacyMessage to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LegacyMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a LocalizedName. */
@@ -8796,6 +13371,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for LocalizedName
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Location. */
@@ -8898,6 +13480,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Location
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MediaData. */
@@ -8988,399 +13577,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
-    }
-
-    /** Properties of a MediaEntry. */
-    interface IMediaEntry {
-
-        /** MediaEntry fileSha256 */
-        fileSha256?: (Uint8Array|null);
-
-        /** MediaEntry mediaKey */
-        mediaKey?: (Uint8Array|null);
-
-        /** MediaEntry fileEncSha256 */
-        fileEncSha256?: (Uint8Array|null);
-
-        /** MediaEntry directPath */
-        directPath?: (string|null);
-
-        /** MediaEntry mediaKeyTimestamp */
-        mediaKeyTimestamp?: (number|Long|null);
-
-        /** MediaEntry serverMediaType */
-        serverMediaType?: (string|null);
-
-        /** MediaEntry uploadToken */
-        uploadToken?: (Uint8Array|null);
-
-        /** MediaEntry validatedTimestamp */
-        validatedTimestamp?: (Uint8Array|null);
-
-        /** MediaEntry sidecar */
-        sidecar?: (Uint8Array|null);
-
-        /** MediaEntry objectId */
-        objectId?: (string|null);
-
-        /** MediaEntry fbid */
-        fbid?: (string|null);
-
-        /** MediaEntry downloadableThumbnail */
-        downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail|null);
-
-        /** MediaEntry handle */
-        handle?: (string|null);
-
-        /** MediaEntry filename */
-        filename?: (string|null);
-
-        /** MediaEntry progressiveJpegDetails */
-        progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails|null);
-    }
-
-    /** Represents a MediaEntry. */
-    class MediaEntry implements IMediaEntry {
 
         /**
-         * Constructs a new MediaEntry.
-         * @param [properties] Properties to set
+         * Gets the default type url for MediaData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
          */
-        constructor(properties?: proto.IMediaEntry);
-
-        /** MediaEntry fileSha256. */
-        public fileSha256: Uint8Array;
-
-        /** MediaEntry mediaKey. */
-        public mediaKey: Uint8Array;
-
-        /** MediaEntry fileEncSha256. */
-        public fileEncSha256: Uint8Array;
-
-        /** MediaEntry directPath. */
-        public directPath: string;
-
-        /** MediaEntry mediaKeyTimestamp. */
-        public mediaKeyTimestamp: (number|Long);
-
-        /** MediaEntry serverMediaType. */
-        public serverMediaType: string;
-
-        /** MediaEntry uploadToken. */
-        public uploadToken: Uint8Array;
-
-        /** MediaEntry validatedTimestamp. */
-        public validatedTimestamp: Uint8Array;
-
-        /** MediaEntry sidecar. */
-        public sidecar: Uint8Array;
-
-        /** MediaEntry objectId. */
-        public objectId: string;
-
-        /** MediaEntry fbid. */
-        public fbid: string;
-
-        /** MediaEntry downloadableThumbnail. */
-        public downloadableThumbnail?: (proto.MediaEntry.IDownloadableThumbnail|null);
-
-        /** MediaEntry handle. */
-        public handle: string;
-
-        /** MediaEntry filename. */
-        public filename: string;
-
-        /** MediaEntry progressiveJpegDetails. */
-        public progressiveJpegDetails?: (proto.MediaEntry.IProgressiveJpegDetails|null);
-
-        /**
-         * Creates a new MediaEntry instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns MediaEntry instance
-         */
-        public static create(properties?: proto.IMediaEntry): proto.MediaEntry;
-
-        /**
-         * Encodes the specified MediaEntry message. Does not implicitly {@link proto.MediaEntry.verify|verify} messages.
-         * @param message MediaEntry message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: proto.IMediaEntry, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified MediaEntry message, length delimited. Does not implicitly {@link proto.MediaEntry.verify|verify} messages.
-         * @param message MediaEntry message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: proto.IMediaEntry, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a MediaEntry message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns MediaEntry
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry;
-
-        /**
-         * Decodes a MediaEntry message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns MediaEntry
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry;
-
-        /**
-         * Verifies a MediaEntry message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a MediaEntry message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns MediaEntry
-         */
-        public static fromObject(object: { [k: string]: any }): proto.MediaEntry;
-
-        /**
-         * Creates a plain object from a MediaEntry message. Also converts values to other types if specified.
-         * @param message MediaEntry
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: proto.MediaEntry, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this MediaEntry to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-
-    namespace MediaEntry {
-
-        /** Properties of a DownloadableThumbnail. */
-        interface IDownloadableThumbnail {
-
-            /** DownloadableThumbnail fileSha256 */
-            fileSha256?: (Uint8Array|null);
-
-            /** DownloadableThumbnail fileEncSha256 */
-            fileEncSha256?: (Uint8Array|null);
-
-            /** DownloadableThumbnail directPath */
-            directPath?: (string|null);
-
-            /** DownloadableThumbnail mediaKey */
-            mediaKey?: (Uint8Array|null);
-
-            /** DownloadableThumbnail mediaKeyTimestamp */
-            mediaKeyTimestamp?: (number|Long|null);
-
-            /** DownloadableThumbnail objectId */
-            objectId?: (string|null);
-        }
-
-        /** Represents a DownloadableThumbnail. */
-        class DownloadableThumbnail implements IDownloadableThumbnail {
-
-            /**
-             * Constructs a new DownloadableThumbnail.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.MediaEntry.IDownloadableThumbnail);
-
-            /** DownloadableThumbnail fileSha256. */
-            public fileSha256: Uint8Array;
-
-            /** DownloadableThumbnail fileEncSha256. */
-            public fileEncSha256: Uint8Array;
-
-            /** DownloadableThumbnail directPath. */
-            public directPath: string;
-
-            /** DownloadableThumbnail mediaKey. */
-            public mediaKey: Uint8Array;
-
-            /** DownloadableThumbnail mediaKeyTimestamp. */
-            public mediaKeyTimestamp: (number|Long);
-
-            /** DownloadableThumbnail objectId. */
-            public objectId: string;
-
-            /**
-             * Creates a new DownloadableThumbnail instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns DownloadableThumbnail instance
-             */
-            public static create(properties?: proto.MediaEntry.IDownloadableThumbnail): proto.MediaEntry.DownloadableThumbnail;
-
-            /**
-             * Encodes the specified DownloadableThumbnail message. Does not implicitly {@link proto.MediaEntry.DownloadableThumbnail.verify|verify} messages.
-             * @param message DownloadableThumbnail message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.MediaEntry.IDownloadableThumbnail, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified DownloadableThumbnail message, length delimited. Does not implicitly {@link proto.MediaEntry.DownloadableThumbnail.verify|verify} messages.
-             * @param message DownloadableThumbnail message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.MediaEntry.IDownloadableThumbnail, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a DownloadableThumbnail message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns DownloadableThumbnail
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry.DownloadableThumbnail;
-
-            /**
-             * Decodes a DownloadableThumbnail message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns DownloadableThumbnail
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry.DownloadableThumbnail;
-
-            /**
-             * Verifies a DownloadableThumbnail message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a DownloadableThumbnail message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns DownloadableThumbnail
-             */
-            public static fromObject(object: { [k: string]: any }): proto.MediaEntry.DownloadableThumbnail;
-
-            /**
-             * Creates a plain object from a DownloadableThumbnail message. Also converts values to other types if specified.
-             * @param message DownloadableThumbnail
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.MediaEntry.DownloadableThumbnail, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this DownloadableThumbnail to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
-        }
-
-        /** Properties of a ProgressiveJpegDetails. */
-        interface IProgressiveJpegDetails {
-
-            /** ProgressiveJpegDetails scanLengths */
-            scanLengths?: ((number|Long)[]|null);
-
-            /** ProgressiveJpegDetails sidecar */
-            sidecar?: (Uint8Array|null);
-        }
-
-        /** Represents a ProgressiveJpegDetails. */
-        class ProgressiveJpegDetails implements IProgressiveJpegDetails {
-
-            /**
-             * Constructs a new ProgressiveJpegDetails.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.MediaEntry.IProgressiveJpegDetails);
-
-            /** ProgressiveJpegDetails scanLengths. */
-            public scanLengths: (number|Long)[];
-
-            /** ProgressiveJpegDetails sidecar. */
-            public sidecar: Uint8Array;
-
-            /**
-             * Creates a new ProgressiveJpegDetails instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns ProgressiveJpegDetails instance
-             */
-            public static create(properties?: proto.MediaEntry.IProgressiveJpegDetails): proto.MediaEntry.ProgressiveJpegDetails;
-
-            /**
-             * Encodes the specified ProgressiveJpegDetails message. Does not implicitly {@link proto.MediaEntry.ProgressiveJpegDetails.verify|verify} messages.
-             * @param message ProgressiveJpegDetails message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.MediaEntry.IProgressiveJpegDetails, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified ProgressiveJpegDetails message, length delimited. Does not implicitly {@link proto.MediaEntry.ProgressiveJpegDetails.verify|verify} messages.
-             * @param message ProgressiveJpegDetails message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.MediaEntry.IProgressiveJpegDetails, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a ProgressiveJpegDetails message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns ProgressiveJpegDetails
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MediaEntry.ProgressiveJpegDetails;
-
-            /**
-             * Decodes a ProgressiveJpegDetails message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns ProgressiveJpegDetails
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MediaEntry.ProgressiveJpegDetails;
-
-            /**
-             * Verifies a ProgressiveJpegDetails message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a ProgressiveJpegDetails message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns ProgressiveJpegDetails
-             */
-            public static fromObject(object: { [k: string]: any }): proto.MediaEntry.ProgressiveJpegDetails;
-
-            /**
-             * Creates a plain object from a ProgressiveJpegDetails message. Also converts values to other types if specified.
-             * @param message ProgressiveJpegDetails
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.MediaEntry.ProgressiveJpegDetails, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this ProgressiveJpegDetails to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
-        }
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MediaNotifyMessage. */
@@ -9483,6 +13686,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MediaNotifyMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MediaRetryNotification. */
@@ -9496,6 +13706,9 @@ export namespace proto {
 
         /** MediaRetryNotification result */
         result?: (proto.MediaRetryNotification.ResultType|null);
+
+        /** MediaRetryNotification messageSecret */
+        messageSecret?: (Uint8Array|null);
     }
 
     /** Represents a MediaRetryNotification. */
@@ -9515,6 +13728,9 @@ export namespace proto {
 
         /** MediaRetryNotification result. */
         public result: proto.MediaRetryNotification.ResultType;
+
+        /** MediaRetryNotification messageSecret. */
+        public messageSecret: Uint8Array;
 
         /**
          * Creates a new MediaRetryNotification instance using the specified properties.
@@ -9585,6 +13801,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MediaRetryNotification
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace MediaRetryNotification {
@@ -9797,20 +14020,56 @@ export namespace proto {
         /** Message eventMessage */
         eventMessage?: (proto.Message.IEventMessage|null);
 
+        /** Message encEventResponseMessage */
+        encEventResponseMessage?: (proto.Message.IEncEventResponseMessage|null);
+
         /** Message commentMessage */
         commentMessage?: (proto.Message.ICommentMessage|null);
 
         /** Message newsletterAdminInviteMessage */
         newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage|null);
 
-        /** Message extendedTextMessageWithParentKey */
-        extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey|null);
-
         /** Message placeholderMessage */
         placeholderMessage?: (proto.Message.IPlaceholderMessage|null);
 
-        /** Message encEventUpdateMessage */
-        encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage|null);
+        /** Message secretEncryptedMessage */
+        secretEncryptedMessage?: (proto.Message.ISecretEncryptedMessage|null);
+
+        /** Message albumMessage */
+        albumMessage?: (proto.Message.IAlbumMessage|null);
+
+        /** Message eventCoverImage */
+        eventCoverImage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message stickerPackMessage */
+        stickerPackMessage?: (proto.Message.IStickerPackMessage|null);
+
+        /** Message statusMentionMessage */
+        statusMentionMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollResultSnapshotMessage */
+        pollResultSnapshotMessage?: (proto.Message.IPollResultSnapshotMessage|null);
+
+        /** Message pollCreationOptionImageMessage */
+        pollCreationOptionImageMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message associatedChildMessage */
+        associatedChildMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message groupStatusMentionMessage */
+        groupStatusMentionMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollCreationMessageV4 */
+        pollCreationMessageV4?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollCreationMessageV5 */
+        pollCreationMessageV5?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message statusAddYours */
+        statusAddYours?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message groupStatusMessage */
+        groupStatusMessage?: (proto.Message.IFutureProofMessage|null);
     }
 
     /** Represents a Message. */
@@ -10011,20 +14270,56 @@ export namespace proto {
         /** Message eventMessage. */
         public eventMessage?: (proto.Message.IEventMessage|null);
 
+        /** Message encEventResponseMessage. */
+        public encEventResponseMessage?: (proto.Message.IEncEventResponseMessage|null);
+
         /** Message commentMessage. */
         public commentMessage?: (proto.Message.ICommentMessage|null);
 
         /** Message newsletterAdminInviteMessage. */
         public newsletterAdminInviteMessage?: (proto.Message.INewsletterAdminInviteMessage|null);
 
-        /** Message extendedTextMessageWithParentKey. */
-        public extendedTextMessageWithParentKey?: (proto.Message.IExtendedTextMessageWithParentKey|null);
-
         /** Message placeholderMessage. */
         public placeholderMessage?: (proto.Message.IPlaceholderMessage|null);
 
-        /** Message encEventUpdateMessage. */
-        public encEventUpdateMessage?: (proto.Message.IEncEventUpdateMessage|null);
+        /** Message secretEncryptedMessage. */
+        public secretEncryptedMessage?: (proto.Message.ISecretEncryptedMessage|null);
+
+        /** Message albumMessage. */
+        public albumMessage?: (proto.Message.IAlbumMessage|null);
+
+        /** Message eventCoverImage. */
+        public eventCoverImage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message stickerPackMessage. */
+        public stickerPackMessage?: (proto.Message.IStickerPackMessage|null);
+
+        /** Message statusMentionMessage. */
+        public statusMentionMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollResultSnapshotMessage. */
+        public pollResultSnapshotMessage?: (proto.Message.IPollResultSnapshotMessage|null);
+
+        /** Message pollCreationOptionImageMessage. */
+        public pollCreationOptionImageMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message associatedChildMessage. */
+        public associatedChildMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message groupStatusMentionMessage. */
+        public groupStatusMentionMessage?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollCreationMessageV4. */
+        public pollCreationMessageV4?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message pollCreationMessageV5. */
+        public pollCreationMessageV5?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message statusAddYours. */
+        public statusAddYours?: (proto.Message.IFutureProofMessage|null);
+
+        /** Message groupStatusMessage. */
+        public groupStatusMessage?: (proto.Message.IFutureProofMessage|null);
 
         /**
          * Creates a new Message instance using the specified properties.
@@ -10095,9 +14390,125 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Message
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace Message {
+
+        /** Properties of an AlbumMessage. */
+        interface IAlbumMessage {
+
+            /** AlbumMessage expectedImageCount */
+            expectedImageCount?: (number|null);
+
+            /** AlbumMessage expectedVideoCount */
+            expectedVideoCount?: (number|null);
+
+            /** AlbumMessage contextInfo */
+            contextInfo?: (proto.IContextInfo|null);
+        }
+
+        /** Represents an AlbumMessage. */
+        class AlbumMessage implements IAlbumMessage {
+
+            /**
+             * Constructs a new AlbumMessage.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.IAlbumMessage);
+
+            /** AlbumMessage expectedImageCount. */
+            public expectedImageCount: number;
+
+            /** AlbumMessage expectedVideoCount. */
+            public expectedVideoCount: number;
+
+            /** AlbumMessage contextInfo. */
+            public contextInfo?: (proto.IContextInfo|null);
+
+            /**
+             * Creates a new AlbumMessage instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns AlbumMessage instance
+             */
+            public static create(properties?: proto.Message.IAlbumMessage): proto.Message.AlbumMessage;
+
+            /**
+             * Encodes the specified AlbumMessage message. Does not implicitly {@link proto.Message.AlbumMessage.verify|verify} messages.
+             * @param message AlbumMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.IAlbumMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified AlbumMessage message, length delimited. Does not implicitly {@link proto.Message.AlbumMessage.verify|verify} messages.
+             * @param message AlbumMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.IAlbumMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes an AlbumMessage message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns AlbumMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.AlbumMessage;
+
+            /**
+             * Decodes an AlbumMessage message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns AlbumMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.AlbumMessage;
+
+            /**
+             * Verifies an AlbumMessage message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates an AlbumMessage message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns AlbumMessage
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.AlbumMessage;
+
+            /**
+             * Creates a plain object from an AlbumMessage message. Also converts values to other types if specified.
+             * @param message AlbumMessage
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.AlbumMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this AlbumMessage to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AlbumMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
 
         /** Properties of an AppStateFatalExceptionNotification. */
         interface IAppStateFatalExceptionNotification {
@@ -10193,6 +14604,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateFatalExceptionNotification
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKey. */
@@ -10289,6 +14707,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyData. */
@@ -10391,6 +14816,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyFingerprint. */
@@ -10493,6 +14925,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyFingerprint
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyId. */
@@ -10583,6 +15022,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyId
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyRequest. */
@@ -10673,6 +15119,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyRequest
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AppStateSyncKeyShare. */
@@ -10763,6 +15216,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AppStateSyncKeyShare
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AudioMessage. */
@@ -10812,6 +15272,9 @@ export namespace proto {
 
             /** AudioMessage viewOnce */
             viewOnce?: (boolean|null);
+
+            /** AudioMessage accessibilityLabel */
+            accessibilityLabel?: (string|null);
         }
 
         /** Represents an AudioMessage. */
@@ -10867,6 +15330,9 @@ export namespace proto {
 
             /** AudioMessage viewOnce. */
             public viewOnce: boolean;
+
+            /** AudioMessage accessibilityLabel. */
+            public accessibilityLabel: string;
 
             /**
              * Creates a new AudioMessage instance using the specified properties.
@@ -10937,6 +15403,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AudioMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a BCallMessage. */
@@ -11045,6 +15518,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BCallMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace BCallMessage {
@@ -11074,6 +15554,9 @@ export namespace proto {
 
             /** BotFeedbackMessage kindPositive */
             kindPositive?: (number|Long|null);
+
+            /** BotFeedbackMessage kindReport */
+            kindReport?: (proto.Message.BotFeedbackMessage.ReportKind|null);
         }
 
         /** Represents a BotFeedbackMessage. */
@@ -11099,6 +15582,9 @@ export namespace proto {
 
             /** BotFeedbackMessage kindPositive. */
             public kindPositive: (number|Long);
+
+            /** BotFeedbackMessage kindReport. */
+            public kindReport: proto.Message.BotFeedbackMessage.ReportKind;
 
             /**
              * Creates a new BotFeedbackMessage instance using the specified properties.
@@ -11169,6 +15655,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BotFeedbackMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace BotFeedbackMessage {
@@ -11203,6 +15696,11 @@ export namespace proto {
             /** BotFeedbackKindMultiplePositive enum. */
             enum BotFeedbackKindMultiplePositive {
                 BOT_FEEDBACK_MULTIPLE_POSITIVE_GENERIC = 1
+            }
+
+            /** ReportKind enum. */
+            enum ReportKind {
+                GENERIC = 0
             }
         }
 
@@ -11351,6 +15849,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ButtonsMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ButtonsMessage {
@@ -11461,6 +15966,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Button
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Button {
@@ -11553,6 +16065,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ButtonText
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a NativeFlowInfo. */
@@ -11649,6 +16168,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for NativeFlowInfo
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Type enum. */
@@ -11780,6 +16306,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ButtonsResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ButtonsResponseMessage {
@@ -11805,6 +16338,12 @@ export namespace proto {
 
             /** Call conversionDelaySeconds */
             conversionDelaySeconds?: (number|null);
+
+            /** Call ctwaSignals */
+            ctwaSignals?: (string|null);
+
+            /** Call ctwaPayload */
+            ctwaPayload?: (Uint8Array|null);
         }
 
         /** Represents a Call. */
@@ -11827,6 +16366,12 @@ export namespace proto {
 
             /** Call conversionDelaySeconds. */
             public conversionDelaySeconds: number;
+
+            /** Call ctwaSignals. */
+            public ctwaSignals: string;
+
+            /** Call ctwaPayload. */
+            public ctwaPayload: Uint8Array;
 
             /**
              * Creates a new Call instance using the specified properties.
@@ -11897,6 +16442,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Call
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CallLogMessage. */
@@ -12011,6 +16563,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallLogMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace CallLogMessage {
@@ -12121,6 +16680,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CallParticipant
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** CallType enum. */
@@ -12219,6 +16785,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CancelPaymentRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a Chat. */
@@ -12315,6 +16888,138 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Chat
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a CloudAPIThreadControlNotification. */
+        interface ICloudAPIThreadControlNotification {
+
+            /** CloudAPIThreadControlNotification status */
+            status?: (proto.Message.CloudAPIThreadControlNotification.CloudAPIThreadControl|null);
+
+            /** CloudAPIThreadControlNotification senderNotificationTimestampMs */
+            senderNotificationTimestampMs?: (number|Long|null);
+
+            /** CloudAPIThreadControlNotification consumerLid */
+            consumerLid?: (string|null);
+
+            /** CloudAPIThreadControlNotification consumerPhoneNumber */
+            consumerPhoneNumber?: (string|null);
+        }
+
+        /** Represents a CloudAPIThreadControlNotification. */
+        class CloudAPIThreadControlNotification implements ICloudAPIThreadControlNotification {
+
+            /**
+             * Constructs a new CloudAPIThreadControlNotification.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.ICloudAPIThreadControlNotification);
+
+            /** CloudAPIThreadControlNotification status. */
+            public status: proto.Message.CloudAPIThreadControlNotification.CloudAPIThreadControl;
+
+            /** CloudAPIThreadControlNotification senderNotificationTimestampMs. */
+            public senderNotificationTimestampMs: (number|Long);
+
+            /** CloudAPIThreadControlNotification consumerLid. */
+            public consumerLid: string;
+
+            /** CloudAPIThreadControlNotification consumerPhoneNumber. */
+            public consumerPhoneNumber: string;
+
+            /**
+             * Creates a new CloudAPIThreadControlNotification instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns CloudAPIThreadControlNotification instance
+             */
+            public static create(properties?: proto.Message.ICloudAPIThreadControlNotification): proto.Message.CloudAPIThreadControlNotification;
+
+            /**
+             * Encodes the specified CloudAPIThreadControlNotification message. Does not implicitly {@link proto.Message.CloudAPIThreadControlNotification.verify|verify} messages.
+             * @param message CloudAPIThreadControlNotification message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.ICloudAPIThreadControlNotification, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified CloudAPIThreadControlNotification message, length delimited. Does not implicitly {@link proto.Message.CloudAPIThreadControlNotification.verify|verify} messages.
+             * @param message CloudAPIThreadControlNotification message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.ICloudAPIThreadControlNotification, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a CloudAPIThreadControlNotification message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns CloudAPIThreadControlNotification
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.CloudAPIThreadControlNotification;
+
+            /**
+             * Decodes a CloudAPIThreadControlNotification message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns CloudAPIThreadControlNotification
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.CloudAPIThreadControlNotification;
+
+            /**
+             * Verifies a CloudAPIThreadControlNotification message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a CloudAPIThreadControlNotification message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns CloudAPIThreadControlNotification
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.CloudAPIThreadControlNotification;
+
+            /**
+             * Creates a plain object from a CloudAPIThreadControlNotification message. Also converts values to other types if specified.
+             * @param message CloudAPIThreadControlNotification
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.CloudAPIThreadControlNotification, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this CloudAPIThreadControlNotification to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CloudAPIThreadControlNotification
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace CloudAPIThreadControlNotification {
+
+            /** CloudAPIThreadControl enum. */
+            enum CloudAPIThreadControl {
+                UNKNOWN = 0,
+                CONTROL_PASSED = 1,
+                CONTROL_TAKEN = 2
+            }
         }
 
         /** Properties of a CommentMessage. */
@@ -12411,6 +17116,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CommentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactMessage. */
@@ -12513,6 +17225,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactsArrayMessage. */
@@ -12615,6 +17334,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactsArrayMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeclinePaymentRequestMessage. */
@@ -12705,6 +17431,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeclinePaymentRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeviceSentMessage. */
@@ -12807,6 +17540,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeviceSentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DocumentMessage. */
@@ -12871,6 +17611,9 @@ export namespace proto {
 
             /** DocumentMessage caption */
             caption?: (string|null);
+
+            /** DocumentMessage accessibilityLabel */
+            accessibilityLabel?: (string|null);
         }
 
         /** Represents a DocumentMessage. */
@@ -12942,6 +17685,9 @@ export namespace proto {
             /** DocumentMessage caption. */
             public caption: string;
 
+            /** DocumentMessage accessibilityLabel. */
+            public accessibilityLabel: string;
+
             /**
              * Creates a new DocumentMessage instance using the specified properties.
              * @param [properties] Properties to set
@@ -13011,6 +17757,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DocumentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EncCommentMessage. */
@@ -13113,108 +17866,122 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EncCommentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
-        /** Properties of an EncEventUpdateMessage. */
-        interface IEncEventUpdateMessage {
+        /** Properties of an EncEventResponseMessage. */
+        interface IEncEventResponseMessage {
 
-            /** EncEventUpdateMessage eventCreationMessageKey */
+            /** EncEventResponseMessage eventCreationMessageKey */
             eventCreationMessageKey?: (proto.IMessageKey|null);
 
-            /** EncEventUpdateMessage encPayload */
+            /** EncEventResponseMessage encPayload */
             encPayload?: (Uint8Array|null);
 
-            /** EncEventUpdateMessage encIv */
+            /** EncEventResponseMessage encIv */
             encIv?: (Uint8Array|null);
         }
 
-        /** Represents an EncEventUpdateMessage. */
-        class EncEventUpdateMessage implements IEncEventUpdateMessage {
+        /** Represents an EncEventResponseMessage. */
+        class EncEventResponseMessage implements IEncEventResponseMessage {
 
             /**
-             * Constructs a new EncEventUpdateMessage.
+             * Constructs a new EncEventResponseMessage.
              * @param [properties] Properties to set
              */
-            constructor(properties?: proto.Message.IEncEventUpdateMessage);
+            constructor(properties?: proto.Message.IEncEventResponseMessage);
 
-            /** EncEventUpdateMessage eventCreationMessageKey. */
+            /** EncEventResponseMessage eventCreationMessageKey. */
             public eventCreationMessageKey?: (proto.IMessageKey|null);
 
-            /** EncEventUpdateMessage encPayload. */
+            /** EncEventResponseMessage encPayload. */
             public encPayload: Uint8Array;
 
-            /** EncEventUpdateMessage encIv. */
+            /** EncEventResponseMessage encIv. */
             public encIv: Uint8Array;
 
             /**
-             * Creates a new EncEventUpdateMessage instance using the specified properties.
+             * Creates a new EncEventResponseMessage instance using the specified properties.
              * @param [properties] Properties to set
-             * @returns EncEventUpdateMessage instance
+             * @returns EncEventResponseMessage instance
              */
-            public static create(properties?: proto.Message.IEncEventUpdateMessage): proto.Message.EncEventUpdateMessage;
+            public static create(properties?: proto.Message.IEncEventResponseMessage): proto.Message.EncEventResponseMessage;
 
             /**
-             * Encodes the specified EncEventUpdateMessage message. Does not implicitly {@link proto.Message.EncEventUpdateMessage.verify|verify} messages.
-             * @param message EncEventUpdateMessage message or plain object to encode
+             * Encodes the specified EncEventResponseMessage message. Does not implicitly {@link proto.Message.EncEventResponseMessage.verify|verify} messages.
+             * @param message EncEventResponseMessage message or plain object to encode
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encode(message: proto.Message.IEncEventUpdateMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+            public static encode(message: proto.Message.IEncEventResponseMessage, writer?: $protobuf.Writer): $protobuf.Writer;
 
             /**
-             * Encodes the specified EncEventUpdateMessage message, length delimited. Does not implicitly {@link proto.Message.EncEventUpdateMessage.verify|verify} messages.
-             * @param message EncEventUpdateMessage message or plain object to encode
+             * Encodes the specified EncEventResponseMessage message, length delimited. Does not implicitly {@link proto.Message.EncEventResponseMessage.verify|verify} messages.
+             * @param message EncEventResponseMessage message or plain object to encode
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encodeDelimited(message: proto.Message.IEncEventUpdateMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+            public static encodeDelimited(message: proto.Message.IEncEventResponseMessage, writer?: $protobuf.Writer): $protobuf.Writer;
 
             /**
-             * Decodes an EncEventUpdateMessage message from the specified reader or buffer.
+             * Decodes an EncEventResponseMessage message from the specified reader or buffer.
              * @param reader Reader or buffer to decode from
              * @param [length] Message length if known beforehand
-             * @returns EncEventUpdateMessage
+             * @returns EncEventResponseMessage
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EncEventUpdateMessage;
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EncEventResponseMessage;
 
             /**
-             * Decodes an EncEventUpdateMessage message from the specified reader or buffer, length delimited.
+             * Decodes an EncEventResponseMessage message from the specified reader or buffer, length delimited.
              * @param reader Reader or buffer to decode from
-             * @returns EncEventUpdateMessage
+             * @returns EncEventResponseMessage
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EncEventUpdateMessage;
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EncEventResponseMessage;
 
             /**
-             * Verifies an EncEventUpdateMessage message.
+             * Verifies an EncEventResponseMessage message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
             public static verify(message: { [k: string]: any }): (string|null);
 
             /**
-             * Creates an EncEventUpdateMessage message from a plain object. Also converts values to their respective internal types.
+             * Creates an EncEventResponseMessage message from a plain object. Also converts values to their respective internal types.
              * @param object Plain object
-             * @returns EncEventUpdateMessage
+             * @returns EncEventResponseMessage
              */
-            public static fromObject(object: { [k: string]: any }): proto.Message.EncEventUpdateMessage;
+            public static fromObject(object: { [k: string]: any }): proto.Message.EncEventResponseMessage;
 
             /**
-             * Creates a plain object from an EncEventUpdateMessage message. Also converts values to other types if specified.
-             * @param message EncEventUpdateMessage
+             * Creates a plain object from an EncEventResponseMessage message. Also converts values to other types if specified.
+             * @param message EncEventResponseMessage
              * @param [options] Conversion options
              * @returns Plain object
              */
-            public static toObject(message: proto.Message.EncEventUpdateMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+            public static toObject(message: proto.Message.EncEventResponseMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
             /**
-             * Converts this EncEventUpdateMessage to JSON.
+             * Converts this EncEventResponseMessage to JSON.
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EncEventResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EncReactionMessage. */
@@ -13317,102 +18084,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
-        }
-
-        /** Properties of an EventEditMessage. */
-        interface IEventEditMessage {
-
-            /** EventEditMessage eventEditMessage */
-            eventEditMessage?: (proto.Message.IEventMessage|null);
-
-            /** EventEditMessage editTimestampMs */
-            editTimestampMs?: (number|Long|null);
-        }
-
-        /** Represents an EventEditMessage. */
-        class EventEditMessage implements IEventEditMessage {
 
             /**
-             * Constructs a new EventEditMessage.
-             * @param [properties] Properties to set
+             * Gets the default type url for EncReactionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
              */
-            constructor(properties?: proto.Message.IEventEditMessage);
-
-            /** EventEditMessage eventEditMessage. */
-            public eventEditMessage?: (proto.Message.IEventMessage|null);
-
-            /** EventEditMessage editTimestampMs. */
-            public editTimestampMs: (number|Long);
-
-            /**
-             * Creates a new EventEditMessage instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns EventEditMessage instance
-             */
-            public static create(properties?: proto.Message.IEventEditMessage): proto.Message.EventEditMessage;
-
-            /**
-             * Encodes the specified EventEditMessage message. Does not implicitly {@link proto.Message.EventEditMessage.verify|verify} messages.
-             * @param message EventEditMessage message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.Message.IEventEditMessage, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified EventEditMessage message, length delimited. Does not implicitly {@link proto.Message.EventEditMessage.verify|verify} messages.
-             * @param message EventEditMessage message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.Message.IEventEditMessage, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes an EventEditMessage message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns EventEditMessage
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventEditMessage;
-
-            /**
-             * Decodes an EventEditMessage message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns EventEditMessage
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventEditMessage;
-
-            /**
-             * Verifies an EventEditMessage message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates an EventEditMessage message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns EventEditMessage
-             */
-            public static fromObject(object: { [k: string]: any }): proto.Message.EventEditMessage;
-
-            /**
-             * Creates a plain object from an EventEditMessage message. Also converts values to other types if specified.
-             * @param message EventEditMessage
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.Message.EventEditMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this EventEditMessage to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EventMessage. */
@@ -13438,6 +18116,12 @@ export namespace proto {
 
             /** EventMessage startTime */
             startTime?: (number|Long|null);
+
+            /** EventMessage endTime */
+            endTime?: (number|Long|null);
+
+            /** EventMessage extraGuestsAllowed */
+            extraGuestsAllowed?: (boolean|null);
         }
 
         /** Represents an EventMessage. */
@@ -13469,6 +18153,12 @@ export namespace proto {
 
             /** EventMessage startTime. */
             public startTime: (number|Long);
+
+            /** EventMessage endTime. */
+            public endTime: (number|Long);
+
+            /** EventMessage extraGuestsAllowed. */
+            public extraGuestsAllowed: boolean;
 
             /**
              * Creates a new EventMessage instance using the specified properties.
@@ -13539,6 +18229,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EventMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an EventResponseMessage. */
@@ -13549,6 +18246,9 @@ export namespace proto {
 
             /** EventResponseMessage timestampMs */
             timestampMs?: (number|Long|null);
+
+            /** EventResponseMessage extraGuestCount */
+            extraGuestCount?: (number|null);
         }
 
         /** Represents an EventResponseMessage. */
@@ -13565,6 +18265,9 @@ export namespace proto {
 
             /** EventResponseMessage timestampMs. */
             public timestampMs: (number|Long);
+
+            /** EventResponseMessage extraGuestCount. */
+            public extraGuestCount: number;
 
             /**
              * Creates a new EventResponseMessage instance using the specified properties.
@@ -13635,6 +18338,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EventResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace EventResponseMessage {
@@ -13643,104 +18353,9 @@ export namespace proto {
             enum EventResponseType {
                 UNKNOWN = 0,
                 GOING = 1,
-                NOT_GOING = 2
+                NOT_GOING = 2,
+                MAYBE = 3
             }
-        }
-
-        /** Properties of an EventUpdateMessage. */
-        interface IEventUpdateMessage {
-
-            /** EventUpdateMessage response */
-            response?: (proto.Message.IEventResponseMessage|null);
-
-            /** EventUpdateMessage edit */
-            edit?: (proto.Message.IEventEditMessage|null);
-        }
-
-        /** Represents an EventUpdateMessage. */
-        class EventUpdateMessage implements IEventUpdateMessage {
-
-            /**
-             * Constructs a new EventUpdateMessage.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.Message.IEventUpdateMessage);
-
-            /** EventUpdateMessage response. */
-            public response?: (proto.Message.IEventResponseMessage|null);
-
-            /** EventUpdateMessage edit. */
-            public edit?: (proto.Message.IEventEditMessage|null);
-
-            /**
-             * Creates a new EventUpdateMessage instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns EventUpdateMessage instance
-             */
-            public static create(properties?: proto.Message.IEventUpdateMessage): proto.Message.EventUpdateMessage;
-
-            /**
-             * Encodes the specified EventUpdateMessage message. Does not implicitly {@link proto.Message.EventUpdateMessage.verify|verify} messages.
-             * @param message EventUpdateMessage message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.Message.IEventUpdateMessage, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified EventUpdateMessage message, length delimited. Does not implicitly {@link proto.Message.EventUpdateMessage.verify|verify} messages.
-             * @param message EventUpdateMessage message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.Message.IEventUpdateMessage, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes an EventUpdateMessage message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns EventUpdateMessage
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.EventUpdateMessage;
-
-            /**
-             * Decodes an EventUpdateMessage message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns EventUpdateMessage
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.EventUpdateMessage;
-
-            /**
-             * Verifies an EventUpdateMessage message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates an EventUpdateMessage message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns EventUpdateMessage
-             */
-            public static fromObject(object: { [k: string]: any }): proto.Message.EventUpdateMessage;
-
-            /**
-             * Creates a plain object from an EventUpdateMessage message. Also converts values to other types if specified.
-             * @param message EventUpdateMessage
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.Message.EventUpdateMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this EventUpdateMessage to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
         }
 
         /** Properties of an ExtendedTextMessage. */
@@ -13817,6 +18432,15 @@ export namespace proto {
 
             /** ExtendedTextMessage viewOnce */
             viewOnce?: (boolean|null);
+
+            /** ExtendedTextMessage videoHeight */
+            videoHeight?: (number|null);
+
+            /** ExtendedTextMessage videoWidth */
+            videoWidth?: (number|null);
+
+            /** ExtendedTextMessage faviconMMSMetadata */
+            faviconMMSMetadata?: (proto.Message.IMMSThumbnailMetadata|null);
         }
 
         /** Represents an ExtendedTextMessage. */
@@ -13900,6 +18524,15 @@ export namespace proto {
             /** ExtendedTextMessage viewOnce. */
             public viewOnce: boolean;
 
+            /** ExtendedTextMessage videoHeight. */
+            public videoHeight: number;
+
+            /** ExtendedTextMessage videoWidth. */
+            public videoWidth: number;
+
+            /** ExtendedTextMessage faviconMMSMetadata. */
+            public faviconMMSMetadata?: (proto.Message.IMMSThumbnailMetadata|null);
+
             /**
              * Creates a new ExtendedTextMessage instance using the specified properties.
              * @param [properties] Properties to set
@@ -13969,6 +18602,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExtendedTextMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ExtendedTextMessage {
@@ -13998,104 +18638,107 @@ export namespace proto {
                 NONE = 0,
                 VIDEO = 1,
                 PLACEHOLDER = 4,
-                IMAGE = 5
+                IMAGE = 5,
+                PAYMENT_LINKS = 6,
+                PROFILE = 7
             }
         }
 
-        /** Properties of an ExtendedTextMessageWithParentKey. */
-        interface IExtendedTextMessageWithParentKey {
+        /** Properties of a FullHistorySyncOnDemandRequestMetadata. */
+        interface IFullHistorySyncOnDemandRequestMetadata {
 
-            /** ExtendedTextMessageWithParentKey key */
-            key?: (proto.IMessageKey|null);
-
-            /** ExtendedTextMessageWithParentKey extendedTextMessage */
-            extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+            /** FullHistorySyncOnDemandRequestMetadata requestId */
+            requestId?: (string|null);
         }
 
-        /** Represents an ExtendedTextMessageWithParentKey. */
-        class ExtendedTextMessageWithParentKey implements IExtendedTextMessageWithParentKey {
+        /** Represents a FullHistorySyncOnDemandRequestMetadata. */
+        class FullHistorySyncOnDemandRequestMetadata implements IFullHistorySyncOnDemandRequestMetadata {
 
             /**
-             * Constructs a new ExtendedTextMessageWithParentKey.
+             * Constructs a new FullHistorySyncOnDemandRequestMetadata.
              * @param [properties] Properties to set
              */
-            constructor(properties?: proto.Message.IExtendedTextMessageWithParentKey);
+            constructor(properties?: proto.Message.IFullHistorySyncOnDemandRequestMetadata);
 
-            /** ExtendedTextMessageWithParentKey key. */
-            public key?: (proto.IMessageKey|null);
-
-            /** ExtendedTextMessageWithParentKey extendedTextMessage. */
-            public extendedTextMessage?: (proto.Message.IExtendedTextMessage|null);
+            /** FullHistorySyncOnDemandRequestMetadata requestId. */
+            public requestId: string;
 
             /**
-             * Creates a new ExtendedTextMessageWithParentKey instance using the specified properties.
+             * Creates a new FullHistorySyncOnDemandRequestMetadata instance using the specified properties.
              * @param [properties] Properties to set
-             * @returns ExtendedTextMessageWithParentKey instance
+             * @returns FullHistorySyncOnDemandRequestMetadata instance
              */
-            public static create(properties?: proto.Message.IExtendedTextMessageWithParentKey): proto.Message.ExtendedTextMessageWithParentKey;
+            public static create(properties?: proto.Message.IFullHistorySyncOnDemandRequestMetadata): proto.Message.FullHistorySyncOnDemandRequestMetadata;
 
             /**
-             * Encodes the specified ExtendedTextMessageWithParentKey message. Does not implicitly {@link proto.Message.ExtendedTextMessageWithParentKey.verify|verify} messages.
-             * @param message ExtendedTextMessageWithParentKey message or plain object to encode
+             * Encodes the specified FullHistorySyncOnDemandRequestMetadata message. Does not implicitly {@link proto.Message.FullHistorySyncOnDemandRequestMetadata.verify|verify} messages.
+             * @param message FullHistorySyncOnDemandRequestMetadata message or plain object to encode
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encode(message: proto.Message.IExtendedTextMessageWithParentKey, writer?: $protobuf.Writer): $protobuf.Writer;
+            public static encode(message: proto.Message.IFullHistorySyncOnDemandRequestMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
 
             /**
-             * Encodes the specified ExtendedTextMessageWithParentKey message, length delimited. Does not implicitly {@link proto.Message.ExtendedTextMessageWithParentKey.verify|verify} messages.
-             * @param message ExtendedTextMessageWithParentKey message or plain object to encode
+             * Encodes the specified FullHistorySyncOnDemandRequestMetadata message, length delimited. Does not implicitly {@link proto.Message.FullHistorySyncOnDemandRequestMetadata.verify|verify} messages.
+             * @param message FullHistorySyncOnDemandRequestMetadata message or plain object to encode
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encodeDelimited(message: proto.Message.IExtendedTextMessageWithParentKey, writer?: $protobuf.Writer): $protobuf.Writer;
+            public static encodeDelimited(message: proto.Message.IFullHistorySyncOnDemandRequestMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
 
             /**
-             * Decodes an ExtendedTextMessageWithParentKey message from the specified reader or buffer.
+             * Decodes a FullHistorySyncOnDemandRequestMetadata message from the specified reader or buffer.
              * @param reader Reader or buffer to decode from
              * @param [length] Message length if known beforehand
-             * @returns ExtendedTextMessageWithParentKey
+             * @returns FullHistorySyncOnDemandRequestMetadata
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.ExtendedTextMessageWithParentKey;
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.FullHistorySyncOnDemandRequestMetadata;
 
             /**
-             * Decodes an ExtendedTextMessageWithParentKey message from the specified reader or buffer, length delimited.
+             * Decodes a FullHistorySyncOnDemandRequestMetadata message from the specified reader or buffer, length delimited.
              * @param reader Reader or buffer to decode from
-             * @returns ExtendedTextMessageWithParentKey
+             * @returns FullHistorySyncOnDemandRequestMetadata
              * @throws {Error} If the payload is not a reader or valid buffer
              * @throws {$protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.ExtendedTextMessageWithParentKey;
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.FullHistorySyncOnDemandRequestMetadata;
 
             /**
-             * Verifies an ExtendedTextMessageWithParentKey message.
+             * Verifies a FullHistorySyncOnDemandRequestMetadata message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
             public static verify(message: { [k: string]: any }): (string|null);
 
             /**
-             * Creates an ExtendedTextMessageWithParentKey message from a plain object. Also converts values to their respective internal types.
+             * Creates a FullHistorySyncOnDemandRequestMetadata message from a plain object. Also converts values to their respective internal types.
              * @param object Plain object
-             * @returns ExtendedTextMessageWithParentKey
+             * @returns FullHistorySyncOnDemandRequestMetadata
              */
-            public static fromObject(object: { [k: string]: any }): proto.Message.ExtendedTextMessageWithParentKey;
+            public static fromObject(object: { [k: string]: any }): proto.Message.FullHistorySyncOnDemandRequestMetadata;
 
             /**
-             * Creates a plain object from an ExtendedTextMessageWithParentKey message. Also converts values to other types if specified.
-             * @param message ExtendedTextMessageWithParentKey
+             * Creates a plain object from a FullHistorySyncOnDemandRequestMetadata message. Also converts values to other types if specified.
+             * @param message FullHistorySyncOnDemandRequestMetadata
              * @param [options] Conversion options
              * @returns Plain object
              */
-            public static toObject(message: proto.Message.ExtendedTextMessageWithParentKey, options?: $protobuf.IConversionOptions): { [k: string]: any };
+            public static toObject(message: proto.Message.FullHistorySyncOnDemandRequestMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
             /**
-             * Converts this ExtendedTextMessageWithParentKey to JSON.
+             * Converts this FullHistorySyncOnDemandRequestMetadata to JSON.
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FullHistorySyncOnDemandRequestMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a FutureProofMessage. */
@@ -14186,6 +18829,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FutureProofMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a GroupInviteMessage. */
@@ -14318,6 +18968,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for GroupInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace GroupInviteMessage {
@@ -14465,6 +19122,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HighlyStructuredMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HighlyStructuredMessage {
@@ -14572,6 +19236,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HSMLocalizableParameter
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace HSMLocalizableParameter {
@@ -14670,6 +19341,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for HSMCurrency
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a HSMDateTime. */
@@ -14769,6 +19447,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for HSMDateTime
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace HSMDateTime {
@@ -14897,6 +19582,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for HSMDateTimeComponent
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
 
                     namespace HSMDateTimeComponent {
@@ -15007,6 +19699,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for HSMDateTimeUnixEpoch
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
             }
@@ -15050,6 +19749,12 @@ export namespace proto {
 
             /** HistorySyncNotification peerDataRequestSessionId */
             peerDataRequestSessionId?: (string|null);
+
+            /** HistorySyncNotification fullHistorySyncOnDemandRequestMetadata */
+            fullHistorySyncOnDemandRequestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+            /** HistorySyncNotification encHandle */
+            encHandle?: (string|null);
         }
 
         /** Represents a HistorySyncNotification. */
@@ -15096,6 +19801,12 @@ export namespace proto {
 
             /** HistorySyncNotification peerDataRequestSessionId. */
             public peerDataRequestSessionId: string;
+
+            /** HistorySyncNotification fullHistorySyncOnDemandRequestMetadata. */
+            public fullHistorySyncOnDemandRequestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+            /** HistorySyncNotification encHandle. */
+            public encHandle: string;
 
             /**
              * Creates a new HistorySyncNotification instance using the specified properties.
@@ -15166,6 +19877,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for HistorySyncNotification
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace HistorySyncNotification {
@@ -15178,7 +19896,8 @@ export namespace proto {
                 RECENT = 3,
                 PUSH_NAME = 4,
                 NON_BLOCKING_DATA = 5,
-                ON_DEMAND = 6
+                ON_DEMAND = 6,
+                NO_HISTORY = 7
             }
         }
 
@@ -15265,6 +19984,12 @@ export namespace proto {
 
             /** ImageMessage annotations */
             annotations?: (proto.IInteractiveAnnotation[]|null);
+
+            /** ImageMessage imageSourceType */
+            imageSourceType?: (proto.Message.ImageMessage.ImageSourceType|null);
+
+            /** ImageMessage accessibilityLabel */
+            accessibilityLabel?: (string|null);
         }
 
         /** Represents an ImageMessage. */
@@ -15357,6 +20082,12 @@ export namespace proto {
             /** ImageMessage annotations. */
             public annotations: proto.IInteractiveAnnotation[];
 
+            /** ImageMessage imageSourceType. */
+            public imageSourceType: proto.Message.ImageMessage.ImageSourceType;
+
+            /** ImageMessage accessibilityLabel. */
+            public accessibilityLabel: string;
+
             /**
              * Creates a new ImageMessage instance using the specified properties.
              * @param [properties] Properties to set
@@ -15426,6 +20157,23 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ImageMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace ImageMessage {
+
+            /** ImageSourceType enum. */
+            enum ImageSourceType {
+                USER_IMAGE = 0,
+                AI_GENERATED = 1,
+                AI_MODIFIED = 2
+            }
         }
 
         /** Properties of an InitialSecurityNotificationSettingSync. */
@@ -15516,6 +20264,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InitialSecurityNotificationSettingSync
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an InteractiveMessage. */
@@ -15532,6 +20287,9 @@ export namespace proto {
 
             /** InteractiveMessage contextInfo */
             contextInfo?: (proto.IContextInfo|null);
+
+            /** InteractiveMessage urlTrackingMap */
+            urlTrackingMap?: (proto.IUrlTrackingMap|null);
 
             /** InteractiveMessage shopStorefrontMessage */
             shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage|null);
@@ -15566,6 +20324,9 @@ export namespace proto {
 
             /** InteractiveMessage contextInfo. */
             public contextInfo?: (proto.IContextInfo|null);
+
+            /** InteractiveMessage urlTrackingMap. */
+            public urlTrackingMap?: (proto.IUrlTrackingMap|null);
 
             /** InteractiveMessage shopStorefrontMessage. */
             public shopStorefrontMessage?: (proto.Message.InteractiveMessage.IShopMessage|null);
@@ -15651,6 +20412,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteractiveMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InteractiveMessage {
@@ -15743,6 +20511,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Body
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CarouselMessage. */
@@ -15839,6 +20614,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CarouselMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CollectionMessage. */
@@ -15941,6 +20723,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CollectionMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Footer. */
@@ -16031,6 +20820,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Footer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Header. */
@@ -16059,6 +20855,9 @@ export namespace proto {
 
                 /** Header locationMessage */
                 locationMessage?: (proto.Message.ILocationMessage|null);
+
+                /** Header productMessage */
+                productMessage?: (proto.Message.IProductMessage|null);
             }
 
             /** Represents a Header. */
@@ -16094,8 +20893,11 @@ export namespace proto {
                 /** Header locationMessage. */
                 public locationMessage?: (proto.Message.ILocationMessage|null);
 
+                /** Header productMessage. */
+                public productMessage?: (proto.Message.IProductMessage|null);
+
                 /** Header media. */
-                public media?: ("documentMessage"|"imageMessage"|"jpegThumbnail"|"videoMessage"|"locationMessage");
+                public media?: ("documentMessage"|"imageMessage"|"jpegThumbnail"|"videoMessage"|"locationMessage"|"productMessage");
 
                 /**
                  * Creates a new Header instance using the specified properties.
@@ -16166,6 +20968,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Header
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NativeFlowMessage. */
@@ -16268,6 +21077,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NativeFlowMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace NativeFlowMessage {
@@ -16366,6 +21182,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for NativeFlowButton
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -16469,6 +21292,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ShopMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace ShopMessage {
@@ -16586,6 +21416,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InteractiveResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InteractiveResponseMessage {
@@ -16684,6 +21521,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Body
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Body {
@@ -16795,6 +21639,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NativeFlowResponseMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -16940,6 +21791,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for InvoiceMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace InvoiceMessage {
@@ -17051,6 +21909,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for KeepInChatMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ListMessage. */
@@ -17183,6 +22048,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ListMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ListMessage {
@@ -17282,6 +22154,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Product
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductListHeaderImage. */
@@ -17378,6 +22257,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductListHeaderImage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductListInfo. */
@@ -17480,6 +22366,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductListInfo
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductSection. */
@@ -17576,6 +22469,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductSection
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Row. */
@@ -17678,6 +22578,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Row
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Section. */
@@ -17774,6 +22681,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Section
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -17889,6 +22803,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ListResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ListResponseMessage {
@@ -17987,6 +22908,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SingleSelectReply
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -18132,6 +23060,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LiveLocationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LocationMessage. */
@@ -18288,6 +23223,146 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LocationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a MMSThumbnailMetadata. */
+        interface IMMSThumbnailMetadata {
+
+            /** MMSThumbnailMetadata thumbnailDirectPath */
+            thumbnailDirectPath?: (string|null);
+
+            /** MMSThumbnailMetadata thumbnailSha256 */
+            thumbnailSha256?: (Uint8Array|null);
+
+            /** MMSThumbnailMetadata thumbnailEncSha256 */
+            thumbnailEncSha256?: (Uint8Array|null);
+
+            /** MMSThumbnailMetadata mediaKey */
+            mediaKey?: (Uint8Array|null);
+
+            /** MMSThumbnailMetadata mediaKeyTimestamp */
+            mediaKeyTimestamp?: (number|Long|null);
+
+            /** MMSThumbnailMetadata thumbnailHeight */
+            thumbnailHeight?: (number|null);
+
+            /** MMSThumbnailMetadata thumbnailWidth */
+            thumbnailWidth?: (number|null);
+        }
+
+        /** Represents a MMSThumbnailMetadata. */
+        class MMSThumbnailMetadata implements IMMSThumbnailMetadata {
+
+            /**
+             * Constructs a new MMSThumbnailMetadata.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.IMMSThumbnailMetadata);
+
+            /** MMSThumbnailMetadata thumbnailDirectPath. */
+            public thumbnailDirectPath: string;
+
+            /** MMSThumbnailMetadata thumbnailSha256. */
+            public thumbnailSha256: Uint8Array;
+
+            /** MMSThumbnailMetadata thumbnailEncSha256. */
+            public thumbnailEncSha256: Uint8Array;
+
+            /** MMSThumbnailMetadata mediaKey. */
+            public mediaKey: Uint8Array;
+
+            /** MMSThumbnailMetadata mediaKeyTimestamp. */
+            public mediaKeyTimestamp: (number|Long);
+
+            /** MMSThumbnailMetadata thumbnailHeight. */
+            public thumbnailHeight: number;
+
+            /** MMSThumbnailMetadata thumbnailWidth. */
+            public thumbnailWidth: number;
+
+            /**
+             * Creates a new MMSThumbnailMetadata instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns MMSThumbnailMetadata instance
+             */
+            public static create(properties?: proto.Message.IMMSThumbnailMetadata): proto.Message.MMSThumbnailMetadata;
+
+            /**
+             * Encodes the specified MMSThumbnailMetadata message. Does not implicitly {@link proto.Message.MMSThumbnailMetadata.verify|verify} messages.
+             * @param message MMSThumbnailMetadata message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.IMMSThumbnailMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified MMSThumbnailMetadata message, length delimited. Does not implicitly {@link proto.Message.MMSThumbnailMetadata.verify|verify} messages.
+             * @param message MMSThumbnailMetadata message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.IMMSThumbnailMetadata, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a MMSThumbnailMetadata message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns MMSThumbnailMetadata
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.MMSThumbnailMetadata;
+
+            /**
+             * Decodes a MMSThumbnailMetadata message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns MMSThumbnailMetadata
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.MMSThumbnailMetadata;
+
+            /**
+             * Verifies a MMSThumbnailMetadata message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a MMSThumbnailMetadata message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns MMSThumbnailMetadata
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.MMSThumbnailMetadata;
+
+            /**
+             * Creates a plain object from a MMSThumbnailMetadata message. Also converts values to other types if specified.
+             * @param message MMSThumbnailMetadata
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.MMSThumbnailMetadata, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this MMSThumbnailMetadata to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MMSThumbnailMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MessageHistoryBundle. */
@@ -18420,6 +23495,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MessageHistoryBundle
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a NewsletterAdminInviteMessage. */
@@ -18439,6 +23521,9 @@ export namespace proto {
 
             /** NewsletterAdminInviteMessage inviteExpiration */
             inviteExpiration?: (number|Long|null);
+
+            /** NewsletterAdminInviteMessage contextInfo */
+            contextInfo?: (proto.IContextInfo|null);
         }
 
         /** Represents a NewsletterAdminInviteMessage. */
@@ -18464,6 +23549,9 @@ export namespace proto {
 
             /** NewsletterAdminInviteMessage inviteExpiration. */
             public inviteExpiration: (number|Long);
+
+            /** NewsletterAdminInviteMessage contextInfo. */
+            public contextInfo?: (proto.IContextInfo|null);
 
             /**
              * Creates a new NewsletterAdminInviteMessage instance using the specified properties.
@@ -18534,6 +23622,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NewsletterAdminInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an OrderMessage. */
@@ -18702,6 +23797,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for OrderMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace OrderMessage {
@@ -18813,6 +23915,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PaymentInviteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PaymentInviteMessage {
@@ -18843,6 +23952,9 @@ export namespace proto {
 
             /** PeerDataOperationRequestMessage placeholderMessageResendRequest */
             placeholderMessageResendRequest?: (proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest[]|null);
+
+            /** PeerDataOperationRequestMessage fullHistorySyncOnDemandRequest */
+            fullHistorySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest|null);
         }
 
         /** Represents a PeerDataOperationRequestMessage. */
@@ -18868,6 +23980,9 @@ export namespace proto {
 
             /** PeerDataOperationRequestMessage placeholderMessageResendRequest. */
             public placeholderMessageResendRequest: proto.Message.PeerDataOperationRequestMessage.IPlaceholderMessageResendRequest[];
+
+            /** PeerDataOperationRequestMessage fullHistorySyncOnDemandRequest. */
+            public fullHistorySyncOnDemandRequest?: (proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest|null);
 
             /**
              * Creates a new PeerDataOperationRequestMessage instance using the specified properties.
@@ -18938,9 +24053,119 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PeerDataOperationRequestMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PeerDataOperationRequestMessage {
+
+            /** Properties of a FullHistorySyncOnDemandRequest. */
+            interface IFullHistorySyncOnDemandRequest {
+
+                /** FullHistorySyncOnDemandRequest requestMetadata */
+                requestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+                /** FullHistorySyncOnDemandRequest historySyncConfig */
+                historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig|null);
+            }
+
+            /** Represents a FullHistorySyncOnDemandRequest. */
+            class FullHistorySyncOnDemandRequest implements IFullHistorySyncOnDemandRequest {
+
+                /**
+                 * Constructs a new FullHistorySyncOnDemandRequest.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest);
+
+                /** FullHistorySyncOnDemandRequest requestMetadata. */
+                public requestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+                /** FullHistorySyncOnDemandRequest historySyncConfig. */
+                public historySyncConfig?: (proto.DeviceProps.IHistorySyncConfig|null);
+
+                /**
+                 * Creates a new FullHistorySyncOnDemandRequest instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns FullHistorySyncOnDemandRequest instance
+                 */
+                public static create(properties?: proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest): proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest;
+
+                /**
+                 * Encodes the specified FullHistorySyncOnDemandRequest message. Does not implicitly {@link proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest.verify|verify} messages.
+                 * @param message FullHistorySyncOnDemandRequest message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified FullHistorySyncOnDemandRequest message, length delimited. Does not implicitly {@link proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest.verify|verify} messages.
+                 * @param message FullHistorySyncOnDemandRequest message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.Message.PeerDataOperationRequestMessage.IFullHistorySyncOnDemandRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a FullHistorySyncOnDemandRequest message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns FullHistorySyncOnDemandRequest
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest;
+
+                /**
+                 * Decodes a FullHistorySyncOnDemandRequest message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns FullHistorySyncOnDemandRequest
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest;
+
+                /**
+                 * Verifies a FullHistorySyncOnDemandRequest message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a FullHistorySyncOnDemandRequest message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns FullHistorySyncOnDemandRequest
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest;
+
+                /**
+                 * Creates a plain object from a FullHistorySyncOnDemandRequest message. Also converts values to other types if specified.
+                 * @param message FullHistorySyncOnDemandRequest
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.Message.PeerDataOperationRequestMessage.FullHistorySyncOnDemandRequest, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this FullHistorySyncOnDemandRequest to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FullHistorySyncOnDemandRequest
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
 
             /** Properties of a HistorySyncOnDemandRequest. */
             interface IHistorySyncOnDemandRequest {
@@ -18959,6 +24184,9 @@ export namespace proto {
 
                 /** HistorySyncOnDemandRequest oldestMsgTimestampMs */
                 oldestMsgTimestampMs?: (number|Long|null);
+
+                /** HistorySyncOnDemandRequest accountLid */
+                accountLid?: (string|null);
             }
 
             /** Represents a HistorySyncOnDemandRequest. */
@@ -18984,6 +24212,9 @@ export namespace proto {
 
                 /** HistorySyncOnDemandRequest oldestMsgTimestampMs. */
                 public oldestMsgTimestampMs: (number|Long);
+
+                /** HistorySyncOnDemandRequest accountLid. */
+                public accountLid: string;
 
                 /**
                  * Creates a new HistorySyncOnDemandRequest instance using the specified properties.
@@ -19054,6 +24285,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HistorySyncOnDemandRequest
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PlaceholderMessageResendRequest. */
@@ -19144,6 +24382,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PlaceholderMessageResendRequest
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RequestStickerReupload. */
@@ -19234,6 +24479,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestStickerReupload
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RequestUrlPreview. */
@@ -19330,6 +24582,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestUrlPreview
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -19433,6 +24692,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PeerDataOperationRequestResponseMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PeerDataOperationRequestResponseMessage {
@@ -19451,6 +24717,15 @@ export namespace proto {
 
                 /** PeerDataOperationResult placeholderMessageResendResponse */
                 placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse|null);
+
+                /** PeerDataOperationResult waffleNonceFetchRequestResponse */
+                waffleNonceFetchRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse|null);
+
+                /** PeerDataOperationResult fullHistorySyncOnDemandRequestResponse */
+                fullHistorySyncOnDemandRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse|null);
+
+                /** PeerDataOperationResult companionMetaNonceFetchRequestResponse */
+                companionMetaNonceFetchRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse|null);
             }
 
             /** Represents a PeerDataOperationResult. */
@@ -19473,6 +24748,15 @@ export namespace proto {
 
                 /** PeerDataOperationResult placeholderMessageResendResponse. */
                 public placeholderMessageResendResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IPlaceholderMessageResendResponse|null);
+
+                /** PeerDataOperationResult waffleNonceFetchRequestResponse. */
+                public waffleNonceFetchRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse|null);
+
+                /** PeerDataOperationResult fullHistorySyncOnDemandRequestResponse. */
+                public fullHistorySyncOnDemandRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse|null);
+
+                /** PeerDataOperationResult companionMetaNonceFetchRequestResponse. */
+                public companionMetaNonceFetchRequestResponse?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse|null);
 
                 /**
                  * Creates a new PeerDataOperationResult instance using the specified properties.
@@ -19543,9 +24827,227 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PeerDataOperationResult
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace PeerDataOperationResult {
+
+                /** Properties of a CompanionMetaNonceFetchResponse. */
+                interface ICompanionMetaNonceFetchResponse {
+
+                    /** CompanionMetaNonceFetchResponse nonce */
+                    nonce?: (string|null);
+                }
+
+                /** Represents a CompanionMetaNonceFetchResponse. */
+                class CompanionMetaNonceFetchResponse implements ICompanionMetaNonceFetchResponse {
+
+                    /**
+                     * Constructs a new CompanionMetaNonceFetchResponse.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse);
+
+                    /** CompanionMetaNonceFetchResponse nonce. */
+                    public nonce: string;
+
+                    /**
+                     * Creates a new CompanionMetaNonceFetchResponse instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns CompanionMetaNonceFetchResponse instance
+                     */
+                    public static create(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse;
+
+                    /**
+                     * Encodes the specified CompanionMetaNonceFetchResponse message. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse.verify|verify} messages.
+                     * @param message CompanionMetaNonceFetchResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Encodes the specified CompanionMetaNonceFetchResponse message, length delimited. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse.verify|verify} messages.
+                     * @param message CompanionMetaNonceFetchResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encodeDelimited(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.ICompanionMetaNonceFetchResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a CompanionMetaNonceFetchResponse message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns CompanionMetaNonceFetchResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse;
+
+                    /**
+                     * Decodes a CompanionMetaNonceFetchResponse message from the specified reader or buffer, length delimited.
+                     * @param reader Reader or buffer to decode from
+                     * @returns CompanionMetaNonceFetchResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse;
+
+                    /**
+                     * Verifies a CompanionMetaNonceFetchResponse message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a CompanionMetaNonceFetchResponse message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns CompanionMetaNonceFetchResponse
+                     */
+                    public static fromObject(object: { [k: string]: any }): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse;
+
+                    /**
+                     * Creates a plain object from a CompanionMetaNonceFetchResponse message. Also converts values to other types if specified.
+                     * @param message CompanionMetaNonceFetchResponse
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.CompanionMetaNonceFetchResponse, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this CompanionMetaNonceFetchResponse to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for CompanionMetaNonceFetchResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a FullHistorySyncOnDemandRequestResponse. */
+                interface IFullHistorySyncOnDemandRequestResponse {
+
+                    /** FullHistorySyncOnDemandRequestResponse requestMetadata */
+                    requestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+                    /** FullHistorySyncOnDemandRequestResponse responseCode */
+                    responseCode?: (proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandResponseCode|null);
+                }
+
+                /** Represents a FullHistorySyncOnDemandRequestResponse. */
+                class FullHistorySyncOnDemandRequestResponse implements IFullHistorySyncOnDemandRequestResponse {
+
+                    /**
+                     * Constructs a new FullHistorySyncOnDemandRequestResponse.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse);
+
+                    /** FullHistorySyncOnDemandRequestResponse requestMetadata. */
+                    public requestMetadata?: (proto.Message.IFullHistorySyncOnDemandRequestMetadata|null);
+
+                    /** FullHistorySyncOnDemandRequestResponse responseCode. */
+                    public responseCode: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandResponseCode;
+
+                    /**
+                     * Creates a new FullHistorySyncOnDemandRequestResponse instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns FullHistorySyncOnDemandRequestResponse instance
+                     */
+                    public static create(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse;
+
+                    /**
+                     * Encodes the specified FullHistorySyncOnDemandRequestResponse message. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse.verify|verify} messages.
+                     * @param message FullHistorySyncOnDemandRequestResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Encodes the specified FullHistorySyncOnDemandRequestResponse message, length delimited. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse.verify|verify} messages.
+                     * @param message FullHistorySyncOnDemandRequestResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encodeDelimited(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IFullHistorySyncOnDemandRequestResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a FullHistorySyncOnDemandRequestResponse message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns FullHistorySyncOnDemandRequestResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse;
+
+                    /**
+                     * Decodes a FullHistorySyncOnDemandRequestResponse message from the specified reader or buffer, length delimited.
+                     * @param reader Reader or buffer to decode from
+                     * @returns FullHistorySyncOnDemandRequestResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse;
+
+                    /**
+                     * Verifies a FullHistorySyncOnDemandRequestResponse message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a FullHistorySyncOnDemandRequestResponse message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns FullHistorySyncOnDemandRequestResponse
+                     */
+                    public static fromObject(object: { [k: string]: any }): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse;
+
+                    /**
+                     * Creates a plain object from a FullHistorySyncOnDemandRequestResponse message. Also converts values to other types if specified.
+                     * @param message FullHistorySyncOnDemandRequestResponse
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.FullHistorySyncOnDemandRequestResponse, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this FullHistorySyncOnDemandRequestResponse to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for FullHistorySyncOnDemandRequestResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** FullHistorySyncOnDemandResponseCode enum. */
+                enum FullHistorySyncOnDemandResponseCode {
+                    REQUEST_SUCCESS = 0,
+                    REQUEST_TIME_EXPIRED = 1,
+                    DECLINED_SHARING_HISTORY = 2,
+                    GENERIC_ERROR = 3,
+                    ERROR_REQUEST_ON_NON_SMB_PRIMARY = 4,
+                    ERROR_HOSTED_DEVICE_NOT_CONNECTED = 5,
+                    ERROR_HOSTED_DEVICE_LOGIN_TIME_NOT_SET = 6
+                }
 
                 /** Properties of a LinkPreviewResponse. */
                 interface ILinkPreviewResponse {
@@ -19677,6 +25179,13 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for LinkPreviewResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace LinkPreviewResponse {
@@ -19805,6 +25314,13 @@ export namespace proto {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for LinkPreviewHighQualityThumbnail
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
 
@@ -19896,6 +25412,116 @@ export namespace proto {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for PlaceholderMessageResendResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a WaffleNonceFetchResponse. */
+                interface IWaffleNonceFetchResponse {
+
+                    /** WaffleNonceFetchResponse nonce */
+                    nonce?: (string|null);
+
+                    /** WaffleNonceFetchResponse waEntFbid */
+                    waEntFbid?: (string|null);
+                }
+
+                /** Represents a WaffleNonceFetchResponse. */
+                class WaffleNonceFetchResponse implements IWaffleNonceFetchResponse {
+
+                    /**
+                     * Constructs a new WaffleNonceFetchResponse.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse);
+
+                    /** WaffleNonceFetchResponse nonce. */
+                    public nonce: string;
+
+                    /** WaffleNonceFetchResponse waEntFbid. */
+                    public waEntFbid: string;
+
+                    /**
+                     * Creates a new WaffleNonceFetchResponse instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns WaffleNonceFetchResponse instance
+                     */
+                    public static create(properties?: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse;
+
+                    /**
+                     * Encodes the specified WaffleNonceFetchResponse message. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse.verify|verify} messages.
+                     * @param message WaffleNonceFetchResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Encodes the specified WaffleNonceFetchResponse message, length delimited. Does not implicitly {@link proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse.verify|verify} messages.
+                     * @param message WaffleNonceFetchResponse message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encodeDelimited(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.IWaffleNonceFetchResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a WaffleNonceFetchResponse message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns WaffleNonceFetchResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse;
+
+                    /**
+                     * Decodes a WaffleNonceFetchResponse message from the specified reader or buffer, length delimited.
+                     * @param reader Reader or buffer to decode from
+                     * @returns WaffleNonceFetchResponse
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse;
+
+                    /**
+                     * Verifies a WaffleNonceFetchResponse message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a WaffleNonceFetchResponse message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns WaffleNonceFetchResponse
+                     */
+                    public static fromObject(object: { [k: string]: any }): proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse;
+
+                    /**
+                     * Creates a plain object from a WaffleNonceFetchResponse message. Also converts values to other types if specified.
+                     * @param message WaffleNonceFetchResponse
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: proto.Message.PeerDataOperationRequestResponseMessage.PeerDataOperationResult.WaffleNonceFetchResponse, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this WaffleNonceFetchResponse to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WaffleNonceFetchResponse
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
         }
@@ -19906,7 +25532,10 @@ export namespace proto {
             SEND_RECENT_STICKER_BOOTSTRAP = 1,
             GENERATE_LINK_PREVIEW = 2,
             HISTORY_SYNC_ON_DEMAND = 3,
-            PLACEHOLDER_MESSAGE_RESEND = 4
+            PLACEHOLDER_MESSAGE_RESEND = 4,
+            WAFFLE_LINKING_NONCE_FETCH = 5,
+            FULL_HISTORY_SYNC_ON_DEMAND = 6,
+            COMPANION_META_NONCE_FETCH = 7
         }
 
         /** Properties of a PinInChatMessage. */
@@ -20009,6 +25638,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PinInChatMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PinInChatMessage {
@@ -20109,6 +25745,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PlaceholderMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PlaceholderMessage {
@@ -20117,6 +25760,13 @@ export namespace proto {
             enum PlaceholderType {
                 MASK_LINKED_DEVICES = 0
             }
+        }
+
+        /** PollContentType enum. */
+        enum PollContentType {
+            UNKNOWN = 0,
+            TEXT = 1,
+            IMAGE = 2
         }
 
         /** Properties of a PollCreationMessage. */
@@ -20136,6 +25786,15 @@ export namespace proto {
 
             /** PollCreationMessage contextInfo */
             contextInfo?: (proto.IContextInfo|null);
+
+            /** PollCreationMessage pollContentType */
+            pollContentType?: (proto.Message.PollContentType|null);
+
+            /** PollCreationMessage pollType */
+            pollType?: (proto.Message.PollCreationMessage.PollType|null);
+
+            /** PollCreationMessage correctAnswer */
+            correctAnswer?: (proto.Message.PollCreationMessage.IOption|null);
         }
 
         /** Represents a PollCreationMessage. */
@@ -20161,6 +25820,15 @@ export namespace proto {
 
             /** PollCreationMessage contextInfo. */
             public contextInfo?: (proto.IContextInfo|null);
+
+            /** PollCreationMessage pollContentType. */
+            public pollContentType: proto.Message.PollContentType;
+
+            /** PollCreationMessage pollType. */
+            public pollType: proto.Message.PollCreationMessage.PollType;
+
+            /** PollCreationMessage correctAnswer. */
+            public correctAnswer?: (proto.Message.PollCreationMessage.IOption|null);
 
             /**
              * Creates a new PollCreationMessage instance using the specified properties.
@@ -20231,6 +25899,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollCreationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace PollCreationMessage {
@@ -20240,6 +25915,9 @@ export namespace proto {
 
                 /** Option optionName */
                 optionName?: (string|null);
+
+                /** Option optionHash */
+                optionHash?: (string|null);
             }
 
             /** Represents an Option. */
@@ -20253,6 +25931,9 @@ export namespace proto {
 
                 /** Option optionName. */
                 public optionName: string;
+
+                /** Option optionHash. */
+                public optionHash: string;
 
                 /**
                  * Creates a new Option instance using the specified properties.
@@ -20323,6 +26004,19 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Option
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** PollType enum. */
+            enum PollType {
+                POLL = 0,
+                QUIZ = 1
             }
         }
 
@@ -20420,6 +26114,228 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollEncValue
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a PollResultSnapshotMessage. */
+        interface IPollResultSnapshotMessage {
+
+            /** PollResultSnapshotMessage name */
+            name?: (string|null);
+
+            /** PollResultSnapshotMessage pollVotes */
+            pollVotes?: (proto.Message.PollResultSnapshotMessage.IPollVote[]|null);
+
+            /** PollResultSnapshotMessage contextInfo */
+            contextInfo?: (proto.IContextInfo|null);
+        }
+
+        /** Represents a PollResultSnapshotMessage. */
+        class PollResultSnapshotMessage implements IPollResultSnapshotMessage {
+
+            /**
+             * Constructs a new PollResultSnapshotMessage.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.IPollResultSnapshotMessage);
+
+            /** PollResultSnapshotMessage name. */
+            public name: string;
+
+            /** PollResultSnapshotMessage pollVotes. */
+            public pollVotes: proto.Message.PollResultSnapshotMessage.IPollVote[];
+
+            /** PollResultSnapshotMessage contextInfo. */
+            public contextInfo?: (proto.IContextInfo|null);
+
+            /**
+             * Creates a new PollResultSnapshotMessage instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns PollResultSnapshotMessage instance
+             */
+            public static create(properties?: proto.Message.IPollResultSnapshotMessage): proto.Message.PollResultSnapshotMessage;
+
+            /**
+             * Encodes the specified PollResultSnapshotMessage message. Does not implicitly {@link proto.Message.PollResultSnapshotMessage.verify|verify} messages.
+             * @param message PollResultSnapshotMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.IPollResultSnapshotMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified PollResultSnapshotMessage message, length delimited. Does not implicitly {@link proto.Message.PollResultSnapshotMessage.verify|verify} messages.
+             * @param message PollResultSnapshotMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.IPollResultSnapshotMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a PollResultSnapshotMessage message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns PollResultSnapshotMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollResultSnapshotMessage;
+
+            /**
+             * Decodes a PollResultSnapshotMessage message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns PollResultSnapshotMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollResultSnapshotMessage;
+
+            /**
+             * Verifies a PollResultSnapshotMessage message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a PollResultSnapshotMessage message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns PollResultSnapshotMessage
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.PollResultSnapshotMessage;
+
+            /**
+             * Creates a plain object from a PollResultSnapshotMessage message. Also converts values to other types if specified.
+             * @param message PollResultSnapshotMessage
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.PollResultSnapshotMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this PollResultSnapshotMessage to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollResultSnapshotMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace PollResultSnapshotMessage {
+
+            /** Properties of a PollVote. */
+            interface IPollVote {
+
+                /** PollVote optionName */
+                optionName?: (string|null);
+
+                /** PollVote optionVoteCount */
+                optionVoteCount?: (number|Long|null);
+            }
+
+            /** Represents a PollVote. */
+            class PollVote implements IPollVote {
+
+                /**
+                 * Constructs a new PollVote.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.Message.PollResultSnapshotMessage.IPollVote);
+
+                /** PollVote optionName. */
+                public optionName: string;
+
+                /** PollVote optionVoteCount. */
+                public optionVoteCount: (number|Long);
+
+                /**
+                 * Creates a new PollVote instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PollVote instance
+                 */
+                public static create(properties?: proto.Message.PollResultSnapshotMessage.IPollVote): proto.Message.PollResultSnapshotMessage.PollVote;
+
+                /**
+                 * Encodes the specified PollVote message. Does not implicitly {@link proto.Message.PollResultSnapshotMessage.PollVote.verify|verify} messages.
+                 * @param message PollVote message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.Message.PollResultSnapshotMessage.IPollVote, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified PollVote message, length delimited. Does not implicitly {@link proto.Message.PollResultSnapshotMessage.PollVote.verify|verify} messages.
+                 * @param message PollVote message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.Message.PollResultSnapshotMessage.IPollVote, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PollVote message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PollVote
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.PollResultSnapshotMessage.PollVote;
+
+                /**
+                 * Decodes a PollVote message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns PollVote
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.PollResultSnapshotMessage.PollVote;
+
+                /**
+                 * Verifies a PollVote message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PollVote message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PollVote
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.Message.PollResultSnapshotMessage.PollVote;
+
+                /**
+                 * Creates a plain object from a PollVote message. Also converts values to other types if specified.
+                 * @param message PollVote
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.Message.PollResultSnapshotMessage.PollVote, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PollVote to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PollVote
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
         }
 
         /** Properties of a PollUpdateMessage. */
@@ -20528,6 +26444,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollUpdateMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PollUpdateMessageMetadata. */
@@ -20612,6 +26535,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollUpdateMessageMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PollVoteMessage. */
@@ -20702,6 +26632,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollVoteMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ProductMessage. */
@@ -20822,6 +26759,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ProductMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ProductMessage {
@@ -20926,6 +26870,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CatalogSnapshot
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ProductSnapshot. */
@@ -20963,6 +26914,9 @@ export namespace proto {
 
                 /** ProductSnapshot salePriceAmount1000 */
                 salePriceAmount1000?: (number|Long|null);
+
+                /** ProductSnapshot signedUrl */
+                signedUrl?: (string|null);
             }
 
             /** Represents a ProductSnapshot. */
@@ -21006,6 +26960,9 @@ export namespace proto {
 
                 /** ProductSnapshot salePriceAmount1000. */
                 public salePriceAmount1000: (number|Long);
+
+                /** ProductSnapshot signedUrl. */
+                public signedUrl: string;
 
                 /**
                  * Creates a new ProductSnapshot instance using the specified properties.
@@ -21076,6 +27033,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ProductSnapshot
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -21135,6 +27099,12 @@ export namespace proto {
 
             /** ProtocolMessage mediaNotifyMessage */
             mediaNotifyMessage?: (proto.IMediaNotifyMessage|null);
+
+            /** ProtocolMessage cloudApiThreadControlNotification */
+            cloudApiThreadControlNotification?: (proto.Message.ICloudAPIThreadControlNotification|null);
+
+            /** ProtocolMessage lidMigrationMappingSyncMessage */
+            lidMigrationMappingSyncMessage?: (proto.ILIDMigrationMappingSyncMessage|null);
         }
 
         /** Represents a ProtocolMessage. */
@@ -21199,6 +27169,12 @@ export namespace proto {
 
             /** ProtocolMessage mediaNotifyMessage. */
             public mediaNotifyMessage?: (proto.IMediaNotifyMessage|null);
+
+            /** ProtocolMessage cloudApiThreadControlNotification. */
+            public cloudApiThreadControlNotification?: (proto.Message.ICloudAPIThreadControlNotification|null);
+
+            /** ProtocolMessage lidMigrationMappingSyncMessage. */
+            public lidMigrationMappingSyncMessage?: (proto.ILIDMigrationMappingSyncMessage|null);
 
             /**
              * Creates a new ProtocolMessage instance using the specified properties.
@@ -21269,6 +27245,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ProtocolMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ProtocolMessage {
@@ -21290,7 +27273,12 @@ export namespace proto {
                 PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE = 17,
                 REQUEST_WELCOME_MESSAGE = 18,
                 BOT_FEEDBACK_MESSAGE = 19,
-                MEDIA_NOTIFY_MESSAGE = 20
+                MEDIA_NOTIFY_MESSAGE = 20,
+                CLOUD_API_THREAD_CONTROL_NOTIFICATION = 21,
+                LID_MIGRATION_MAPPING_SYNC = 22,
+                REMINDER_MESSAGE = 23,
+                BOT_MEMU_ONBOARDING_MESSAGE = 24,
+                STATUS_MENTION_MESSAGE = 25
             }
         }
 
@@ -21400,6 +27388,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ReactionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestPaymentMessage. */
@@ -21526,6 +27521,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestPaymentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestPhoneNumberMessage. */
@@ -21616,6 +27618,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestPhoneNumberMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RequestWelcomeMessageMetadata. */
@@ -21706,6 +27715,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RequestWelcomeMessageMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace RequestWelcomeMessageMetadata {
@@ -21817,6 +27833,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ScheduledCallCreationMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ScheduledCallCreationMessage {
@@ -21923,6 +27946,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ScheduledCallEditMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace ScheduledCallEditMessage {
@@ -21931,6 +27961,130 @@ export namespace proto {
             enum EditType {
                 UNKNOWN = 0,
                 CANCEL = 1
+            }
+        }
+
+        /** Properties of a SecretEncryptedMessage. */
+        interface ISecretEncryptedMessage {
+
+            /** SecretEncryptedMessage targetMessageKey */
+            targetMessageKey?: (proto.IMessageKey|null);
+
+            /** SecretEncryptedMessage encPayload */
+            encPayload?: (Uint8Array|null);
+
+            /** SecretEncryptedMessage encIv */
+            encIv?: (Uint8Array|null);
+
+            /** SecretEncryptedMessage secretEncType */
+            secretEncType?: (proto.Message.SecretEncryptedMessage.SecretEncType|null);
+        }
+
+        /** Represents a SecretEncryptedMessage. */
+        class SecretEncryptedMessage implements ISecretEncryptedMessage {
+
+            /**
+             * Constructs a new SecretEncryptedMessage.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.ISecretEncryptedMessage);
+
+            /** SecretEncryptedMessage targetMessageKey. */
+            public targetMessageKey?: (proto.IMessageKey|null);
+
+            /** SecretEncryptedMessage encPayload. */
+            public encPayload: Uint8Array;
+
+            /** SecretEncryptedMessage encIv. */
+            public encIv: Uint8Array;
+
+            /** SecretEncryptedMessage secretEncType. */
+            public secretEncType: proto.Message.SecretEncryptedMessage.SecretEncType;
+
+            /**
+             * Creates a new SecretEncryptedMessage instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns SecretEncryptedMessage instance
+             */
+            public static create(properties?: proto.Message.ISecretEncryptedMessage): proto.Message.SecretEncryptedMessage;
+
+            /**
+             * Encodes the specified SecretEncryptedMessage message. Does not implicitly {@link proto.Message.SecretEncryptedMessage.verify|verify} messages.
+             * @param message SecretEncryptedMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.ISecretEncryptedMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified SecretEncryptedMessage message, length delimited. Does not implicitly {@link proto.Message.SecretEncryptedMessage.verify|verify} messages.
+             * @param message SecretEncryptedMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.ISecretEncryptedMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a SecretEncryptedMessage message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns SecretEncryptedMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.SecretEncryptedMessage;
+
+            /**
+             * Decodes a SecretEncryptedMessage message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns SecretEncryptedMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.SecretEncryptedMessage;
+
+            /**
+             * Verifies a SecretEncryptedMessage message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a SecretEncryptedMessage message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns SecretEncryptedMessage
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.SecretEncryptedMessage;
+
+            /**
+             * Creates a plain object from a SecretEncryptedMessage message. Also converts values to other types if specified.
+             * @param message SecretEncryptedMessage
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.SecretEncryptedMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this SecretEncryptedMessage to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SecretEncryptedMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace SecretEncryptedMessage {
+
+            /** SecretEncType enum. */
+            enum SecretEncType {
+                UNKNOWN = 0,
+                EVENT_EDIT = 1
             }
         }
 
@@ -22034,6 +28188,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SendPaymentMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderKeyDistributionMessage. */
@@ -22130,6 +28291,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderKeyDistributionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StickerMessage. */
@@ -22191,6 +28359,9 @@ export namespace proto {
 
             /** StickerMessage isLottie */
             isLottie?: (boolean|null);
+
+            /** StickerMessage accessibilityLabel */
+            accessibilityLabel?: (string|null);
         }
 
         /** Represents a StickerMessage. */
@@ -22258,6 +28429,9 @@ export namespace proto {
 
             /** StickerMessage isLottie. */
             public isLottie: boolean;
+
+            /** StickerMessage accessibilityLabel. */
+            public accessibilityLabel: string;
 
             /**
              * Creates a new StickerMessage instance using the specified properties.
@@ -22328,6 +28502,373 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a StickerPackMessage. */
+        interface IStickerPackMessage {
+
+            /** StickerPackMessage stickerPackId */
+            stickerPackId?: (string|null);
+
+            /** StickerPackMessage name */
+            name?: (string|null);
+
+            /** StickerPackMessage publisher */
+            publisher?: (string|null);
+
+            /** StickerPackMessage stickers */
+            stickers?: (proto.Message.StickerPackMessage.ISticker[]|null);
+
+            /** StickerPackMessage fileLength */
+            fileLength?: (number|Long|null);
+
+            /** StickerPackMessage fileSha256 */
+            fileSha256?: (Uint8Array|null);
+
+            /** StickerPackMessage fileEncSha256 */
+            fileEncSha256?: (Uint8Array|null);
+
+            /** StickerPackMessage mediaKey */
+            mediaKey?: (Uint8Array|null);
+
+            /** StickerPackMessage directPath */
+            directPath?: (string|null);
+
+            /** StickerPackMessage caption */
+            caption?: (string|null);
+
+            /** StickerPackMessage contextInfo */
+            contextInfo?: (proto.IContextInfo|null);
+
+            /** StickerPackMessage packDescription */
+            packDescription?: (string|null);
+
+            /** StickerPackMessage mediaKeyTimestamp */
+            mediaKeyTimestamp?: (number|Long|null);
+
+            /** StickerPackMessage trayIconFileName */
+            trayIconFileName?: (string|null);
+
+            /** StickerPackMessage thumbnailDirectPath */
+            thumbnailDirectPath?: (string|null);
+
+            /** StickerPackMessage thumbnailSha256 */
+            thumbnailSha256?: (Uint8Array|null);
+
+            /** StickerPackMessage thumbnailEncSha256 */
+            thumbnailEncSha256?: (Uint8Array|null);
+
+            /** StickerPackMessage thumbnailHeight */
+            thumbnailHeight?: (number|null);
+
+            /** StickerPackMessage thumbnailWidth */
+            thumbnailWidth?: (number|null);
+
+            /** StickerPackMessage imageDataHash */
+            imageDataHash?: (string|null);
+
+            /** StickerPackMessage stickerPackSize */
+            stickerPackSize?: (number|Long|null);
+
+            /** StickerPackMessage stickerPackOrigin */
+            stickerPackOrigin?: (proto.Message.StickerPackMessage.StickerPackOrigin|null);
+        }
+
+        /** Represents a StickerPackMessage. */
+        class StickerPackMessage implements IStickerPackMessage {
+
+            /**
+             * Constructs a new StickerPackMessage.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.Message.IStickerPackMessage);
+
+            /** StickerPackMessage stickerPackId. */
+            public stickerPackId: string;
+
+            /** StickerPackMessage name. */
+            public name: string;
+
+            /** StickerPackMessage publisher. */
+            public publisher: string;
+
+            /** StickerPackMessage stickers. */
+            public stickers: proto.Message.StickerPackMessage.ISticker[];
+
+            /** StickerPackMessage fileLength. */
+            public fileLength: (number|Long);
+
+            /** StickerPackMessage fileSha256. */
+            public fileSha256: Uint8Array;
+
+            /** StickerPackMessage fileEncSha256. */
+            public fileEncSha256: Uint8Array;
+
+            /** StickerPackMessage mediaKey. */
+            public mediaKey: Uint8Array;
+
+            /** StickerPackMessage directPath. */
+            public directPath: string;
+
+            /** StickerPackMessage caption. */
+            public caption: string;
+
+            /** StickerPackMessage contextInfo. */
+            public contextInfo?: (proto.IContextInfo|null);
+
+            /** StickerPackMessage packDescription. */
+            public packDescription: string;
+
+            /** StickerPackMessage mediaKeyTimestamp. */
+            public mediaKeyTimestamp: (number|Long);
+
+            /** StickerPackMessage trayIconFileName. */
+            public trayIconFileName: string;
+
+            /** StickerPackMessage thumbnailDirectPath. */
+            public thumbnailDirectPath: string;
+
+            /** StickerPackMessage thumbnailSha256. */
+            public thumbnailSha256: Uint8Array;
+
+            /** StickerPackMessage thumbnailEncSha256. */
+            public thumbnailEncSha256: Uint8Array;
+
+            /** StickerPackMessage thumbnailHeight. */
+            public thumbnailHeight: number;
+
+            /** StickerPackMessage thumbnailWidth. */
+            public thumbnailWidth: number;
+
+            /** StickerPackMessage imageDataHash. */
+            public imageDataHash: string;
+
+            /** StickerPackMessage stickerPackSize. */
+            public stickerPackSize: (number|Long);
+
+            /** StickerPackMessage stickerPackOrigin. */
+            public stickerPackOrigin: proto.Message.StickerPackMessage.StickerPackOrigin;
+
+            /**
+             * Creates a new StickerPackMessage instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns StickerPackMessage instance
+             */
+            public static create(properties?: proto.Message.IStickerPackMessage): proto.Message.StickerPackMessage;
+
+            /**
+             * Encodes the specified StickerPackMessage message. Does not implicitly {@link proto.Message.StickerPackMessage.verify|verify} messages.
+             * @param message StickerPackMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.Message.IStickerPackMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified StickerPackMessage message, length delimited. Does not implicitly {@link proto.Message.StickerPackMessage.verify|verify} messages.
+             * @param message StickerPackMessage message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.Message.IStickerPackMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a StickerPackMessage message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns StickerPackMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.StickerPackMessage;
+
+            /**
+             * Decodes a StickerPackMessage message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns StickerPackMessage
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.StickerPackMessage;
+
+            /**
+             * Verifies a StickerPackMessage message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a StickerPackMessage message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns StickerPackMessage
+             */
+            public static fromObject(object: { [k: string]: any }): proto.Message.StickerPackMessage;
+
+            /**
+             * Creates a plain object from a StickerPackMessage message. Also converts values to other types if specified.
+             * @param message StickerPackMessage
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.Message.StickerPackMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this StickerPackMessage to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerPackMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace StickerPackMessage {
+
+            /** Properties of a Sticker. */
+            interface ISticker {
+
+                /** Sticker fileName */
+                fileName?: (string|null);
+
+                /** Sticker isAnimated */
+                isAnimated?: (boolean|null);
+
+                /** Sticker emojis */
+                emojis?: (string[]|null);
+
+                /** Sticker accessibilityLabel */
+                accessibilityLabel?: (string|null);
+
+                /** Sticker isLottie */
+                isLottie?: (boolean|null);
+
+                /** Sticker mimetype */
+                mimetype?: (string|null);
+            }
+
+            /** Represents a Sticker. */
+            class Sticker implements ISticker {
+
+                /**
+                 * Constructs a new Sticker.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.Message.StickerPackMessage.ISticker);
+
+                /** Sticker fileName. */
+                public fileName: string;
+
+                /** Sticker isAnimated. */
+                public isAnimated: boolean;
+
+                /** Sticker emojis. */
+                public emojis: string[];
+
+                /** Sticker accessibilityLabel. */
+                public accessibilityLabel: string;
+
+                /** Sticker isLottie. */
+                public isLottie: boolean;
+
+                /** Sticker mimetype. */
+                public mimetype: string;
+
+                /**
+                 * Creates a new Sticker instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Sticker instance
+                 */
+                public static create(properties?: proto.Message.StickerPackMessage.ISticker): proto.Message.StickerPackMessage.Sticker;
+
+                /**
+                 * Encodes the specified Sticker message. Does not implicitly {@link proto.Message.StickerPackMessage.Sticker.verify|verify} messages.
+                 * @param message Sticker message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.Message.StickerPackMessage.ISticker, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified Sticker message, length delimited. Does not implicitly {@link proto.Message.StickerPackMessage.Sticker.verify|verify} messages.
+                 * @param message Sticker message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.Message.StickerPackMessage.ISticker, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a Sticker message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Sticker
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Message.StickerPackMessage.Sticker;
+
+                /**
+                 * Decodes a Sticker message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns Sticker
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Message.StickerPackMessage.Sticker;
+
+                /**
+                 * Verifies a Sticker message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a Sticker message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Sticker
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.Message.StickerPackMessage.Sticker;
+
+                /**
+                 * Creates a plain object from a Sticker message. Also converts values to other types if specified.
+                 * @param message Sticker
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.Message.StickerPackMessage.Sticker, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Sticker to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Sticker
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** StickerPackOrigin enum. */
+            enum StickerPackOrigin {
+                FIRST_PARTY = 0,
+                THIRD_PARTY = 1,
+                USER_CREATED = 2
+            }
         }
 
         /** Properties of a StickerSyncRMRMessage. */
@@ -22430,6 +28971,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerSyncRMRMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TemplateButtonReplyMessage. */
@@ -22544,6 +29092,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TemplateButtonReplyMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TemplateMessage. */
@@ -22667,6 +29222,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TemplateMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace TemplateMessage {
@@ -22804,6 +29366,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FourRowTemplate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a HydratedFourRowTemplate. */
@@ -22951,6 +29520,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HydratedFourRowTemplate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -23028,6 +29604,12 @@ export namespace proto {
 
             /** VideoMessage annotations */
             annotations?: (proto.IInteractiveAnnotation[]|null);
+
+            /** VideoMessage accessibilityLabel */
+            accessibilityLabel?: (string|null);
+
+            /** VideoMessage processedVideos */
+            processedVideos?: (proto.IProcessedVideo[]|null);
         }
 
         /** Represents a VideoMessage. */
@@ -23111,6 +29693,12 @@ export namespace proto {
             /** VideoMessage annotations. */
             public annotations: proto.IInteractiveAnnotation[];
 
+            /** VideoMessage accessibilityLabel. */
+            public accessibilityLabel: string;
+
+            /** VideoMessage processedVideos. */
+            public processedVideos: proto.IProcessedVideo[];
+
             /**
              * Creates a new VideoMessage instance using the specified properties.
              * @param [properties] Properties to set
@@ -23180,6 +29768,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for VideoMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace VideoMessage {
@@ -23193,11 +29788,165 @@ export namespace proto {
         }
     }
 
+    /** Properties of a MessageAddOn. */
+    interface IMessageAddOn {
+
+        /** MessageAddOn messageAddOnType */
+        messageAddOnType?: (proto.MessageAddOn.MessageAddOnType|null);
+
+        /** MessageAddOn messageAddOn */
+        messageAddOn?: (proto.IMessage|null);
+
+        /** MessageAddOn senderTimestampMs */
+        senderTimestampMs?: (number|Long|null);
+
+        /** MessageAddOn serverTimestampMs */
+        serverTimestampMs?: (number|Long|null);
+
+        /** MessageAddOn status */
+        status?: (proto.WebMessageInfo.Status|null);
+
+        /** MessageAddOn addOnContextInfo */
+        addOnContextInfo?: (proto.IMessageAddOnContextInfo|null);
+
+        /** MessageAddOn messageAddOnKey */
+        messageAddOnKey?: (proto.IMessageKey|null);
+
+        /** MessageAddOn legacyMessage */
+        legacyMessage?: (proto.ILegacyMessage|null);
+    }
+
+    /** Represents a MessageAddOn. */
+    class MessageAddOn implements IMessageAddOn {
+
+        /**
+         * Constructs a new MessageAddOn.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IMessageAddOn);
+
+        /** MessageAddOn messageAddOnType. */
+        public messageAddOnType: proto.MessageAddOn.MessageAddOnType;
+
+        /** MessageAddOn messageAddOn. */
+        public messageAddOn?: (proto.IMessage|null);
+
+        /** MessageAddOn senderTimestampMs. */
+        public senderTimestampMs: (number|Long);
+
+        /** MessageAddOn serverTimestampMs. */
+        public serverTimestampMs: (number|Long);
+
+        /** MessageAddOn status. */
+        public status: proto.WebMessageInfo.Status;
+
+        /** MessageAddOn addOnContextInfo. */
+        public addOnContextInfo?: (proto.IMessageAddOnContextInfo|null);
+
+        /** MessageAddOn messageAddOnKey. */
+        public messageAddOnKey?: (proto.IMessageKey|null);
+
+        /** MessageAddOn legacyMessage. */
+        public legacyMessage?: (proto.ILegacyMessage|null);
+
+        /**
+         * Creates a new MessageAddOn instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns MessageAddOn instance
+         */
+        public static create(properties?: proto.IMessageAddOn): proto.MessageAddOn;
+
+        /**
+         * Encodes the specified MessageAddOn message. Does not implicitly {@link proto.MessageAddOn.verify|verify} messages.
+         * @param message MessageAddOn message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IMessageAddOn, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified MessageAddOn message, length delimited. Does not implicitly {@link proto.MessageAddOn.verify|verify} messages.
+         * @param message MessageAddOn message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IMessageAddOn, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a MessageAddOn message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns MessageAddOn
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageAddOn;
+
+        /**
+         * Decodes a MessageAddOn message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns MessageAddOn
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageAddOn;
+
+        /**
+         * Verifies a MessageAddOn message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a MessageAddOn message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns MessageAddOn
+         */
+        public static fromObject(object: { [k: string]: any }): proto.MessageAddOn;
+
+        /**
+         * Creates a plain object from a MessageAddOn message. Also converts values to other types if specified.
+         * @param message MessageAddOn
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.MessageAddOn, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this MessageAddOn to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageAddOn
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace MessageAddOn {
+
+        /** MessageAddOnType enum. */
+        enum MessageAddOnType {
+            UNDEFINED = 0,
+            REACTION = 1,
+            EVENT_RESPONSE = 2,
+            POLL_UPDATE = 3,
+            PIN_IN_CHAT = 4
+        }
+    }
+
     /** Properties of a MessageAddOnContextInfo. */
     interface IMessageAddOnContextInfo {
 
         /** MessageAddOnContextInfo messageAddOnDurationInSecs */
         messageAddOnDurationInSecs?: (number|null);
+
+        /** MessageAddOnContextInfo messageAddOnExpiryType */
+        messageAddOnExpiryType?: (proto.MessageContextInfo.MessageAddonExpiryType|null);
     }
 
     /** Represents a MessageAddOnContextInfo. */
@@ -23211,6 +29960,9 @@ export namespace proto {
 
         /** MessageAddOnContextInfo messageAddOnDurationInSecs. */
         public messageAddOnDurationInSecs: number;
+
+        /** MessageAddOnContextInfo messageAddOnExpiryType. */
+        public messageAddOnExpiryType: proto.MessageContextInfo.MessageAddonExpiryType;
 
         /**
          * Creates a new MessageAddOnContextInfo instance using the specified properties.
@@ -23281,6 +30033,138 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageAddOnContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a MessageAssociation. */
+    interface IMessageAssociation {
+
+        /** MessageAssociation associationType */
+        associationType?: (proto.MessageAssociation.AssociationType|null);
+
+        /** MessageAssociation parentMessageKey */
+        parentMessageKey?: (proto.IMessageKey|null);
+
+        /** MessageAssociation messageIndex */
+        messageIndex?: (number|null);
+    }
+
+    /** Represents a MessageAssociation. */
+    class MessageAssociation implements IMessageAssociation {
+
+        /**
+         * Constructs a new MessageAssociation.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IMessageAssociation);
+
+        /** MessageAssociation associationType. */
+        public associationType: proto.MessageAssociation.AssociationType;
+
+        /** MessageAssociation parentMessageKey. */
+        public parentMessageKey?: (proto.IMessageKey|null);
+
+        /** MessageAssociation messageIndex. */
+        public messageIndex: number;
+
+        /**
+         * Creates a new MessageAssociation instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns MessageAssociation instance
+         */
+        public static create(properties?: proto.IMessageAssociation): proto.MessageAssociation;
+
+        /**
+         * Encodes the specified MessageAssociation message. Does not implicitly {@link proto.MessageAssociation.verify|verify} messages.
+         * @param message MessageAssociation message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IMessageAssociation, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified MessageAssociation message, length delimited. Does not implicitly {@link proto.MessageAssociation.verify|verify} messages.
+         * @param message MessageAssociation message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IMessageAssociation, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a MessageAssociation message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns MessageAssociation
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MessageAssociation;
+
+        /**
+         * Decodes a MessageAssociation message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns MessageAssociation
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MessageAssociation;
+
+        /**
+         * Verifies a MessageAssociation message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a MessageAssociation message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns MessageAssociation
+         */
+        public static fromObject(object: { [k: string]: any }): proto.MessageAssociation;
+
+        /**
+         * Creates a plain object from a MessageAssociation message. Also converts values to other types if specified.
+         * @param message MessageAssociation
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.MessageAssociation, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this MessageAssociation to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageAssociation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace MessageAssociation {
+
+        /** AssociationType enum. */
+        enum AssociationType {
+            UNKNOWN = 0,
+            MEDIA_ALBUM = 1,
+            BOT_PLUGIN = 2,
+            EVENT_COVER_IMAGE = 3,
+            STATUS_POLL = 4,
+            HD_VIDEO_DUAL_UPLOAD = 5,
+            STATUS_TAPPABLE_MESSAGE = 6,
+            MEDIA_POLL = 7,
+            STATUS_ADD_YOURS = 8
+        }
     }
 
     /** Properties of a MessageContextInfo. */
@@ -23309,6 +30193,18 @@ export namespace proto {
 
         /** MessageContextInfo reportingTokenVersion */
         reportingTokenVersion?: (number|null);
+
+        /** MessageContextInfo messageAddOnExpiryType */
+        messageAddOnExpiryType?: (proto.MessageContextInfo.MessageAddonExpiryType|null);
+
+        /** MessageContextInfo messageAssociation */
+        messageAssociation?: (proto.IMessageAssociation|null);
+
+        /** MessageContextInfo capiCreatedGroup */
+        capiCreatedGroup?: (boolean|null);
+
+        /** MessageContextInfo supportPayload */
+        supportPayload?: (string|null);
     }
 
     /** Represents a MessageContextInfo. */
@@ -23343,6 +30239,18 @@ export namespace proto {
 
         /** MessageContextInfo reportingTokenVersion. */
         public reportingTokenVersion: number;
+
+        /** MessageContextInfo messageAddOnExpiryType. */
+        public messageAddOnExpiryType: proto.MessageContextInfo.MessageAddonExpiryType;
+
+        /** MessageContextInfo messageAssociation. */
+        public messageAssociation?: (proto.IMessageAssociation|null);
+
+        /** MessageContextInfo capiCreatedGroup. */
+        public capiCreatedGroup: boolean;
+
+        /** MessageContextInfo supportPayload. */
+        public supportPayload: string;
 
         /**
          * Creates a new MessageContextInfo instance using the specified properties.
@@ -23413,6 +30321,22 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageContextInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace MessageContextInfo {
+
+        /** MessageAddonExpiryType enum. */
+        enum MessageAddonExpiryType {
+            STATIC = 1,
+            DEPENDENT_ON_PARENT = 2
+        }
     }
 
     /** Properties of a MessageKey. */
@@ -23521,6 +30445,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageKey
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MessageSecretMessage. */
@@ -23623,6 +30554,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MessageSecretMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Money. */
@@ -23725,6 +30663,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Money
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a MsgOpaqueData. */
@@ -23750,9 +30695,6 @@ export namespace proto {
 
         /** MsgOpaqueData paymentNoteMsgBody */
         paymentNoteMsgBody?: (string|null);
-
-        /** MsgOpaqueData canonicalUrl */
-        canonicalUrl?: (string|null);
 
         /** MsgOpaqueData matchedText */
         matchedText?: (string|null);
@@ -23799,6 +30741,12 @@ export namespace proto {
         /** MsgOpaqueData isSentCagPollCreation */
         isSentCagPollCreation?: (boolean|null);
 
+        /** MsgOpaqueData pollContentType */
+        pollContentType?: (proto.MsgOpaqueData.PollContentType|null);
+
+        /** MsgOpaqueData pollVotesSnapshot */
+        pollVotesSnapshot?: (proto.MsgOpaqueData.IPollVotesSnapshot|null);
+
         /** MsgOpaqueData encReactionTargetMessageKey */
         encReactionTargetMessageKey?: (string|null);
 
@@ -23819,6 +30767,27 @@ export namespace proto {
 
         /** MsgOpaqueData encIv */
         encIv?: (Uint8Array|null);
+
+        /** MsgOpaqueData eventName */
+        eventName?: (string|null);
+
+        /** MsgOpaqueData isEventCanceled */
+        isEventCanceled?: (boolean|null);
+
+        /** MsgOpaqueData eventDescription */
+        eventDescription?: (string|null);
+
+        /** MsgOpaqueData eventJoinLink */
+        eventJoinLink?: (string|null);
+
+        /** MsgOpaqueData eventStartTime */
+        eventStartTime?: (number|Long|null);
+
+        /** MsgOpaqueData eventLocation */
+        eventLocation?: (proto.MsgOpaqueData.IEventLocation|null);
+
+        /** MsgOpaqueData eventEndTime */
+        eventEndTime?: (number|Long|null);
     }
 
     /** Represents a MsgOpaqueData. */
@@ -23850,9 +30819,6 @@ export namespace proto {
 
         /** MsgOpaqueData paymentNoteMsgBody. */
         public paymentNoteMsgBody: string;
-
-        /** MsgOpaqueData canonicalUrl. */
-        public canonicalUrl: string;
 
         /** MsgOpaqueData matchedText. */
         public matchedText: string;
@@ -23899,6 +30865,12 @@ export namespace proto {
         /** MsgOpaqueData isSentCagPollCreation. */
         public isSentCagPollCreation: boolean;
 
+        /** MsgOpaqueData pollContentType. */
+        public pollContentType: proto.MsgOpaqueData.PollContentType;
+
+        /** MsgOpaqueData pollVotesSnapshot. */
+        public pollVotesSnapshot?: (proto.MsgOpaqueData.IPollVotesSnapshot|null);
+
         /** MsgOpaqueData encReactionTargetMessageKey. */
         public encReactionTargetMessageKey: string;
 
@@ -23919,6 +30891,27 @@ export namespace proto {
 
         /** MsgOpaqueData encIv. */
         public encIv: Uint8Array;
+
+        /** MsgOpaqueData eventName. */
+        public eventName: string;
+
+        /** MsgOpaqueData isEventCanceled. */
+        public isEventCanceled: boolean;
+
+        /** MsgOpaqueData eventDescription. */
+        public eventDescription: string;
+
+        /** MsgOpaqueData eventJoinLink. */
+        public eventJoinLink: string;
+
+        /** MsgOpaqueData eventStartTime. */
+        public eventStartTime: (number|Long);
+
+        /** MsgOpaqueData eventLocation. */
+        public eventLocation?: (proto.MsgOpaqueData.IEventLocation|null);
+
+        /** MsgOpaqueData eventEndTime. */
+        public eventEndTime: (number|Long);
 
         /**
          * Creates a new MsgOpaqueData instance using the specified properties.
@@ -23989,9 +30982,150 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MsgOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace MsgOpaqueData {
+
+        /** Properties of an EventLocation. */
+        interface IEventLocation {
+
+            /** EventLocation degreesLatitude */
+            degreesLatitude?: (number|null);
+
+            /** EventLocation degreesLongitude */
+            degreesLongitude?: (number|null);
+
+            /** EventLocation name */
+            name?: (string|null);
+
+            /** EventLocation address */
+            address?: (string|null);
+
+            /** EventLocation url */
+            url?: (string|null);
+
+            /** EventLocation jpegThumbnail */
+            jpegThumbnail?: (Uint8Array|null);
+        }
+
+        /** Represents an EventLocation. */
+        class EventLocation implements IEventLocation {
+
+            /**
+             * Constructs a new EventLocation.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.MsgOpaqueData.IEventLocation);
+
+            /** EventLocation degreesLatitude. */
+            public degreesLatitude: number;
+
+            /** EventLocation degreesLongitude. */
+            public degreesLongitude: number;
+
+            /** EventLocation name. */
+            public name: string;
+
+            /** EventLocation address. */
+            public address: string;
+
+            /** EventLocation url. */
+            public url: string;
+
+            /** EventLocation jpegThumbnail. */
+            public jpegThumbnail: Uint8Array;
+
+            /**
+             * Creates a new EventLocation instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns EventLocation instance
+             */
+            public static create(properties?: proto.MsgOpaqueData.IEventLocation): proto.MsgOpaqueData.EventLocation;
+
+            /**
+             * Encodes the specified EventLocation message. Does not implicitly {@link proto.MsgOpaqueData.EventLocation.verify|verify} messages.
+             * @param message EventLocation message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.MsgOpaqueData.IEventLocation, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified EventLocation message, length delimited. Does not implicitly {@link proto.MsgOpaqueData.EventLocation.verify|verify} messages.
+             * @param message EventLocation message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.MsgOpaqueData.IEventLocation, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes an EventLocation message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns EventLocation
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgOpaqueData.EventLocation;
+
+            /**
+             * Decodes an EventLocation message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns EventLocation
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgOpaqueData.EventLocation;
+
+            /**
+             * Verifies an EventLocation message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates an EventLocation message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns EventLocation
+             */
+            public static fromObject(object: { [k: string]: any }): proto.MsgOpaqueData.EventLocation;
+
+            /**
+             * Creates a plain object from an EventLocation message. Also converts values to other types if specified.
+             * @param message EventLocation
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.MsgOpaqueData.EventLocation, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this EventLocation to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for EventLocation
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** PollContentType enum. */
+        enum PollContentType {
+            UNKNOWN = 0,
+            TEXT = 1,
+            IMAGE = 2
+        }
 
         /** Properties of a PollOption. */
         interface IPollOption {
@@ -24081,6 +31215,213 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollOption
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a PollVoteSnapshot. */
+        interface IPollVoteSnapshot {
+
+            /** PollVoteSnapshot option */
+            option?: (proto.MsgOpaqueData.IPollOption|null);
+
+            /** PollVoteSnapshot optionVoteCount */
+            optionVoteCount?: (number|null);
+        }
+
+        /** Represents a PollVoteSnapshot. */
+        class PollVoteSnapshot implements IPollVoteSnapshot {
+
+            /**
+             * Constructs a new PollVoteSnapshot.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.MsgOpaqueData.IPollVoteSnapshot);
+
+            /** PollVoteSnapshot option. */
+            public option?: (proto.MsgOpaqueData.IPollOption|null);
+
+            /** PollVoteSnapshot optionVoteCount. */
+            public optionVoteCount: number;
+
+            /**
+             * Creates a new PollVoteSnapshot instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns PollVoteSnapshot instance
+             */
+            public static create(properties?: proto.MsgOpaqueData.IPollVoteSnapshot): proto.MsgOpaqueData.PollVoteSnapshot;
+
+            /**
+             * Encodes the specified PollVoteSnapshot message. Does not implicitly {@link proto.MsgOpaqueData.PollVoteSnapshot.verify|verify} messages.
+             * @param message PollVoteSnapshot message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.MsgOpaqueData.IPollVoteSnapshot, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified PollVoteSnapshot message, length delimited. Does not implicitly {@link proto.MsgOpaqueData.PollVoteSnapshot.verify|verify} messages.
+             * @param message PollVoteSnapshot message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.MsgOpaqueData.IPollVoteSnapshot, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a PollVoteSnapshot message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns PollVoteSnapshot
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgOpaqueData.PollVoteSnapshot;
+
+            /**
+             * Decodes a PollVoteSnapshot message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns PollVoteSnapshot
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgOpaqueData.PollVoteSnapshot;
+
+            /**
+             * Verifies a PollVoteSnapshot message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a PollVoteSnapshot message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns PollVoteSnapshot
+             */
+            public static fromObject(object: { [k: string]: any }): proto.MsgOpaqueData.PollVoteSnapshot;
+
+            /**
+             * Creates a plain object from a PollVoteSnapshot message. Also converts values to other types if specified.
+             * @param message PollVoteSnapshot
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.MsgOpaqueData.PollVoteSnapshot, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this PollVoteSnapshot to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollVoteSnapshot
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a PollVotesSnapshot. */
+        interface IPollVotesSnapshot {
+
+            /** PollVotesSnapshot pollVotes */
+            pollVotes?: (proto.MsgOpaqueData.IPollVoteSnapshot[]|null);
+        }
+
+        /** Represents a PollVotesSnapshot. */
+        class PollVotesSnapshot implements IPollVotesSnapshot {
+
+            /**
+             * Constructs a new PollVotesSnapshot.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.MsgOpaqueData.IPollVotesSnapshot);
+
+            /** PollVotesSnapshot pollVotes. */
+            public pollVotes: proto.MsgOpaqueData.IPollVoteSnapshot[];
+
+            /**
+             * Creates a new PollVotesSnapshot instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns PollVotesSnapshot instance
+             */
+            public static create(properties?: proto.MsgOpaqueData.IPollVotesSnapshot): proto.MsgOpaqueData.PollVotesSnapshot;
+
+            /**
+             * Encodes the specified PollVotesSnapshot message. Does not implicitly {@link proto.MsgOpaqueData.PollVotesSnapshot.verify|verify} messages.
+             * @param message PollVotesSnapshot message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.MsgOpaqueData.IPollVotesSnapshot, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified PollVotesSnapshot message, length delimited. Does not implicitly {@link proto.MsgOpaqueData.PollVotesSnapshot.verify|verify} messages.
+             * @param message PollVotesSnapshot message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.MsgOpaqueData.IPollVotesSnapshot, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a PollVotesSnapshot message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns PollVotesSnapshot
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.MsgOpaqueData.PollVotesSnapshot;
+
+            /**
+             * Decodes a PollVotesSnapshot message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns PollVotesSnapshot
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.MsgOpaqueData.PollVotesSnapshot;
+
+            /**
+             * Verifies a PollVotesSnapshot message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a PollVotesSnapshot message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns PollVotesSnapshot
+             */
+            public static fromObject(object: { [k: string]: any }): proto.MsgOpaqueData.PollVotesSnapshot;
+
+            /**
+             * Creates a plain object from a PollVotesSnapshot message. Also converts values to other types if specified.
+             * @param message PollVotesSnapshot
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.MsgOpaqueData.PollVotesSnapshot, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this PollVotesSnapshot to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PollVotesSnapshot
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -24178,6 +31519,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for MsgRowOpaqueData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a NoiseCertificate. */
@@ -24274,6 +31622,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NoiseCertificate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace NoiseCertificate {
@@ -24390,6 +31745,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Details
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -24499,6 +31861,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NotificationMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a NotificationSettings. */
@@ -24619,6 +31988,122 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for NotificationSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a PairingRequest. */
+    interface IPairingRequest {
+
+        /** PairingRequest companionPublicKey */
+        companionPublicKey?: (Uint8Array|null);
+
+        /** PairingRequest companionIdentityKey */
+        companionIdentityKey?: (Uint8Array|null);
+
+        /** PairingRequest advSecret */
+        advSecret?: (Uint8Array|null);
+    }
+
+    /** Represents a PairingRequest. */
+    class PairingRequest implements IPairingRequest {
+
+        /**
+         * Constructs a new PairingRequest.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IPairingRequest);
+
+        /** PairingRequest companionPublicKey. */
+        public companionPublicKey: Uint8Array;
+
+        /** PairingRequest companionIdentityKey. */
+        public companionIdentityKey: Uint8Array;
+
+        /** PairingRequest advSecret. */
+        public advSecret: Uint8Array;
+
+        /**
+         * Creates a new PairingRequest instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns PairingRequest instance
+         */
+        public static create(properties?: proto.IPairingRequest): proto.PairingRequest;
+
+        /**
+         * Encodes the specified PairingRequest message. Does not implicitly {@link proto.PairingRequest.verify|verify} messages.
+         * @param message PairingRequest message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IPairingRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified PairingRequest message, length delimited. Does not implicitly {@link proto.PairingRequest.verify|verify} messages.
+         * @param message PairingRequest message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IPairingRequest, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a PairingRequest message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns PairingRequest
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PairingRequest;
+
+        /**
+         * Decodes a PairingRequest message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns PairingRequest
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PairingRequest;
+
+        /**
+         * Verifies a PairingRequest message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a PairingRequest message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns PairingRequest
+         */
+        public static fromObject(object: { [k: string]: any }): proto.PairingRequest;
+
+        /**
+         * Creates a plain object from a PairingRequest message. Also converts values to other types if specified.
+         * @param message PairingRequest
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.PairingRequest, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this PairingRequest to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PairingRequest
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PastParticipant. */
@@ -24721,6 +32206,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PastParticipant
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PastParticipant {
@@ -24826,6 +32318,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PastParticipants
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PatchDebugData. */
@@ -24976,6 +32475,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PatchDebugData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PatchDebugData {
@@ -24988,7 +32494,9 @@ export namespace proto {
             SMBI = 3,
             WEB = 4,
             UWP = 5,
-            DARWIN = 6
+            DARWIN = 6,
+            IPAD = 7,
+            WEAROS = 8
         }
     }
 
@@ -25134,6 +32642,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PaymentBackground
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PaymentBackground {
@@ -25250,6 +32765,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MediaData
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Type enum. */
@@ -25419,6 +32941,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PaymentInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PaymentInfo {
@@ -25576,6 +33105,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PhoneNumberToLIDMapping
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PhotoChange. */
@@ -25678,6 +33214,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PhotoChange
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PinInChat. */
@@ -25792,6 +33335,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PinInChat
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace PinInChat {
@@ -25910,6 +33460,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Point
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollAdditionalMetadata. */
@@ -26000,6 +33557,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollAdditionalMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollEncValue. */
@@ -26096,6 +33660,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollEncValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PollUpdate. */
@@ -26210,6 +33781,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PollUpdate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PreKeyRecordStructure. */
@@ -26312,6 +33890,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PreKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PreKeySignalMessage. */
@@ -26432,6 +34017,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PreKeySignalMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a PremiumMessageInfo. */
@@ -26522,6 +34114,376 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PremiumMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a PrimaryEphemeralIdentity. */
+    interface IPrimaryEphemeralIdentity {
+
+        /** PrimaryEphemeralIdentity publicKey */
+        publicKey?: (Uint8Array|null);
+
+        /** PrimaryEphemeralIdentity nonce */
+        nonce?: (Uint8Array|null);
+    }
+
+    /** Represents a PrimaryEphemeralIdentity. */
+    class PrimaryEphemeralIdentity implements IPrimaryEphemeralIdentity {
+
+        /**
+         * Constructs a new PrimaryEphemeralIdentity.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IPrimaryEphemeralIdentity);
+
+        /** PrimaryEphemeralIdentity publicKey. */
+        public publicKey: Uint8Array;
+
+        /** PrimaryEphemeralIdentity nonce. */
+        public nonce: Uint8Array;
+
+        /**
+         * Creates a new PrimaryEphemeralIdentity instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns PrimaryEphemeralIdentity instance
+         */
+        public static create(properties?: proto.IPrimaryEphemeralIdentity): proto.PrimaryEphemeralIdentity;
+
+        /**
+         * Encodes the specified PrimaryEphemeralIdentity message. Does not implicitly {@link proto.PrimaryEphemeralIdentity.verify|verify} messages.
+         * @param message PrimaryEphemeralIdentity message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IPrimaryEphemeralIdentity, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified PrimaryEphemeralIdentity message, length delimited. Does not implicitly {@link proto.PrimaryEphemeralIdentity.verify|verify} messages.
+         * @param message PrimaryEphemeralIdentity message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IPrimaryEphemeralIdentity, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a PrimaryEphemeralIdentity message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns PrimaryEphemeralIdentity
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.PrimaryEphemeralIdentity;
+
+        /**
+         * Decodes a PrimaryEphemeralIdentity message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns PrimaryEphemeralIdentity
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.PrimaryEphemeralIdentity;
+
+        /**
+         * Verifies a PrimaryEphemeralIdentity message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a PrimaryEphemeralIdentity message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns PrimaryEphemeralIdentity
+         */
+        public static fromObject(object: { [k: string]: any }): proto.PrimaryEphemeralIdentity;
+
+        /**
+         * Creates a plain object from a PrimaryEphemeralIdentity message. Also converts values to other types if specified.
+         * @param message PrimaryEphemeralIdentity
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.PrimaryEphemeralIdentity, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this PrimaryEphemeralIdentity to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PrimaryEphemeralIdentity
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** PrivacySystemMessage enum. */
+    enum PrivacySystemMessage {
+        E2EE_MSG = 1,
+        NE2EE_SELF = 2,
+        NE2EE_OTHER = 3
+    }
+
+    /** Properties of a ProcessedVideo. */
+    interface IProcessedVideo {
+
+        /** ProcessedVideo directPath */
+        directPath?: (string|null);
+
+        /** ProcessedVideo fileSha256 */
+        fileSha256?: (Uint8Array|null);
+
+        /** ProcessedVideo height */
+        height?: (number|null);
+
+        /** ProcessedVideo width */
+        width?: (number|null);
+
+        /** ProcessedVideo fileLength */
+        fileLength?: (number|Long|null);
+
+        /** ProcessedVideo bitrate */
+        bitrate?: (number|null);
+
+        /** ProcessedVideo quality */
+        quality?: (proto.ProcessedVideo.VideoQuality|null);
+
+        /** ProcessedVideo capabilities */
+        capabilities?: (string[]|null);
+    }
+
+    /** Represents a ProcessedVideo. */
+    class ProcessedVideo implements IProcessedVideo {
+
+        /**
+         * Constructs a new ProcessedVideo.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IProcessedVideo);
+
+        /** ProcessedVideo directPath. */
+        public directPath: string;
+
+        /** ProcessedVideo fileSha256. */
+        public fileSha256: Uint8Array;
+
+        /** ProcessedVideo height. */
+        public height: number;
+
+        /** ProcessedVideo width. */
+        public width: number;
+
+        /** ProcessedVideo fileLength. */
+        public fileLength: (number|Long);
+
+        /** ProcessedVideo bitrate. */
+        public bitrate: number;
+
+        /** ProcessedVideo quality. */
+        public quality: proto.ProcessedVideo.VideoQuality;
+
+        /** ProcessedVideo capabilities. */
+        public capabilities: string[];
+
+        /**
+         * Creates a new ProcessedVideo instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns ProcessedVideo instance
+         */
+        public static create(properties?: proto.IProcessedVideo): proto.ProcessedVideo;
+
+        /**
+         * Encodes the specified ProcessedVideo message. Does not implicitly {@link proto.ProcessedVideo.verify|verify} messages.
+         * @param message ProcessedVideo message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IProcessedVideo, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified ProcessedVideo message, length delimited. Does not implicitly {@link proto.ProcessedVideo.verify|verify} messages.
+         * @param message ProcessedVideo message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IProcessedVideo, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a ProcessedVideo message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns ProcessedVideo
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ProcessedVideo;
+
+        /**
+         * Decodes a ProcessedVideo message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns ProcessedVideo
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ProcessedVideo;
+
+        /**
+         * Verifies a ProcessedVideo message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a ProcessedVideo message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns ProcessedVideo
+         */
+        public static fromObject(object: { [k: string]: any }): proto.ProcessedVideo;
+
+        /**
+         * Creates a plain object from a ProcessedVideo message. Also converts values to other types if specified.
+         * @param message ProcessedVideo
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.ProcessedVideo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this ProcessedVideo to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ProcessedVideo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace ProcessedVideo {
+
+        /** VideoQuality enum. */
+        enum VideoQuality {
+            UNDEFINED = 0,
+            LOW = 1,
+            MID = 2,
+            HIGH = 3
+        }
+    }
+
+    /** Properties of a ProloguePayload. */
+    interface IProloguePayload {
+
+        /** ProloguePayload companionEphemeralIdentity */
+        companionEphemeralIdentity?: (Uint8Array|null);
+
+        /** ProloguePayload commitment */
+        commitment?: (proto.ICompanionCommitment|null);
+    }
+
+    /** Represents a ProloguePayload. */
+    class ProloguePayload implements IProloguePayload {
+
+        /**
+         * Constructs a new ProloguePayload.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IProloguePayload);
+
+        /** ProloguePayload companionEphemeralIdentity. */
+        public companionEphemeralIdentity: Uint8Array;
+
+        /** ProloguePayload commitment. */
+        public commitment?: (proto.ICompanionCommitment|null);
+
+        /**
+         * Creates a new ProloguePayload instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns ProloguePayload instance
+         */
+        public static create(properties?: proto.IProloguePayload): proto.ProloguePayload;
+
+        /**
+         * Encodes the specified ProloguePayload message. Does not implicitly {@link proto.ProloguePayload.verify|verify} messages.
+         * @param message ProloguePayload message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IProloguePayload, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified ProloguePayload message, length delimited. Does not implicitly {@link proto.ProloguePayload.verify|verify} messages.
+         * @param message ProloguePayload message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IProloguePayload, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a ProloguePayload message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns ProloguePayload
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.ProloguePayload;
+
+        /**
+         * Decodes a ProloguePayload message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns ProloguePayload
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.ProloguePayload;
+
+        /**
+         * Verifies a ProloguePayload message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a ProloguePayload message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns ProloguePayload
+         */
+        public static fromObject(object: { [k: string]: any }): proto.ProloguePayload;
+
+        /**
+         * Creates a plain object from a ProloguePayload message. Also converts values to other types if specified.
+         * @param message ProloguePayload
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.ProloguePayload, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this ProloguePayload to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ProloguePayload
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Pushname. */
@@ -26618,419 +34580,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
-    }
-
-    /** Properties of a QP. */
-    interface IQP {
-    }
-
-    /** Represents a QP. */
-    class QP implements IQP {
 
         /**
-         * Constructs a new QP.
-         * @param [properties] Properties to set
+         * Gets the default type url for Pushname
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
          */
-        constructor(properties?: proto.IQP);
-
-        /**
-         * Creates a new QP instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns QP instance
-         */
-        public static create(properties?: proto.IQP): proto.QP;
-
-        /**
-         * Encodes the specified QP message. Does not implicitly {@link proto.QP.verify|verify} messages.
-         * @param message QP message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: proto.IQP, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Encodes the specified QP message, length delimited. Does not implicitly {@link proto.QP.verify|verify} messages.
-         * @param message QP message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: proto.IQP, writer?: $protobuf.Writer): $protobuf.Writer;
-
-        /**
-         * Decodes a QP message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns QP
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP;
-
-        /**
-         * Decodes a QP message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns QP
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP;
-
-        /**
-         * Verifies a QP message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
-
-        /**
-         * Creates a QP message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns QP
-         */
-        public static fromObject(object: { [k: string]: any }): proto.QP;
-
-        /**
-         * Creates a plain object from a QP message. Also converts values to other types if specified.
-         * @param message QP
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: proto.QP, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-        /**
-         * Converts this QP to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
-
-    namespace QP {
-
-        /** ClauseType enum. */
-        enum ClauseType {
-            AND = 1,
-            OR = 2,
-            NOR = 3
-        }
-
-        /** Properties of a Filter. */
-        interface IFilter {
-
-            /** Filter filterName */
-            filterName: string;
-
-            /** Filter parameters */
-            parameters?: (proto.QP.IFilterParameters[]|null);
-
-            /** Filter filterResult */
-            filterResult?: (proto.QP.FilterResult|null);
-
-            /** Filter clientNotSupportedConfig */
-            clientNotSupportedConfig: proto.QP.FilterClientNotSupportedConfig;
-        }
-
-        /** Represents a Filter. */
-        class Filter implements IFilter {
-
-            /**
-             * Constructs a new Filter.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.QP.IFilter);
-
-            /** Filter filterName. */
-            public filterName: string;
-
-            /** Filter parameters. */
-            public parameters: proto.QP.IFilterParameters[];
-
-            /** Filter filterResult. */
-            public filterResult: proto.QP.FilterResult;
-
-            /** Filter clientNotSupportedConfig. */
-            public clientNotSupportedConfig: proto.QP.FilterClientNotSupportedConfig;
-
-            /**
-             * Creates a new Filter instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns Filter instance
-             */
-            public static create(properties?: proto.QP.IFilter): proto.QP.Filter;
-
-            /**
-             * Encodes the specified Filter message. Does not implicitly {@link proto.QP.Filter.verify|verify} messages.
-             * @param message Filter message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.QP.IFilter, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified Filter message, length delimited. Does not implicitly {@link proto.QP.Filter.verify|verify} messages.
-             * @param message Filter message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.QP.IFilter, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a Filter message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns Filter
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.Filter;
-
-            /**
-             * Decodes a Filter message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns Filter
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.Filter;
-
-            /**
-             * Verifies a Filter message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a Filter message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns Filter
-             */
-            public static fromObject(object: { [k: string]: any }): proto.QP.Filter;
-
-            /**
-             * Creates a plain object from a Filter message. Also converts values to other types if specified.
-             * @param message Filter
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.QP.Filter, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this Filter to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
-        }
-
-        /** Properties of a FilterClause. */
-        interface IFilterClause {
-
-            /** FilterClause clauseType */
-            clauseType: proto.QP.ClauseType;
-
-            /** FilterClause clauses */
-            clauses?: (proto.QP.IFilterClause[]|null);
-
-            /** FilterClause filters */
-            filters?: (proto.QP.IFilter[]|null);
-        }
-
-        /** Represents a FilterClause. */
-        class FilterClause implements IFilterClause {
-
-            /**
-             * Constructs a new FilterClause.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.QP.IFilterClause);
-
-            /** FilterClause clauseType. */
-            public clauseType: proto.QP.ClauseType;
-
-            /** FilterClause clauses. */
-            public clauses: proto.QP.IFilterClause[];
-
-            /** FilterClause filters. */
-            public filters: proto.QP.IFilter[];
-
-            /**
-             * Creates a new FilterClause instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns FilterClause instance
-             */
-            public static create(properties?: proto.QP.IFilterClause): proto.QP.FilterClause;
-
-            /**
-             * Encodes the specified FilterClause message. Does not implicitly {@link proto.QP.FilterClause.verify|verify} messages.
-             * @param message FilterClause message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.QP.IFilterClause, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified FilterClause message, length delimited. Does not implicitly {@link proto.QP.FilterClause.verify|verify} messages.
-             * @param message FilterClause message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.QP.IFilterClause, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a FilterClause message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns FilterClause
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.FilterClause;
-
-            /**
-             * Decodes a FilterClause message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns FilterClause
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.FilterClause;
-
-            /**
-             * Verifies a FilterClause message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a FilterClause message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns FilterClause
-             */
-            public static fromObject(object: { [k: string]: any }): proto.QP.FilterClause;
-
-            /**
-             * Creates a plain object from a FilterClause message. Also converts values to other types if specified.
-             * @param message FilterClause
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.QP.FilterClause, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this FilterClause to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
-        }
-
-        /** FilterClientNotSupportedConfig enum. */
-        enum FilterClientNotSupportedConfig {
-            PASS_BY_DEFAULT = 1,
-            FAIL_BY_DEFAULT = 2
-        }
-
-        /** Properties of a FilterParameters. */
-        interface IFilterParameters {
-
-            /** FilterParameters key */
-            key?: (string|null);
-
-            /** FilterParameters value */
-            value?: (string|null);
-        }
-
-        /** Represents a FilterParameters. */
-        class FilterParameters implements IFilterParameters {
-
-            /**
-             * Constructs a new FilterParameters.
-             * @param [properties] Properties to set
-             */
-            constructor(properties?: proto.QP.IFilterParameters);
-
-            /** FilterParameters key. */
-            public key: string;
-
-            /** FilterParameters value. */
-            public value: string;
-
-            /**
-             * Creates a new FilterParameters instance using the specified properties.
-             * @param [properties] Properties to set
-             * @returns FilterParameters instance
-             */
-            public static create(properties?: proto.QP.IFilterParameters): proto.QP.FilterParameters;
-
-            /**
-             * Encodes the specified FilterParameters message. Does not implicitly {@link proto.QP.FilterParameters.verify|verify} messages.
-             * @param message FilterParameters message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encode(message: proto.QP.IFilterParameters, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Encodes the specified FilterParameters message, length delimited. Does not implicitly {@link proto.QP.FilterParameters.verify|verify} messages.
-             * @param message FilterParameters message or plain object to encode
-             * @param [writer] Writer to encode to
-             * @returns Writer
-             */
-            public static encodeDelimited(message: proto.QP.IFilterParameters, writer?: $protobuf.Writer): $protobuf.Writer;
-
-            /**
-             * Decodes a FilterParameters message from the specified reader or buffer.
-             * @param reader Reader or buffer to decode from
-             * @param [length] Message length if known beforehand
-             * @returns FilterParameters
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.QP.FilterParameters;
-
-            /**
-             * Decodes a FilterParameters message from the specified reader or buffer, length delimited.
-             * @param reader Reader or buffer to decode from
-             * @returns FilterParameters
-             * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
-             */
-            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.QP.FilterParameters;
-
-            /**
-             * Verifies a FilterParameters message.
-             * @param message Plain object to verify
-             * @returns `null` if valid, otherwise the reason why it is not
-             */
-            public static verify(message: { [k: string]: any }): (string|null);
-
-            /**
-             * Creates a FilterParameters message from a plain object. Also converts values to their respective internal types.
-             * @param object Plain object
-             * @returns FilterParameters
-             */
-            public static fromObject(object: { [k: string]: any }): proto.QP.FilterParameters;
-
-            /**
-             * Creates a plain object from a FilterParameters message. Also converts values to other types if specified.
-             * @param message FilterParameters
-             * @param [options] Conversion options
-             * @returns Plain object
-             */
-            public static toObject(message: proto.QP.FilterParameters, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-            /**
-             * Converts this FilterParameters to JSON.
-             * @returns JSON object
-             */
-            public toJSON(): { [k: string]: any };
-        }
-
-        /** FilterResult enum. */
-        enum FilterResult {
-            TRUE = 1,
-            FALSE = 2,
-            UNKNOWN = 3
-        }
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a Reaction. */
@@ -27145,6 +34701,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Reaction
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a RecentEmojiWeight. */
@@ -27241,6 +34804,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for RecentEmojiWeight
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a RecordStructure. */
@@ -27337,6 +34907,128 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for RecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a Reportable. */
+    interface IReportable {
+
+        /** Reportable minVersion */
+        minVersion?: (number|null);
+
+        /** Reportable maxVersion */
+        maxVersion?: (number|null);
+
+        /** Reportable notReportableMinVersion */
+        notReportableMinVersion?: (number|null);
+
+        /** Reportable never */
+        never?: (boolean|null);
+    }
+
+    /** Represents a Reportable. */
+    class Reportable implements IReportable {
+
+        /**
+         * Constructs a new Reportable.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IReportable);
+
+        /** Reportable minVersion. */
+        public minVersion: number;
+
+        /** Reportable maxVersion. */
+        public maxVersion: number;
+
+        /** Reportable notReportableMinVersion. */
+        public notReportableMinVersion: number;
+
+        /** Reportable never. */
+        public never: boolean;
+
+        /**
+         * Creates a new Reportable instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Reportable instance
+         */
+        public static create(properties?: proto.IReportable): proto.Reportable;
+
+        /**
+         * Encodes the specified Reportable message. Does not implicitly {@link proto.Reportable.verify|verify} messages.
+         * @param message Reportable message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IReportable, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified Reportable message, length delimited. Does not implicitly {@link proto.Reportable.verify|verify} messages.
+         * @param message Reportable message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IReportable, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a Reportable message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns Reportable
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.Reportable;
+
+        /**
+         * Decodes a Reportable message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns Reportable
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.Reportable;
+
+        /**
+         * Verifies a Reportable message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a Reportable message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns Reportable
+         */
+        public static fromObject(object: { [k: string]: any }): proto.Reportable;
+
+        /**
+         * Creates a plain object from a Reportable message. Also converts values to other types if specified.
+         * @param message Reportable
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.Reportable, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this Reportable to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for Reportable
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a ReportingTokenInfo. */
@@ -27427,6 +35119,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ReportingTokenInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyDistributionMessage. */
@@ -27535,6 +35234,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyDistributionMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyMessage. */
@@ -27637,6 +35343,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyRecordStructure. */
@@ -27727,6 +35440,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SenderKeyStateStructure. */
@@ -27835,6 +35555,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SenderKeyStateStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SenderKeyStateStructure {
@@ -27933,6 +35660,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderChainKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderMessageKey. */
@@ -28029,6 +35763,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderMessageKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SenderSigningKey. */
@@ -28125,6 +35866,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SenderSigningKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -28216,6 +35964,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for ServerErrorReceipt
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SessionStructure. */
@@ -28378,6 +36133,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SessionStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SessionStructure {
@@ -28488,6 +36250,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Chain
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace Chain {
@@ -28586,6 +36355,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ChainKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MessageKey. */
@@ -28694,6 +36470,13 @@ export namespace proto {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MessageKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
 
@@ -28821,6 +36604,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PendingKeyExchange
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PendingPreKey. */
@@ -28923,6 +36713,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PendingPreKey
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -29032,6 +36829,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SignalMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SignedPreKeyRecordStructure. */
@@ -29146,6 +36950,110 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SignedPreKeyRecordStructure
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a StatusMentionMessage. */
+    interface IStatusMentionMessage {
+
+        /** StatusMentionMessage quotedStatus */
+        quotedStatus?: (proto.IMessage|null);
+    }
+
+    /** Represents a StatusMentionMessage. */
+    class StatusMentionMessage implements IStatusMentionMessage {
+
+        /**
+         * Constructs a new StatusMentionMessage.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IStatusMentionMessage);
+
+        /** StatusMentionMessage quotedStatus. */
+        public quotedStatus?: (proto.IMessage|null);
+
+        /**
+         * Creates a new StatusMentionMessage instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns StatusMentionMessage instance
+         */
+        public static create(properties?: proto.IStatusMentionMessage): proto.StatusMentionMessage;
+
+        /**
+         * Encodes the specified StatusMentionMessage message. Does not implicitly {@link proto.StatusMentionMessage.verify|verify} messages.
+         * @param message StatusMentionMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IStatusMentionMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified StatusMentionMessage message, length delimited. Does not implicitly {@link proto.StatusMentionMessage.verify|verify} messages.
+         * @param message StatusMentionMessage message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IStatusMentionMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a StatusMentionMessage message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns StatusMentionMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.StatusMentionMessage;
+
+        /**
+         * Decodes a StatusMentionMessage message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns StatusMentionMessage
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.StatusMentionMessage;
+
+        /**
+         * Verifies a StatusMentionMessage message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a StatusMentionMessage message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns StatusMentionMessage
+         */
+        public static fromObject(object: { [k: string]: any }): proto.StatusMentionMessage;
+
+        /**
+         * Creates a plain object from a StatusMentionMessage message. Also converts values to other types if specified.
+         * @param message StatusMentionMessage
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.StatusMentionMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this StatusMentionMessage to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for StatusMentionMessage
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a StatusPSA. */
@@ -29242,6 +37150,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for StatusPSA
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a StickerMetadata. */
@@ -29279,6 +37194,9 @@ export namespace proto {
 
         /** StickerMetadata lastStickerSentTs */
         lastStickerSentTs?: (number|Long|null);
+
+        /** StickerMetadata isLottie */
+        isLottie?: (boolean|null);
     }
 
     /** Represents a StickerMetadata. */
@@ -29322,6 +37240,9 @@ export namespace proto {
 
         /** StickerMetadata lastStickerSentTs. */
         public lastStickerSentTs: (number|Long);
+
+        /** StickerMetadata isLottie. */
+        public isLottie: boolean;
 
         /**
          * Creates a new StickerMetadata instance using the specified properties.
@@ -29392,6 +37313,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for StickerMetadata
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncActionData. */
@@ -29500,6 +37428,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncActionData
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncActionValue. */
@@ -29633,6 +37568,39 @@ export namespace proto {
 
         /** SyncActionValue customPaymentMethodsAction */
         customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction|null);
+
+        /** SyncActionValue lockChatAction */
+        lockChatAction?: (proto.SyncActionValue.ILockChatAction|null);
+
+        /** SyncActionValue chatLockSettings */
+        chatLockSettings?: (proto.IChatLockSettings|null);
+
+        /** SyncActionValue wamoUserIdentifierAction */
+        wamoUserIdentifierAction?: (proto.SyncActionValue.IWamoUserIdentifierAction|null);
+
+        /** SyncActionValue privacySettingDisableLinkPreviewsAction */
+        privacySettingDisableLinkPreviewsAction?: (proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction|null);
+
+        /** SyncActionValue deviceCapabilities */
+        deviceCapabilities?: (proto.IDeviceCapabilities|null);
+
+        /** SyncActionValue noteEditAction */
+        noteEditAction?: (proto.SyncActionValue.INoteEditAction|null);
+
+        /** SyncActionValue favoritesAction */
+        favoritesAction?: (proto.SyncActionValue.IFavoritesAction|null);
+
+        /** SyncActionValue merchantPaymentPartnerAction */
+        merchantPaymentPartnerAction?: (proto.SyncActionValue.IMerchantPaymentPartnerAction|null);
+
+        /** SyncActionValue waffleAccountLinkStateAction */
+        waffleAccountLinkStateAction?: (proto.SyncActionValue.IWaffleAccountLinkStateAction|null);
+
+        /** SyncActionValue usernameChatStartMode */
+        usernameChatStartMode?: (proto.SyncActionValue.IUsernameChatStartModeAction|null);
+
+        /** SyncActionValue notificationActivitySettingAction */
+        notificationActivitySettingAction?: (proto.SyncActionValue.INotificationActivitySettingAction|null);
     }
 
     /** Represents a SyncActionValue. */
@@ -29773,6 +37741,39 @@ export namespace proto {
         /** SyncActionValue customPaymentMethodsAction. */
         public customPaymentMethodsAction?: (proto.SyncActionValue.ICustomPaymentMethodsAction|null);
 
+        /** SyncActionValue lockChatAction. */
+        public lockChatAction?: (proto.SyncActionValue.ILockChatAction|null);
+
+        /** SyncActionValue chatLockSettings. */
+        public chatLockSettings?: (proto.IChatLockSettings|null);
+
+        /** SyncActionValue wamoUserIdentifierAction. */
+        public wamoUserIdentifierAction?: (proto.SyncActionValue.IWamoUserIdentifierAction|null);
+
+        /** SyncActionValue privacySettingDisableLinkPreviewsAction. */
+        public privacySettingDisableLinkPreviewsAction?: (proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction|null);
+
+        /** SyncActionValue deviceCapabilities. */
+        public deviceCapabilities?: (proto.IDeviceCapabilities|null);
+
+        /** SyncActionValue noteEditAction. */
+        public noteEditAction?: (proto.SyncActionValue.INoteEditAction|null);
+
+        /** SyncActionValue favoritesAction. */
+        public favoritesAction?: (proto.SyncActionValue.IFavoritesAction|null);
+
+        /** SyncActionValue merchantPaymentPartnerAction. */
+        public merchantPaymentPartnerAction?: (proto.SyncActionValue.IMerchantPaymentPartnerAction|null);
+
+        /** SyncActionValue waffleAccountLinkStateAction. */
+        public waffleAccountLinkStateAction?: (proto.SyncActionValue.IWaffleAccountLinkStateAction|null);
+
+        /** SyncActionValue usernameChatStartMode. */
+        public usernameChatStartMode?: (proto.SyncActionValue.IUsernameChatStartModeAction|null);
+
+        /** SyncActionValue notificationActivitySettingAction. */
+        public notificationActivitySettingAction?: (proto.SyncActionValue.INotificationActivitySettingAction|null);
+
         /**
          * Creates a new SyncActionValue instance using the specified properties.
          * @param [properties] Properties to set
@@ -29842,6 +37843,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncActionValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SyncActionValue {
@@ -29946,6 +37954,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AgentAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an AndroidUnsupportedActions. */
@@ -30036,6 +38051,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for AndroidUnsupportedActions
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an ArchiveChatAction. */
@@ -30132,6 +38154,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ArchiveChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a BotWelcomeRequestAction. */
@@ -30222,6 +38251,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for BotWelcomeRequestAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CallLogAction. */
@@ -30312,6 +38348,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallLogAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ChatAssignmentAction. */
@@ -30402,6 +38445,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ChatAssignmentAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ChatAssignmentOpenedStatusAction. */
@@ -30492,6 +38542,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ChatAssignmentOpenedStatusAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ClearChatAction. */
@@ -30582,6 +38639,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ClearChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a ContactAction. */
@@ -30690,6 +38754,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ContactAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CustomPaymentMethod. */
@@ -30798,6 +38869,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CustomPaymentMethod
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CustomPaymentMethodMetadata. */
@@ -30894,6 +38972,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CustomPaymentMethodMetadata
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a CustomPaymentMethodsAction. */
@@ -30984,6 +39069,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CustomPaymentMethodsAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteChatAction. */
@@ -31074,6 +39166,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteIndividualCallLogAction. */
@@ -31170,6 +39269,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteIndividualCallLogAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a DeleteMessageForMeAction. */
@@ -31266,6 +39372,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for DeleteMessageForMeAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an ExternalWebBetaAction. */
@@ -31356,6 +39469,210 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for ExternalWebBetaAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a FavoritesAction. */
+        interface IFavoritesAction {
+
+            /** FavoritesAction favorites */
+            favorites?: (proto.SyncActionValue.FavoritesAction.IFavorite[]|null);
+        }
+
+        /** Represents a FavoritesAction. */
+        class FavoritesAction implements IFavoritesAction {
+
+            /**
+             * Constructs a new FavoritesAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IFavoritesAction);
+
+            /** FavoritesAction favorites. */
+            public favorites: proto.SyncActionValue.FavoritesAction.IFavorite[];
+
+            /**
+             * Creates a new FavoritesAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns FavoritesAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IFavoritesAction): proto.SyncActionValue.FavoritesAction;
+
+            /**
+             * Encodes the specified FavoritesAction message. Does not implicitly {@link proto.SyncActionValue.FavoritesAction.verify|verify} messages.
+             * @param message FavoritesAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IFavoritesAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified FavoritesAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.FavoritesAction.verify|verify} messages.
+             * @param message FavoritesAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IFavoritesAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a FavoritesAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns FavoritesAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.FavoritesAction;
+
+            /**
+             * Decodes a FavoritesAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns FavoritesAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.FavoritesAction;
+
+            /**
+             * Verifies a FavoritesAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a FavoritesAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns FavoritesAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.FavoritesAction;
+
+            /**
+             * Creates a plain object from a FavoritesAction message. Also converts values to other types if specified.
+             * @param message FavoritesAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.FavoritesAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this FavoritesAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for FavoritesAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace FavoritesAction {
+
+            /** Properties of a Favorite. */
+            interface IFavorite {
+
+                /** Favorite id */
+                id?: (string|null);
+            }
+
+            /** Represents a Favorite. */
+            class Favorite implements IFavorite {
+
+                /**
+                 * Constructs a new Favorite.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.SyncActionValue.FavoritesAction.IFavorite);
+
+                /** Favorite id. */
+                public id: string;
+
+                /**
+                 * Creates a new Favorite instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Favorite instance
+                 */
+                public static create(properties?: proto.SyncActionValue.FavoritesAction.IFavorite): proto.SyncActionValue.FavoritesAction.Favorite;
+
+                /**
+                 * Encodes the specified Favorite message. Does not implicitly {@link proto.SyncActionValue.FavoritesAction.Favorite.verify|verify} messages.
+                 * @param message Favorite message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.SyncActionValue.FavoritesAction.IFavorite, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified Favorite message, length delimited. Does not implicitly {@link proto.SyncActionValue.FavoritesAction.Favorite.verify|verify} messages.
+                 * @param message Favorite message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.SyncActionValue.FavoritesAction.IFavorite, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a Favorite message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Favorite
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.FavoritesAction.Favorite;
+
+                /**
+                 * Decodes a Favorite message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns Favorite
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.FavoritesAction.Favorite;
+
+                /**
+                 * Verifies a Favorite message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a Favorite message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Favorite
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.FavoritesAction.Favorite;
+
+                /**
+                 * Creates a plain object from a Favorite message. Also converts values to other types if specified.
+                 * @param message Favorite
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.SyncActionValue.FavoritesAction.Favorite, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Favorite to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Favorite
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
         }
 
         /** Properties of a KeyExpiration. */
@@ -31446,6 +39763,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for KeyExpiration
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LabelAssociationAction. */
@@ -31536,6 +39860,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelAssociationAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LabelEditAction. */
@@ -31555,6 +39886,12 @@ export namespace proto {
 
             /** LabelEditAction orderIndex */
             orderIndex?: (number|null);
+
+            /** LabelEditAction isActive */
+            isActive?: (boolean|null);
+
+            /** LabelEditAction type */
+            type?: (proto.SyncActionValue.LabelEditAction.ListType|null);
         }
 
         /** Represents a LabelEditAction. */
@@ -31580,6 +39917,12 @@ export namespace proto {
 
             /** LabelEditAction orderIndex. */
             public orderIndex: number;
+
+            /** LabelEditAction isActive. */
+            public isActive: boolean;
+
+            /** LabelEditAction type. */
+            public type: proto.SyncActionValue.LabelEditAction.ListType;
 
             /**
              * Creates a new LabelEditAction instance using the specified properties.
@@ -31650,6 +39993,26 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelEditAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace LabelEditAction {
+
+            /** ListType enum. */
+            enum ListType {
+                NONE = 0,
+                UNREAD = 1,
+                GROUPS = 2,
+                FAVORITES = 3,
+                PREDEFINED = 4,
+                CUSTOM = 5
+            }
         }
 
         /** Properties of a LabelReorderingAction. */
@@ -31740,6 +40103,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LabelReorderingAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a LocaleSetting. */
@@ -31830,6 +40200,110 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LocaleSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a LockChatAction. */
+        interface ILockChatAction {
+
+            /** LockChatAction locked */
+            locked?: (boolean|null);
+        }
+
+        /** Represents a LockChatAction. */
+        class LockChatAction implements ILockChatAction {
+
+            /**
+             * Constructs a new LockChatAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.ILockChatAction);
+
+            /** LockChatAction locked. */
+            public locked: boolean;
+
+            /**
+             * Creates a new LockChatAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns LockChatAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.ILockChatAction): proto.SyncActionValue.LockChatAction;
+
+            /**
+             * Encodes the specified LockChatAction message. Does not implicitly {@link proto.SyncActionValue.LockChatAction.verify|verify} messages.
+             * @param message LockChatAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.ILockChatAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified LockChatAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.LockChatAction.verify|verify} messages.
+             * @param message LockChatAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.ILockChatAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a LockChatAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns LockChatAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.LockChatAction;
+
+            /**
+             * Decodes a LockChatAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns LockChatAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.LockChatAction;
+
+            /**
+             * Verifies a LockChatAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a LockChatAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns LockChatAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.LockChatAction;
+
+            /**
+             * Creates a plain object from a LockChatAction message. Also converts values to other types if specified.
+             * @param message LockChatAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.LockChatAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this LockChatAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for LockChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MarkChatAsReadAction. */
@@ -31926,6 +40400,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarkChatAsReadAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a MarketingMessageAction. */
@@ -32052,6 +40533,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarketingMessageAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace MarketingMessageAction {
@@ -32150,6 +40638,137 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MarketingMessageBroadcastAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a MerchantPaymentPartnerAction. */
+        interface IMerchantPaymentPartnerAction {
+
+            /** MerchantPaymentPartnerAction status */
+            status: proto.SyncActionValue.MerchantPaymentPartnerAction.Status;
+
+            /** MerchantPaymentPartnerAction country */
+            country: string;
+
+            /** MerchantPaymentPartnerAction gatewayName */
+            gatewayName?: (string|null);
+
+            /** MerchantPaymentPartnerAction credentialId */
+            credentialId?: (string|null);
+        }
+
+        /** Represents a MerchantPaymentPartnerAction. */
+        class MerchantPaymentPartnerAction implements IMerchantPaymentPartnerAction {
+
+            /**
+             * Constructs a new MerchantPaymentPartnerAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IMerchantPaymentPartnerAction);
+
+            /** MerchantPaymentPartnerAction status. */
+            public status: proto.SyncActionValue.MerchantPaymentPartnerAction.Status;
+
+            /** MerchantPaymentPartnerAction country. */
+            public country: string;
+
+            /** MerchantPaymentPartnerAction gatewayName. */
+            public gatewayName: string;
+
+            /** MerchantPaymentPartnerAction credentialId. */
+            public credentialId: string;
+
+            /**
+             * Creates a new MerchantPaymentPartnerAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns MerchantPaymentPartnerAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IMerchantPaymentPartnerAction): proto.SyncActionValue.MerchantPaymentPartnerAction;
+
+            /**
+             * Encodes the specified MerchantPaymentPartnerAction message. Does not implicitly {@link proto.SyncActionValue.MerchantPaymentPartnerAction.verify|verify} messages.
+             * @param message MerchantPaymentPartnerAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IMerchantPaymentPartnerAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified MerchantPaymentPartnerAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.MerchantPaymentPartnerAction.verify|verify} messages.
+             * @param message MerchantPaymentPartnerAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IMerchantPaymentPartnerAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a MerchantPaymentPartnerAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns MerchantPaymentPartnerAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.MerchantPaymentPartnerAction;
+
+            /**
+             * Decodes a MerchantPaymentPartnerAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns MerchantPaymentPartnerAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.MerchantPaymentPartnerAction;
+
+            /**
+             * Verifies a MerchantPaymentPartnerAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a MerchantPaymentPartnerAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns MerchantPaymentPartnerAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.MerchantPaymentPartnerAction;
+
+            /**
+             * Creates a plain object from a MerchantPaymentPartnerAction message. Also converts values to other types if specified.
+             * @param message MerchantPaymentPartnerAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.MerchantPaymentPartnerAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this MerchantPaymentPartnerAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MerchantPaymentPartnerAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace MerchantPaymentPartnerAction {
+
+            /** Status enum. */
+            enum Status {
+                ACTIVE = 0,
+                INACTIVE = 1
+            }
         }
 
         /** Properties of a MuteAction. */
@@ -32252,6 +40871,251 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for MuteAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a NoteEditAction. */
+        interface INoteEditAction {
+
+            /** NoteEditAction type */
+            type?: (proto.SyncActionValue.NoteEditAction.NoteType|null);
+
+            /** NoteEditAction chatJid */
+            chatJid?: (string|null);
+
+            /** NoteEditAction createdAt */
+            createdAt?: (number|Long|null);
+
+            /** NoteEditAction deleted */
+            deleted?: (boolean|null);
+
+            /** NoteEditAction unstructuredContent */
+            unstructuredContent?: (string|null);
+        }
+
+        /** Represents a NoteEditAction. */
+        class NoteEditAction implements INoteEditAction {
+
+            /**
+             * Constructs a new NoteEditAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.INoteEditAction);
+
+            /** NoteEditAction type. */
+            public type: proto.SyncActionValue.NoteEditAction.NoteType;
+
+            /** NoteEditAction chatJid. */
+            public chatJid: string;
+
+            /** NoteEditAction createdAt. */
+            public createdAt: (number|Long);
+
+            /** NoteEditAction deleted. */
+            public deleted: boolean;
+
+            /** NoteEditAction unstructuredContent. */
+            public unstructuredContent: string;
+
+            /**
+             * Creates a new NoteEditAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns NoteEditAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.INoteEditAction): proto.SyncActionValue.NoteEditAction;
+
+            /**
+             * Encodes the specified NoteEditAction message. Does not implicitly {@link proto.SyncActionValue.NoteEditAction.verify|verify} messages.
+             * @param message NoteEditAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.INoteEditAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified NoteEditAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.NoteEditAction.verify|verify} messages.
+             * @param message NoteEditAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.INoteEditAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a NoteEditAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns NoteEditAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.NoteEditAction;
+
+            /**
+             * Decodes a NoteEditAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns NoteEditAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.NoteEditAction;
+
+            /**
+             * Verifies a NoteEditAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a NoteEditAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns NoteEditAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.NoteEditAction;
+
+            /**
+             * Creates a plain object from a NoteEditAction message. Also converts values to other types if specified.
+             * @param message NoteEditAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.NoteEditAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this NoteEditAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NoteEditAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace NoteEditAction {
+
+            /** NoteType enum. */
+            enum NoteType {
+                UNSTRUCTURED = 1,
+                STRUCTURED = 2
+            }
+        }
+
+        /** Properties of a NotificationActivitySettingAction. */
+        interface INotificationActivitySettingAction {
+
+            /** NotificationActivitySettingAction notificationActivitySetting */
+            notificationActivitySetting?: (proto.SyncActionValue.NotificationActivitySettingAction.NotificationActivitySetting|null);
+        }
+
+        /** Represents a NotificationActivitySettingAction. */
+        class NotificationActivitySettingAction implements INotificationActivitySettingAction {
+
+            /**
+             * Constructs a new NotificationActivitySettingAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.INotificationActivitySettingAction);
+
+            /** NotificationActivitySettingAction notificationActivitySetting. */
+            public notificationActivitySetting: proto.SyncActionValue.NotificationActivitySettingAction.NotificationActivitySetting;
+
+            /**
+             * Creates a new NotificationActivitySettingAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns NotificationActivitySettingAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.INotificationActivitySettingAction): proto.SyncActionValue.NotificationActivitySettingAction;
+
+            /**
+             * Encodes the specified NotificationActivitySettingAction message. Does not implicitly {@link proto.SyncActionValue.NotificationActivitySettingAction.verify|verify} messages.
+             * @param message NotificationActivitySettingAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.INotificationActivitySettingAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified NotificationActivitySettingAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.NotificationActivitySettingAction.verify|verify} messages.
+             * @param message NotificationActivitySettingAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.INotificationActivitySettingAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a NotificationActivitySettingAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns NotificationActivitySettingAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.NotificationActivitySettingAction;
+
+            /**
+             * Decodes a NotificationActivitySettingAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns NotificationActivitySettingAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.NotificationActivitySettingAction;
+
+            /**
+             * Verifies a NotificationActivitySettingAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a NotificationActivitySettingAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns NotificationActivitySettingAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.NotificationActivitySettingAction;
+
+            /**
+             * Creates a plain object from a NotificationActivitySettingAction message. Also converts values to other types if specified.
+             * @param message NotificationActivitySettingAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.NotificationActivitySettingAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this NotificationActivitySettingAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NotificationActivitySettingAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace NotificationActivitySettingAction {
+
+            /** NotificationActivitySetting enum. */
+            enum NotificationActivitySetting {
+                DEFAULT_ALL_MESSAGES = 0,
+                ALL_MESSAGES = 1,
+                HIGHLIGHTS = 2,
+                DEFAULT_HIGHLIGHTS = 3
+            }
         }
 
         /** Properties of a NuxAction. */
@@ -32342,6 +41206,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for NuxAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PaymentInfoAction. */
@@ -32432,6 +41303,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PaymentInfoAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PinAction. */
@@ -32522,6 +41400,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PinAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PnForLidChatAction. */
@@ -32612,6 +41497,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PnForLidChatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrimaryFeature. */
@@ -32702,6 +41594,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrimaryFeature
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrimaryVersionAction. */
@@ -32792,6 +41691,110 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrimaryVersionAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a PrivacySettingDisableLinkPreviewsAction. */
+        interface IPrivacySettingDisableLinkPreviewsAction {
+
+            /** PrivacySettingDisableLinkPreviewsAction isPreviewsDisabled */
+            isPreviewsDisabled?: (boolean|null);
+        }
+
+        /** Represents a PrivacySettingDisableLinkPreviewsAction. */
+        class PrivacySettingDisableLinkPreviewsAction implements IPrivacySettingDisableLinkPreviewsAction {
+
+            /**
+             * Constructs a new PrivacySettingDisableLinkPreviewsAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction);
+
+            /** PrivacySettingDisableLinkPreviewsAction isPreviewsDisabled. */
+            public isPreviewsDisabled: boolean;
+
+            /**
+             * Creates a new PrivacySettingDisableLinkPreviewsAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns PrivacySettingDisableLinkPreviewsAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction): proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction;
+
+            /**
+             * Encodes the specified PrivacySettingDisableLinkPreviewsAction message. Does not implicitly {@link proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction.verify|verify} messages.
+             * @param message PrivacySettingDisableLinkPreviewsAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified PrivacySettingDisableLinkPreviewsAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction.verify|verify} messages.
+             * @param message PrivacySettingDisableLinkPreviewsAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IPrivacySettingDisableLinkPreviewsAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a PrivacySettingDisableLinkPreviewsAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns PrivacySettingDisableLinkPreviewsAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction;
+
+            /**
+             * Decodes a PrivacySettingDisableLinkPreviewsAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns PrivacySettingDisableLinkPreviewsAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction;
+
+            /**
+             * Verifies a PrivacySettingDisableLinkPreviewsAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a PrivacySettingDisableLinkPreviewsAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns PrivacySettingDisableLinkPreviewsAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction;
+
+            /**
+             * Creates a plain object from a PrivacySettingDisableLinkPreviewsAction message. Also converts values to other types if specified.
+             * @param message PrivacySettingDisableLinkPreviewsAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.PrivacySettingDisableLinkPreviewsAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this PrivacySettingDisableLinkPreviewsAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrivacySettingDisableLinkPreviewsAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PrivacySettingRelayAllCalls. */
@@ -32882,6 +41885,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PrivacySettingRelayAllCalls
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a PushNameSetting. */
@@ -32972,6 +41982,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for PushNameSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a QuickReplyAction. */
@@ -33086,6 +42103,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for QuickReplyAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RecentEmojiWeightsAction. */
@@ -33176,6 +42200,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RecentEmojiWeightsAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a RemoveRecentStickerAction. */
@@ -33266,6 +42297,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for RemoveRecentStickerAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SecurityNotificationSetting. */
@@ -33356,6 +42394,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SecurityNotificationSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StarAction. */
@@ -33446,6 +42491,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StarAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a StatusPrivacyAction. */
@@ -33542,6 +42594,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StatusPrivacyAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         namespace StatusPrivacyAction {
@@ -33586,6 +42645,9 @@ export namespace proto {
 
             /** StickerAction deviceIdHint */
             deviceIdHint?: (number|null);
+
+            /** StickerAction isLottie */
+            isLottie?: (boolean|null);
         }
 
         /** Represents a StickerAction. */
@@ -33626,6 +42688,9 @@ export namespace proto {
 
             /** StickerAction deviceIdHint. */
             public deviceIdHint: number;
+
+            /** StickerAction isLottie. */
+            public isLottie: boolean;
 
             /**
              * Creates a new StickerAction instance using the specified properties.
@@ -33696,6 +42761,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for StickerAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SubscriptionAction. */
@@ -33798,6 +42870,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SubscriptionAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SyncActionMessage. */
@@ -33894,6 +42973,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SyncActionMessage
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a SyncActionMessageRange. */
@@ -33996,6 +43082,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for SyncActionMessageRange
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a TimeFormatAction. */
@@ -34086,6 +43179,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TimeFormatAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of an UnarchiveChatsSetting. */
@@ -34176,6 +43276,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UnarchiveChatsSetting
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a UserStatusMuteAction. */
@@ -34266,6 +43373,321 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UserStatusMuteAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        /** Properties of a UsernameChatStartModeAction. */
+        interface IUsernameChatStartModeAction {
+
+            /** UsernameChatStartModeAction chatStartMode */
+            chatStartMode?: (proto.SyncActionValue.UsernameChatStartModeAction.ChatStartMode|null);
+        }
+
+        /** Represents a UsernameChatStartModeAction. */
+        class UsernameChatStartModeAction implements IUsernameChatStartModeAction {
+
+            /**
+             * Constructs a new UsernameChatStartModeAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IUsernameChatStartModeAction);
+
+            /** UsernameChatStartModeAction chatStartMode. */
+            public chatStartMode: proto.SyncActionValue.UsernameChatStartModeAction.ChatStartMode;
+
+            /**
+             * Creates a new UsernameChatStartModeAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns UsernameChatStartModeAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IUsernameChatStartModeAction): proto.SyncActionValue.UsernameChatStartModeAction;
+
+            /**
+             * Encodes the specified UsernameChatStartModeAction message. Does not implicitly {@link proto.SyncActionValue.UsernameChatStartModeAction.verify|verify} messages.
+             * @param message UsernameChatStartModeAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IUsernameChatStartModeAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified UsernameChatStartModeAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.UsernameChatStartModeAction.verify|verify} messages.
+             * @param message UsernameChatStartModeAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IUsernameChatStartModeAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a UsernameChatStartModeAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns UsernameChatStartModeAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.UsernameChatStartModeAction;
+
+            /**
+             * Decodes a UsernameChatStartModeAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns UsernameChatStartModeAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.UsernameChatStartModeAction;
+
+            /**
+             * Verifies a UsernameChatStartModeAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a UsernameChatStartModeAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns UsernameChatStartModeAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.UsernameChatStartModeAction;
+
+            /**
+             * Creates a plain object from a UsernameChatStartModeAction message. Also converts values to other types if specified.
+             * @param message UsernameChatStartModeAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.UsernameChatStartModeAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this UsernameChatStartModeAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UsernameChatStartModeAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace UsernameChatStartModeAction {
+
+            /** ChatStartMode enum. */
+            enum ChatStartMode {
+                LID = 1,
+                PN = 2
+            }
+        }
+
+        /** Properties of a WaffleAccountLinkStateAction. */
+        interface IWaffleAccountLinkStateAction {
+
+            /** WaffleAccountLinkStateAction linkState */
+            linkState?: (proto.SyncActionValue.WaffleAccountLinkStateAction.AccountLinkState|null);
+        }
+
+        /** Represents a WaffleAccountLinkStateAction. */
+        class WaffleAccountLinkStateAction implements IWaffleAccountLinkStateAction {
+
+            /**
+             * Constructs a new WaffleAccountLinkStateAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IWaffleAccountLinkStateAction);
+
+            /** WaffleAccountLinkStateAction linkState. */
+            public linkState: proto.SyncActionValue.WaffleAccountLinkStateAction.AccountLinkState;
+
+            /**
+             * Creates a new WaffleAccountLinkStateAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns WaffleAccountLinkStateAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IWaffleAccountLinkStateAction): proto.SyncActionValue.WaffleAccountLinkStateAction;
+
+            /**
+             * Encodes the specified WaffleAccountLinkStateAction message. Does not implicitly {@link proto.SyncActionValue.WaffleAccountLinkStateAction.verify|verify} messages.
+             * @param message WaffleAccountLinkStateAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IWaffleAccountLinkStateAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified WaffleAccountLinkStateAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.WaffleAccountLinkStateAction.verify|verify} messages.
+             * @param message WaffleAccountLinkStateAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IWaffleAccountLinkStateAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a WaffleAccountLinkStateAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns WaffleAccountLinkStateAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.WaffleAccountLinkStateAction;
+
+            /**
+             * Decodes a WaffleAccountLinkStateAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns WaffleAccountLinkStateAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.WaffleAccountLinkStateAction;
+
+            /**
+             * Verifies a WaffleAccountLinkStateAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a WaffleAccountLinkStateAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns WaffleAccountLinkStateAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.WaffleAccountLinkStateAction;
+
+            /**
+             * Creates a plain object from a WaffleAccountLinkStateAction message. Also converts values to other types if specified.
+             * @param message WaffleAccountLinkStateAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.WaffleAccountLinkStateAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this WaffleAccountLinkStateAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for WaffleAccountLinkStateAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace WaffleAccountLinkStateAction {
+
+            /** AccountLinkState enum. */
+            enum AccountLinkState {
+                ACTIVE = 0
+            }
+        }
+
+        /** Properties of a WamoUserIdentifierAction. */
+        interface IWamoUserIdentifierAction {
+
+            /** WamoUserIdentifierAction identifier */
+            identifier?: (string|null);
+        }
+
+        /** Represents a WamoUserIdentifierAction. */
+        class WamoUserIdentifierAction implements IWamoUserIdentifierAction {
+
+            /**
+             * Constructs a new WamoUserIdentifierAction.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.SyncActionValue.IWamoUserIdentifierAction);
+
+            /** WamoUserIdentifierAction identifier. */
+            public identifier: string;
+
+            /**
+             * Creates a new WamoUserIdentifierAction instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns WamoUserIdentifierAction instance
+             */
+            public static create(properties?: proto.SyncActionValue.IWamoUserIdentifierAction): proto.SyncActionValue.WamoUserIdentifierAction;
+
+            /**
+             * Encodes the specified WamoUserIdentifierAction message. Does not implicitly {@link proto.SyncActionValue.WamoUserIdentifierAction.verify|verify} messages.
+             * @param message WamoUserIdentifierAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.SyncActionValue.IWamoUserIdentifierAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified WamoUserIdentifierAction message, length delimited. Does not implicitly {@link proto.SyncActionValue.WamoUserIdentifierAction.verify|verify} messages.
+             * @param message WamoUserIdentifierAction message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.SyncActionValue.IWamoUserIdentifierAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a WamoUserIdentifierAction message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns WamoUserIdentifierAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.SyncActionValue.WamoUserIdentifierAction;
+
+            /**
+             * Decodes a WamoUserIdentifierAction message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns WamoUserIdentifierAction
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.SyncActionValue.WamoUserIdentifierAction;
+
+            /**
+             * Verifies a WamoUserIdentifierAction message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a WamoUserIdentifierAction message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns WamoUserIdentifierAction
+             */
+            public static fromObject(object: { [k: string]: any }): proto.SyncActionValue.WamoUserIdentifierAction;
+
+            /**
+             * Creates a plain object from a WamoUserIdentifierAction message. Also converts values to other types if specified.
+             * @param message WamoUserIdentifierAction
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.SyncActionValue.WamoUserIdentifierAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this WamoUserIdentifierAction to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for WamoUserIdentifierAction
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -34357,6 +43779,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdIndex
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdMutation. */
@@ -34453,6 +43882,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdMutation
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace SyncdMutation {
@@ -34552,6 +43988,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdMutations
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdPatch. */
@@ -34690,6 +44133,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdPatch
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdRecord. */
@@ -34792,6 +44242,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdRecord
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdSnapshot. */
@@ -34900,6 +44357,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdSnapshot
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdValue. */
@@ -34990,6 +44454,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdValue
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a SyncdVersion. */
@@ -35080,6 +44551,116 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for SyncdVersion
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    /** Properties of a TapLinkAction. */
+    interface ITapLinkAction {
+
+        /** TapLinkAction title */
+        title?: (string|null);
+
+        /** TapLinkAction tapUrl */
+        tapUrl?: (string|null);
+    }
+
+    /** Represents a TapLinkAction. */
+    class TapLinkAction implements ITapLinkAction {
+
+        /**
+         * Constructs a new TapLinkAction.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.ITapLinkAction);
+
+        /** TapLinkAction title. */
+        public title: string;
+
+        /** TapLinkAction tapUrl. */
+        public tapUrl: string;
+
+        /**
+         * Creates a new TapLinkAction instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns TapLinkAction instance
+         */
+        public static create(properties?: proto.ITapLinkAction): proto.TapLinkAction;
+
+        /**
+         * Encodes the specified TapLinkAction message. Does not implicitly {@link proto.TapLinkAction.verify|verify} messages.
+         * @param message TapLinkAction message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.ITapLinkAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified TapLinkAction message, length delimited. Does not implicitly {@link proto.TapLinkAction.verify|verify} messages.
+         * @param message TapLinkAction message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.ITapLinkAction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a TapLinkAction message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns TapLinkAction
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.TapLinkAction;
+
+        /**
+         * Decodes a TapLinkAction message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns TapLinkAction
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.TapLinkAction;
+
+        /**
+         * Verifies a TapLinkAction message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a TapLinkAction message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns TapLinkAction
+         */
+        public static fromObject(object: { [k: string]: any }): proto.TapLinkAction;
+
+        /**
+         * Creates a plain object from a TapLinkAction message. Also converts values to other types if specified.
+         * @param message TapLinkAction
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.TapLinkAction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this TapLinkAction to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for TapLinkAction
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a TemplateButton. */
@@ -35191,6 +44772,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for TemplateButton
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace TemplateButton {
@@ -35289,6 +44877,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for CallButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a QuickReplyButton. */
@@ -35385,6 +44980,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for QuickReplyButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
 
         /** Properties of a URLButton. */
@@ -35481,6 +45083,571 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for URLButton
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+    }
+
+    /** Properties of an UrlTrackingMap. */
+    interface IUrlTrackingMap {
+
+        /** UrlTrackingMap urlTrackingMapElements */
+        urlTrackingMapElements?: (proto.UrlTrackingMap.IUrlTrackingMapElement[]|null);
+    }
+
+    /** Represents an UrlTrackingMap. */
+    class UrlTrackingMap implements IUrlTrackingMap {
+
+        /**
+         * Constructs a new UrlTrackingMap.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IUrlTrackingMap);
+
+        /** UrlTrackingMap urlTrackingMapElements. */
+        public urlTrackingMapElements: proto.UrlTrackingMap.IUrlTrackingMapElement[];
+
+        /**
+         * Creates a new UrlTrackingMap instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns UrlTrackingMap instance
+         */
+        public static create(properties?: proto.IUrlTrackingMap): proto.UrlTrackingMap;
+
+        /**
+         * Encodes the specified UrlTrackingMap message. Does not implicitly {@link proto.UrlTrackingMap.verify|verify} messages.
+         * @param message UrlTrackingMap message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IUrlTrackingMap, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified UrlTrackingMap message, length delimited. Does not implicitly {@link proto.UrlTrackingMap.verify|verify} messages.
+         * @param message UrlTrackingMap message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IUrlTrackingMap, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes an UrlTrackingMap message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns UrlTrackingMap
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UrlTrackingMap;
+
+        /**
+         * Decodes an UrlTrackingMap message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns UrlTrackingMap
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UrlTrackingMap;
+
+        /**
+         * Verifies an UrlTrackingMap message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates an UrlTrackingMap message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns UrlTrackingMap
+         */
+        public static fromObject(object: { [k: string]: any }): proto.UrlTrackingMap;
+
+        /**
+         * Creates a plain object from an UrlTrackingMap message. Also converts values to other types if specified.
+         * @param message UrlTrackingMap
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.UrlTrackingMap, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this UrlTrackingMap to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for UrlTrackingMap
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace UrlTrackingMap {
+
+        /** Properties of an UrlTrackingMapElement. */
+        interface IUrlTrackingMapElement {
+
+            /** UrlTrackingMapElement originalUrl */
+            originalUrl?: (string|null);
+
+            /** UrlTrackingMapElement unconsentedUsersUrl */
+            unconsentedUsersUrl?: (string|null);
+
+            /** UrlTrackingMapElement consentedUsersUrl */
+            consentedUsersUrl?: (string|null);
+
+            /** UrlTrackingMapElement cardIndex */
+            cardIndex?: (number|null);
+        }
+
+        /** Represents an UrlTrackingMapElement. */
+        class UrlTrackingMapElement implements IUrlTrackingMapElement {
+
+            /**
+             * Constructs a new UrlTrackingMapElement.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.UrlTrackingMap.IUrlTrackingMapElement);
+
+            /** UrlTrackingMapElement originalUrl. */
+            public originalUrl: string;
+
+            /** UrlTrackingMapElement unconsentedUsersUrl. */
+            public unconsentedUsersUrl: string;
+
+            /** UrlTrackingMapElement consentedUsersUrl. */
+            public consentedUsersUrl: string;
+
+            /** UrlTrackingMapElement cardIndex. */
+            public cardIndex: number;
+
+            /**
+             * Creates a new UrlTrackingMapElement instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns UrlTrackingMapElement instance
+             */
+            public static create(properties?: proto.UrlTrackingMap.IUrlTrackingMapElement): proto.UrlTrackingMap.UrlTrackingMapElement;
+
+            /**
+             * Encodes the specified UrlTrackingMapElement message. Does not implicitly {@link proto.UrlTrackingMap.UrlTrackingMapElement.verify|verify} messages.
+             * @param message UrlTrackingMapElement message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.UrlTrackingMap.IUrlTrackingMapElement, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified UrlTrackingMapElement message, length delimited. Does not implicitly {@link proto.UrlTrackingMap.UrlTrackingMapElement.verify|verify} messages.
+             * @param message UrlTrackingMapElement message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.UrlTrackingMap.IUrlTrackingMapElement, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes an UrlTrackingMapElement message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns UrlTrackingMapElement
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UrlTrackingMap.UrlTrackingMapElement;
+
+            /**
+             * Decodes an UrlTrackingMapElement message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns UrlTrackingMapElement
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UrlTrackingMap.UrlTrackingMapElement;
+
+            /**
+             * Verifies an UrlTrackingMapElement message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates an UrlTrackingMapElement message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns UrlTrackingMapElement
+             */
+            public static fromObject(object: { [k: string]: any }): proto.UrlTrackingMap.UrlTrackingMapElement;
+
+            /**
+             * Creates a plain object from an UrlTrackingMapElement message. Also converts values to other types if specified.
+             * @param message UrlTrackingMapElement
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.UrlTrackingMap.UrlTrackingMapElement, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this UrlTrackingMapElement to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for UrlTrackingMapElement
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+    }
+
+    /** Properties of a UserPassword. */
+    interface IUserPassword {
+
+        /** UserPassword encoding */
+        encoding?: (proto.UserPassword.Encoding|null);
+
+        /** UserPassword transformer */
+        transformer?: (proto.UserPassword.Transformer|null);
+
+        /** UserPassword transformerArg */
+        transformerArg?: (proto.UserPassword.ITransformerArg[]|null);
+
+        /** UserPassword transformedData */
+        transformedData?: (Uint8Array|null);
+    }
+
+    /** Represents a UserPassword. */
+    class UserPassword implements IUserPassword {
+
+        /**
+         * Constructs a new UserPassword.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: proto.IUserPassword);
+
+        /** UserPassword encoding. */
+        public encoding: proto.UserPassword.Encoding;
+
+        /** UserPassword transformer. */
+        public transformer: proto.UserPassword.Transformer;
+
+        /** UserPassword transformerArg. */
+        public transformerArg: proto.UserPassword.ITransformerArg[];
+
+        /** UserPassword transformedData. */
+        public transformedData: Uint8Array;
+
+        /**
+         * Creates a new UserPassword instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns UserPassword instance
+         */
+        public static create(properties?: proto.IUserPassword): proto.UserPassword;
+
+        /**
+         * Encodes the specified UserPassword message. Does not implicitly {@link proto.UserPassword.verify|verify} messages.
+         * @param message UserPassword message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: proto.IUserPassword, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Encodes the specified UserPassword message, length delimited. Does not implicitly {@link proto.UserPassword.verify|verify} messages.
+         * @param message UserPassword message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: proto.IUserPassword, writer?: $protobuf.Writer): $protobuf.Writer;
+
+        /**
+         * Decodes a UserPassword message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns UserPassword
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UserPassword;
+
+        /**
+         * Decodes a UserPassword message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns UserPassword
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UserPassword;
+
+        /**
+         * Verifies a UserPassword message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
+
+        /**
+         * Creates a UserPassword message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns UserPassword
+         */
+        public static fromObject(object: { [k: string]: any }): proto.UserPassword;
+
+        /**
+         * Creates a plain object from a UserPassword message. Also converts values to other types if specified.
+         * @param message UserPassword
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: proto.UserPassword, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+        /**
+         * Converts this UserPassword to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for UserPassword
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
+
+    namespace UserPassword {
+
+        /** Encoding enum. */
+        enum Encoding {
+            UTF8 = 0,
+            UTF8_BROKEN = 1
+        }
+
+        /** Transformer enum. */
+        enum Transformer {
+            NONE = 0,
+            PBKDF2_HMAC_SHA512 = 1,
+            PBKDF2_HMAC_SHA384 = 2
+        }
+
+        /** Properties of a TransformerArg. */
+        interface ITransformerArg {
+
+            /** TransformerArg key */
+            key?: (string|null);
+
+            /** TransformerArg value */
+            value?: (proto.UserPassword.TransformerArg.IValue|null);
+        }
+
+        /** Represents a TransformerArg. */
+        class TransformerArg implements ITransformerArg {
+
+            /**
+             * Constructs a new TransformerArg.
+             * @param [properties] Properties to set
+             */
+            constructor(properties?: proto.UserPassword.ITransformerArg);
+
+            /** TransformerArg key. */
+            public key: string;
+
+            /** TransformerArg value. */
+            public value?: (proto.UserPassword.TransformerArg.IValue|null);
+
+            /**
+             * Creates a new TransformerArg instance using the specified properties.
+             * @param [properties] Properties to set
+             * @returns TransformerArg instance
+             */
+            public static create(properties?: proto.UserPassword.ITransformerArg): proto.UserPassword.TransformerArg;
+
+            /**
+             * Encodes the specified TransformerArg message. Does not implicitly {@link proto.UserPassword.TransformerArg.verify|verify} messages.
+             * @param message TransformerArg message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encode(message: proto.UserPassword.ITransformerArg, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Encodes the specified TransformerArg message, length delimited. Does not implicitly {@link proto.UserPassword.TransformerArg.verify|verify} messages.
+             * @param message TransformerArg message or plain object to encode
+             * @param [writer] Writer to encode to
+             * @returns Writer
+             */
+            public static encodeDelimited(message: proto.UserPassword.ITransformerArg, writer?: $protobuf.Writer): $protobuf.Writer;
+
+            /**
+             * Decodes a TransformerArg message from the specified reader or buffer.
+             * @param reader Reader or buffer to decode from
+             * @param [length] Message length if known beforehand
+             * @returns TransformerArg
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UserPassword.TransformerArg;
+
+            /**
+             * Decodes a TransformerArg message from the specified reader or buffer, length delimited.
+             * @param reader Reader or buffer to decode from
+             * @returns TransformerArg
+             * @throws {Error} If the payload is not a reader or valid buffer
+             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             */
+            public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UserPassword.TransformerArg;
+
+            /**
+             * Verifies a TransformerArg message.
+             * @param message Plain object to verify
+             * @returns `null` if valid, otherwise the reason why it is not
+             */
+            public static verify(message: { [k: string]: any }): (string|null);
+
+            /**
+             * Creates a TransformerArg message from a plain object. Also converts values to their respective internal types.
+             * @param object Plain object
+             * @returns TransformerArg
+             */
+            public static fromObject(object: { [k: string]: any }): proto.UserPassword.TransformerArg;
+
+            /**
+             * Creates a plain object from a TransformerArg message. Also converts values to other types if specified.
+             * @param message TransformerArg
+             * @param [options] Conversion options
+             * @returns Plain object
+             */
+            public static toObject(message: proto.UserPassword.TransformerArg, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+            /**
+             * Converts this TransformerArg to JSON.
+             * @returns JSON object
+             */
+            public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for TransformerArg
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
+        }
+
+        namespace TransformerArg {
+
+            /** Properties of a Value. */
+            interface IValue {
+
+                /** Value asBlob */
+                asBlob?: (Uint8Array|null);
+
+                /** Value asUnsignedInteger */
+                asUnsignedInteger?: (number|null);
+            }
+
+            /** Represents a Value. */
+            class Value implements IValue {
+
+                /**
+                 * Constructs a new Value.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: proto.UserPassword.TransformerArg.IValue);
+
+                /** Value asBlob. */
+                public asBlob?: (Uint8Array|null);
+
+                /** Value asUnsignedInteger. */
+                public asUnsignedInteger?: (number|null);
+
+                /** Value value. */
+                public value?: ("asBlob"|"asUnsignedInteger");
+
+                /**
+                 * Creates a new Value instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Value instance
+                 */
+                public static create(properties?: proto.UserPassword.TransformerArg.IValue): proto.UserPassword.TransformerArg.Value;
+
+                /**
+                 * Encodes the specified Value message. Does not implicitly {@link proto.UserPassword.TransformerArg.Value.verify|verify} messages.
+                 * @param message Value message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: proto.UserPassword.TransformerArg.IValue, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Encodes the specified Value message, length delimited. Does not implicitly {@link proto.UserPassword.TransformerArg.Value.verify|verify} messages.
+                 * @param message Value message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encodeDelimited(message: proto.UserPassword.TransformerArg.IValue, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a Value message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Value
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): proto.UserPassword.TransformerArg.Value;
+
+                /**
+                 * Decodes a Value message from the specified reader or buffer, length delimited.
+                 * @param reader Reader or buffer to decode from
+                 * @returns Value
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): proto.UserPassword.TransformerArg.Value;
+
+                /**
+                 * Verifies a Value message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a Value message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Value
+                 */
+                public static fromObject(object: { [k: string]: any }): proto.UserPassword.TransformerArg.Value;
+
+                /**
+                 * Creates a plain object from a Value message. Also converts values to other types if specified.
+                 * @param message Value
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: proto.UserPassword.TransformerArg.Value, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Value to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Value
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
         }
     }
 
@@ -35602,6 +45769,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for UserReceipt
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a VerifiedNameCertificate. */
@@ -35704,6 +45878,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for VerifiedNameCertificate
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace VerifiedNameCertificate {
@@ -35820,6 +46001,13 @@ export namespace proto {
              * @returns JSON object
              */
             public toJSON(): { [k: string]: any };
+
+            /**
+             * Gets the default type url for Details
+             * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+             * @returns The default type url
+             */
+            public static getTypeUrl(typeUrlPrefix?: string): string;
         }
     }
 
@@ -35917,6 +46105,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WallpaperSettings
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     /** Properties of a WebFeatures. */
@@ -36271,6 +46466,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebFeatures
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace WebFeatures {
@@ -36442,6 +46644,30 @@ export namespace proto {
 
         /** WebMessageInfo newsletterServerId */
         newsletterServerId?: (number|Long|null);
+
+        /** WebMessageInfo eventAdditionalMetadata */
+        eventAdditionalMetadata?: (proto.IEventAdditionalMetadata|null);
+
+        /** WebMessageInfo isMentionedInStatus */
+        isMentionedInStatus?: (boolean|null);
+
+        /** WebMessageInfo statusMentions */
+        statusMentions?: (string[]|null);
+
+        /** WebMessageInfo targetMessageId */
+        targetMessageId?: (proto.IMessageKey|null);
+
+        /** WebMessageInfo messageAddOns */
+        messageAddOns?: (proto.IMessageAddOn[]|null);
+
+        /** WebMessageInfo statusMentionMessageInfo */
+        statusMentionMessageInfo?: (proto.IStatusMentionMessage|null);
+
+        /** WebMessageInfo isSupportAiMessage */
+        isSupportAiMessage?: (boolean|null);
+
+        /** WebMessageInfo statusMentionSources */
+        statusMentionSources?: (string[]|null);
     }
 
     /** Represents a WebMessageInfo. */
@@ -36609,6 +46835,30 @@ export namespace proto {
         /** WebMessageInfo newsletterServerId. */
         public newsletterServerId: (number|Long);
 
+        /** WebMessageInfo eventAdditionalMetadata. */
+        public eventAdditionalMetadata?: (proto.IEventAdditionalMetadata|null);
+
+        /** WebMessageInfo isMentionedInStatus. */
+        public isMentionedInStatus: boolean;
+
+        /** WebMessageInfo statusMentions. */
+        public statusMentions: string[];
+
+        /** WebMessageInfo targetMessageId. */
+        public targetMessageId?: (proto.IMessageKey|null);
+
+        /** WebMessageInfo messageAddOns. */
+        public messageAddOns: proto.IMessageAddOn[];
+
+        /** WebMessageInfo statusMentionMessageInfo. */
+        public statusMentionMessageInfo?: (proto.IStatusMentionMessage|null);
+
+        /** WebMessageInfo isSupportAiMessage. */
+        public isSupportAiMessage: boolean;
+
+        /** WebMessageInfo statusMentionSources. */
+        public statusMentionSources: string[];
+
         /**
          * Creates a new WebMessageInfo instance using the specified properties.
          * @param [properties] Properties to set
@@ -36678,6 +46928,13 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebMessageInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 
     namespace WebMessageInfo {
@@ -36902,7 +47159,18 @@ export namespace proto {
             BIZ_BOT_3P_MESSAGING_ENABLED = 197,
             REMINDER_SETUP_MESSAGE = 198,
             REMINDER_SENT_MESSAGE = 199,
-            REMINDER_CANCEL_MESSAGE = 200
+            REMINDER_CANCEL_MESSAGE = 200,
+            BIZ_COEX_PRIVACY_INIT = 201,
+            BIZ_COEX_PRIVACY_TRANSITION = 202,
+            GROUP_DEACTIVATED = 203,
+            COMMUNITY_DEACTIVATE_SIBLING_GROUP = 204,
+            EVENT_UPDATED = 205,
+            EVENT_CANCELED = 206,
+            COMMUNITY_OWNER_UPDATED = 207,
+            COMMUNITY_SUB_GROUP_VISIBILITY_HIDDEN = 208,
+            CAPI_GROUP_NE2EE_SYSTEM_MESSAGE = 209,
+            STATUS_MENTION = 210,
+            USER_CONTROLS_SYSTEM_MESSAGE = 211
         }
     }
 
@@ -37012,5 +47280,12 @@ export namespace proto {
          * @returns JSON object
          */
         public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for WebNotificationsInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
     }
 }
