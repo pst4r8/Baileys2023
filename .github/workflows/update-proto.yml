@@ -58,12 +58,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
           git checkout -b update-proto/stable || git checkout update-proto/stable
-          git pull origin update-proto/stable --allow-unrelated-histories # Pull the latest changes from the remote branch
+          git add WAProto/WAProto.proto WAProto/index.d.ts WAProto/index.js src/Defaults/baileys-version.json
+          git commit -m "chore: commit local changes before merge"
+          git pull origin update-proto/stable --allow-unrelated-histories  # Pull with allow-unrelated-histories
           git add WAProto/*
           git add src/Defaults/baileys-version.json
           git commit -m "chore: updated proto/version to v${{steps.wa_proto_info.outputs.wa_version}}"
           git push origin update-proto/stable || git push --set-upstream origin update-proto/stable
-          
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
