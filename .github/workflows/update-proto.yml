@@ -38,7 +38,7 @@ jobs:
           echo "wa_js_url=$WA_JS_URL" >> $GITHUB_OUTPUT
 
       - name: GenerateStatics
-        run: npx sh WAProto/GenerateStatics.sh  # Use npx to run the script
+        run: sh WAProto/GenerateStatics.sh  # Use sh to run the script
 
       - name: Update baileys-version.json
         run: |
