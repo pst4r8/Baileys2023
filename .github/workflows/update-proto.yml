@@ -25,7 +25,7 @@ jobs:
       - name: Install packages
         run: |
           yarn
-          yarn add protobufjs@7.2.4  # Install locally as dev dependency
+          yarn add protobufjs-cli --dev  # Install protobufjs-cli as a dev dependency
           yarn --pure-lockfile --cwd proto-extract
 
       - name: Update WAProto.proto
