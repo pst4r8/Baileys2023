@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-          with:
-            token: ${{ secrets.NPM_TOKEN }}
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
 
       - name: Install Node
         uses: actions/setup-node@v3
