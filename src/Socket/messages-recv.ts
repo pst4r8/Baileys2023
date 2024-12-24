@@ -839,7 +839,7 @@ export const makeMessagesRecvSocket = (config: SocketConfig) => {
 				chatJid: oldestMsgKey.remoteJid,
 				oldestMsgFromMe: oldestMsgKey.fromMe,
 				oldestMsgId: oldestMsgKey.id,
-				oldestMsgTimestampMs: oldestMsgTimestamp,
+				oldestMsgTimestampMs: oldestMsgTimestamp as number | Long | null | undefined,
 				onDemandMsgCount: count
 			},
 			peerDataOperationRequestType: proto.Message.PeerDataOperationRequestType.HISTORY_SYNC_ON_DEMAND
