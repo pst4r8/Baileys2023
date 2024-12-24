@@ -24,9 +24,8 @@ jobs:
 
       - name: Install packages
         run: |
-          yarn
+          yarn install
           yarn --pure-lockfile --cwd proto-extract
-          yarn global add protobufjs
 
       - name: Update WAProto.proto
         id: wa_proto_info
@@ -39,7 +38,7 @@ jobs:
 
       - name: GenerateStatics
         run: |
-          export PATH="$(yarn global bin):$PATH"
+          export PATH="$(yarn bin):$PATH"
           sh WAProto/GenerateStatics.sh
 
       - name: Update baileys-version.json
