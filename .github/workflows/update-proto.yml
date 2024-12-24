@@ -48,6 +48,10 @@ jobs:
           WA_NUMBERS=$(echo $WA_VERSION | sed "s/\./, /g")
           echo -e "{\n\t\"version\": [$WA_NUMBERS]\n}" > src/Defaults/baileys-version.json
 
+      - name: Configure Git to Merge
+        run: |
+          git config pull.rebase false  # Configure Git to use merge
+
       - name: Authorize GitHub
         run: |
           git config user.name "github-actions[bot]"
