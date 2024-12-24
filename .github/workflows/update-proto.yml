@@ -25,7 +25,8 @@ jobs:
       - name: Install packages
         run: |
           yarn
-          yarn global add protobufjs  # Install protobufjs globally
+          yarn add protobufjs --dev  # Install locally as dev dependency
+          yarn global add protobufjs  # Install globally
           yarn --pure-lockfile --cwd proto-extract
 
       - name: Update WAProto.proto
