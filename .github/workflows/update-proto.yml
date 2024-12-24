@@ -25,8 +25,7 @@ jobs:
       - name: Install packages
         run: |
           yarn
-          yarn add protobufjs --dev  # Install locally as dev dependency
-          yarn global add protobufjs  # Install globally
+          yarn global add protobufjs@7.2.4
           yarn --pure-lockfile --cwd proto-extract
 
       - name: Update WAProto.proto
@@ -39,7 +38,7 @@ jobs:
           echo "wa_js_url=$WA_JS_URL" >> $GITHUB_OUTPUT
 
       - name: GenerateStatics
-        run: sh WAProto/GenerateStatics.sh  # Use sh to run the script
+        run: sh WAProto/GenerateStatics.sh
 
       - name: Update baileys-version.json
         run: |
