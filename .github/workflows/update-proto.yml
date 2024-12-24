@@ -51,7 +51,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: updated proto/version to v${{steps.wa_proto_info.outputs.wa_version}}"
           title: "Whatsapp v${{steps.wa_proto_info.outputs.wa_version}} proto/version change"
           branch: "update-proto/stable"
