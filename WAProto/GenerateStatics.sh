@@ -6,8 +6,8 @@
 #!/bin/sh
 
 # Use the binaries from node_modules
-PBJS=node_modules/.bin/pbjs
-PBTS=node_modules/.bin/pbts
+PBJS=./node_modules/.bin/pbjs
+PBTS=./node_modules/.bin/pbts
 
 $PBJS -t static-module -w commonjs -o WAProto.js WAProto.proto
 $PBTS -o WAProto.d.ts WAProto.js
