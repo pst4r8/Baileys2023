@@ -48,14 +48,21 @@ jobs:
           WA_NUMBERS=$(echo $WA_VERSION | sed "s/\./, /g")
           echo -e "{\n\t\"version\": [$WA_NUMBERS]\n}" > src/Defaults/baileys-version.json
 
-      - name: Stash Local Changes
+      - name: Configure Git to Merge
         run: |
-          git stash
-        
-      - name: Authorize GitHub
+          git config pull.rebase false  # Configure Git to use merge for pulls
+
+      - name: Configure GitHub
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Stash Local Changes
+        run: |
+          git stash
+
+      - name: Authorize GitHub
+        run: |
           git fetch origin
           git checkout -b update-proto/stable || git checkout update-proto/stable
           git pull origin update-proto/stable --allow-unrelated-histories  # Pull with allow-unrelated-histories
