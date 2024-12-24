@@ -54,6 +54,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
           git checkout -b update-proto/stable || git checkout update-proto/stable
+          git pull origin update-proto/stable  # Pull the latest changes from the remote branch
           git add WAProto/*
           git add src/Defaults/baileys-version.json
           git commit -m "chore: updated proto/version to v${{steps.wa_proto_info.outputs.wa_version}}"
