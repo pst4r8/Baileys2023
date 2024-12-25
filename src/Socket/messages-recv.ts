@@ -1,4 +1,4 @@
-
+import Long from 'long'
 import { Boom } from '@hapi/boom'
 import { randomBytes } from 'crypto'
 import NodeCache from 'node-cache'
