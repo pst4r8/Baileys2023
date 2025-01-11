@@ -399,6 +399,7 @@ message BotSessionMetadata {
 }
 
 enum BotSessionSource {
+    NONE = 0;
     NULL_STATE = 1;
     TYPEAHEAD = 2;
     USER_INPUT = 3;
@@ -1758,7 +1759,6 @@ message Message {
     message ExtendedTextMessage {
         optional string text = 1;
         optional string matchedText = 2;
-        optional string canonicalUrl = 4;
         optional string description = 5;
         optional string title = 6;
         optional fixed32 textArgb = 7;
@@ -2303,7 +2303,6 @@ message Message {
                 optional string title = 2;
                 optional string description = 3;
                 optional bytes thumbData = 4;
-                optional string canonicalUrl = 5;
                 optional string matchText = 6;
                 optional string previewType = 7;
                 optional LinkPreviewHighQualityThumbnail hqThumbnail = 8;

@@ -4608,6 +4608,7 @@ export namespace proto {
 
     /** BotSessionSource enum. */
     enum BotSessionSource {
+        NONE = 0,
         NULL_STATE = 1,
         TYPEAHEAD = 2,
         USER_INPUT = 3,
@@ -19510,9 +19511,6 @@ export namespace proto {
             /** ExtendedTextMessage matchedText */
             matchedText?: (string|null);
 
-            /** ExtendedTextMessage canonicalUrl */
-            canonicalUrl?: (string|null);
-
             /** ExtendedTextMessage description */
             description?: (string|null);
 
@@ -19600,9 +19598,6 @@ export namespace proto {
 
             /** ExtendedTextMessage matchedText. */
             public matchedText: string;
-
-            /** ExtendedTextMessage canonicalUrl. */
-            public canonicalUrl: string;
 
             /** ExtendedTextMessage description. */
             public description: string;
@@ -26207,9 +26202,6 @@ export namespace proto {
                     /** LinkPreviewResponse thumbData */
                     thumbData?: (Uint8Array|null);
 
-                    /** LinkPreviewResponse canonicalUrl */
-                    canonicalUrl?: (string|null);
-
                     /** LinkPreviewResponse matchText */
                     matchText?: (string|null);
 
@@ -26240,9 +26232,6 @@ export namespace proto {
 
                     /** LinkPreviewResponse thumbData. */
                     public thumbData: Uint8Array;
-
-                    /** LinkPreviewResponse canonicalUrl. */
-                    public canonicalUrl: string;
 
                     /** LinkPreviewResponse matchText. */
                     public matchText: string;
