@@ -718,6 +718,7 @@ message ClientPayload {
             WIN_STORE = 2;
             DARWIN = 3;
             WIN32 = 4;
+            WIN_HYBRID = 5;
         }
         message WebdPayload {
             optional bool usesParticipantInKey = 1;
