@@ -60,7 +60,8 @@ export const generateLoginNode = (userJid: string, config: SocketConfig): proto.
 	const { user, device } = jidDecode(userJid)!
 	const payload: proto.IClientPayload = {
 		...getClientPayload(config),
-		passive: true,
+		passive: false,
+		pull: true,
 		username: +user,
 		device: device,
 	}
