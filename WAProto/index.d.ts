@@ -1144,6 +1144,9 @@ export namespace proto {
 
             /** AIRichResponseImageURL imageHighResUrl */
             imageHighResUrl?: (string|null);
+
+            /** AIRichResponseImageURL sourceUrl */
+            sourceUrl?: (string|null);
         }
 
         /** Represents a AIRichResponseImageURL. */
@@ -1160,6 +1163,9 @@ export namespace proto {
 
             /** AIRichResponseImageURL imageHighResUrl. */
             public imageHighResUrl: string;
+
+            /** AIRichResponseImageURL sourceUrl. */
+            public sourceUrl: string;
 
             /**
              * Creates a new AIRichResponseImageURL instance using the specified properties.
@@ -6504,7 +6510,8 @@ export namespace proto {
                 GOOGLE = 1,
                 HARDCODED = 2,
                 OVERRIDE = 3,
-                FALLBACK = 4
+                FALLBACK = 4,
+                MNS = 5
             }
         }
 
@@ -8887,6 +8894,9 @@ export namespace proto {
 
             /** FeatureEligibilities canRequestFeedback */
             canRequestFeedback?: (boolean|null);
+
+            /** FeatureEligibilities canBeReshared */
+            canBeReshared?: (boolean|null);
         }
 
         /** Represents a FeatureEligibilities. */
@@ -8906,6 +8916,9 @@ export namespace proto {
 
             /** FeatureEligibilities canRequestFeedback. */
             public canRequestFeedback: boolean;
+
+            /** FeatureEligibilities canBeReshared. */
+            public canBeReshared: boolean;
 
             /**
              * Creates a new FeatureEligibilities instance using the specified properties.
@@ -9228,7 +9241,8 @@ export namespace proto {
         /** StatusAttributionType enum. */
         enum StatusAttributionType {
             NONE = 0,
-            RESHARED_FROM_MENTION = 1
+            RESHARED_FROM_MENTION = 1,
+            RESHARED_FROM_POST = 2
         }
 
         /** Properties of a UTMInfo. */
