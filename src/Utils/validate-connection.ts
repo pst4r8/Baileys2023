@@ -94,6 +94,7 @@ export const generateRegistrationNode = (
 	const registerPayload: proto.IClientPayload = {
 		...getClientPayload(config),
 		passive: false,
+		pull: false,
 		devicePairingData: {
 			buildHash: appVersionBuf,
 			deviceProps: companionProto,
